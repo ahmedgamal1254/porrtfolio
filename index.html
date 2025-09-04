@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Eng Ahmed Gamal | Web Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+ <header class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md text-white shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+        <h1 class="text-2xl text-center font-bold"><a href="#">AhmedGamal</a></h1>
+        
+        <!-- Hamburger Button for Mobile -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="#services" class="hover:text-yellow-400">Services</a>
+            <a href="#projects" class="hover:text-yellow-400">Projects</a>
+            <a href="#contact" class="hover:text-yellow-400">Contact Us</a>
+            <a href="/ar" class="hover:text-yellow-400">عربى</a>
+        </nav>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center justify-between gap-4">
+            <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+                Projects
+                <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+                Download CV
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+        <div class="flex justify-end p-4">
+            <button id="menu-close" class="text-black focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-6 px-6 text-lg font-medium bg-white text-gray-800">
+            <a href="#" class="hover:text-yellow-400">Home</a>
+            <a href="#services" class="hover:text-yellow-400">Services</a>
+            <a href="#projects" class="hover:text-yellow-400">Projects</a>
+            <a href="#contact" class="hover:text-yellow-400">Contact Us</a>
+            <a href="/ar" class="hover:text-yellow-400">عربى</a>
+            
+        </nav>
+    </div>
+</header>
+
+
+  <!-- header movi -->
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
+    <video autoplay loop muted class="absolute w-full h-full object-cover">
+      <source src="assets/vid.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="flex-1 text-center md:text-left space-y-6">
+        <h1 class="text-4xl md:text-4xl font-bold">Eng Ahmed Gamal</h1>
+        <h2 class="text-2xl font-semibold text-yellow-400">Web Developer</h2>
+        <p class="text-gray-300 text-lg">
+          Motivated and detail-oriented PHP Developer with 1 year of hands-on experience in building dynamic web applications using PHP, Laravel, and MySQL. Passionate about clean code, problem-solving, and delivering robust backend systems.
+           Seeking to join a dynamic team where I can grow and contribute to impactful projects. 
+        </p>
+        <div class="flex justify-center md:justify-start gap-4 mt-4 flex-wrap">
+          <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+            My Work 
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <a href="assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+            download CV
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="flex justify-center md:justify-start gap-4 text-2xl mt-6">
+          <a href="https://facebook.com/elking.ahmed.35175" target="_blank" class="hover:text-yellow-400"><i class="fab fa-facebook"></i></a>
+          <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ahmedgamal1254" target="_blank" class="hover:text-yellow-400"><i class="fab fa-github"></i></a>
+          <a href="https://leetcode.com/u/ahmedgamal912" target="_blank" class="hover:text-yellow-400">
+            <img class="icon_image" src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode"></a>
+          <a href="https://wa.link/bxtthy" target="_blank" class="hover:text-yellow-400"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="assets/imgs/profile.png" alt="Ahmed Gamal" class="rounded-2xl shadow-xl w-64 md:w-80" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col items-start justify-center gap-3 mb-8">
+        <div class="flex items-start justify-start gap-3 mb-4">
+          <i class="fas fa-tools text-3xl text-indigo-600"></i>
+          <h2 class="text-3xl font-bold">My Services</h2>
+        </div>
+
+        <p class="text-left text-gray-600 mb-4 max-w-xl">
+          Discover the range of professional services I offer to help bring your ideas to life. From modern web development to seamless user experiences.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-code text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Custom Website Development</h3>
+          <p>Designing and building dynamic, responsive websites tailored to your specific business needs.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-shopping-cart text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">E-Commerce Solutions</h3>
+          <p>Developing complete online stores with secure payment gateways and optimized user experience.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-cogs text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">CMS Development</h3>
+          <p>Creating custom or WordPress-based content management systems for easy site control.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-laptop-code text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Full Web Applications</h3>
+          <p>Building advanced web apps using Laravel, React, or Vue.js with clean and scalable architecture.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-chart-line text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+          <p>Improving your website's visibility in search engine results through best SEO practices.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-tools text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">Website Maintenance</h3>
+          <p>Ongoing support including updates, security enhancements, and regular backups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-20 bg-gradient-to-br from-white to-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-left mb-12">
+      <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-start gap-3">
+        <i class="fas fa-tools text-yellow-500 text-3xl"></i>
+        My Skills
+      </h2>
+      <p class="text-gray-600 mt-2 text-sm">Technologies & tools I use to build modern, scalable web applications.</p>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-800">
+      
+      <!-- PHP -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fab fa-php text-3xl text-indigo-600"></i>
+        <h3 class="font-semibold">PHP</h3>
+      </div>
+
+      <!-- Laravel -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fab fa-laravel text-3xl text-red-600"></i>
+        <h3 class="font-semibold">Laravel</h3>
+      </div>
+
+      <!-- MySQL -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-database text-3xl text-blue-600"></i>
+        <h3 class="font-semibold">MySQL</h3>
+      </div>
+
+      <!-- RESTful API -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-cloud text-3xl text-cyan-600"></i>
+        <h3 class="font-semibold">RESTful API</h3>
+      </div>
+
+      <!-- Postman -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-paper-plane text-3xl text-orange-500"></i>
+        <h3 class="font-semibold">Postman</h3>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fab fa-js-square text-3xl text-yellow-400"></i>
+        <h3 class="font-semibold">JavaScript</h3>
+      </div>
+
+      <!-- React.js -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fab fa-react text-3xl text-blue-400"></i>
+        <h3 class="font-semibold">React.js</h3>
+      </div>
+
+      <!-- Next.js -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-layer-group text-3xl text-gray-800"></i>
+        <h3 class="font-semibold">Next.js</h3>
+      </div>
+
+      <!-- Tailwind CSS -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-wind text-3xl text-teal-500"></i>
+        <h3 class="font-semibold">Tailwind CSS</h3>
+      </div>
+
+      <!-- Material UI -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-cubes text-3xl text-purple-600"></i>
+        <h3 class="font-semibold">Material UI</h3>
+      </div>
+
+      <!-- Ant Design -->
+      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+        <i class="fas fa-palette text-3xl text-pink-500"></i>
+        <h3 class="font-semibold">Ant Design</h3>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+ <!-- Projects Section -->
+<section id="projects" class="py-16 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex flex-col items-start justify-center gap-3 mb-8">
+      <div class="flex items-start justify-start gap-3 mb-2">
+        <i class="fas fa-laptop-code text-3xl text-indigo-600"></i>
+        <h2 class="text-3xl font-bold">My Work</h2>
+      </div>
+
+      <p class="text-left text-gray-600 mb-4 max-w-xl">
+        Discover our work across a variety of creative and technical projects.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Almahlawy LMS -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/projects/img_1.webp" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Almahlawy LMS</h3>
+          <p class="text-sm text-gray-600">An educational platform for physics with admin dashboards and online payment integration.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+            <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-yellow-400 px-2 py-1 rounded">RestFul Api</span>
+          </div>
+          <a href="https://zain-physics.online" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Maren LMS -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/MAREN-Home.webp" alt="Maren Project" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Maren LMS</h3>
+          <p class="text-sm text-gray-600">Multi-user educational system for teachers and students with login roles and dashboards.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+            <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-green-600 px-2 py-1 rounded">Blade</span>
+          </div>
+          <a href="https://maren.live" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+
+      <!-- Camera invertory -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/projects/homepage.png" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Camera Inventory System</h3>
+          <p class="text-sm text-gray-600">
+            An inventory system for camera inventory, including features like orders, product management, and customer management.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+            <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-yellow-400 px-2 py-1 rounded">RestFul Api</span>
+            <span class="bg-yellow-400 px-2 py-1 rounded">NEXTjs</span>
+          </div>
+          <a href="#" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- LMS Next.js App -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/lms.png" alt="LMS Next.js" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">LMS Next.js App</h3>
+          <p class="text-sm text-gray-600">Educational platform built with modern frontend stack for students.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-black px-2 py-1 rounded">Next.js</span>
+            <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
+            <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
+          </div>
+          <a href="https://lms-nextapp.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Company Portfolio Site -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/projects/company.png" alt="Company Website" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Portfolio WebApp (Laravel)</h3>
+          <p class="text-sm text-gray-600">A modern company profile website built using Laravel.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+            <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-gray-700 px-2 py-1 rounded">Blade</span>
+          </div>
+          <a href="https://company-app-six.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- E-commerce Frontend -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/eecommerc.webp" alt="E-commerce Frontend" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Frontend E-commerce App</h3>
+          <p class="text-sm text-gray-600">E-commerce frontend built using Next.js and TailwindCSS.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-black px-2 py-1 rounded">Next.js</span>
+            <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
+            <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
+          </div>
+          <a href="https://ecommerce-app-wheat-two.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Almahlawy Mobile App -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="assets/imgs/img.webp" alt="Mobile App" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">Physics Mobile App</h3>
+          <p class="text-sm text-gray-600">Educational Android app for physics available on Google Play.</p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-green-600 px-2 py-1 rounded">Android</span>
+            <span class="bg-blue-500 px-2 py-1 rounded">API</span>
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel Backend</span>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=com.dev3solutions.almahlawy_in_physics" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View on Google Play
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+   <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50">
+  <div class="max-w-5xl mx-auto px-6">
+    <!-- Title -->
+    <div class="text-center mb-12 flex justify-start items-start flex-col">
+      <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-center gap-2">
+        <i class="fas fa-envelope text-yellow-500 text-3xl"></i> 
+        Contact Me
+      </h2>
+      <p class="text-gray-600 mt-2 text-sm">I’m open to freelance projects or part-time opportunities — feel free to reach out!</p>
+    </div>
+
+    <!-- Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+      <!-- Contact Info -->
+      <div class="space-y-5 text-gray-700">
+        <h3 class="text-2xl font-semibold text-gray-800">Ahmed Gamal</h3>
+        <p class="text-gray-600">Available for freelance or part-time work in modern web development and UI/UX design.</p>
+
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-center gap-3">
+            <i class="fas fa-phone-alt text-yellow-500"></i>
+            <a href="https://wa.link/bxtthy" class="hover:underline text-gray-800 font-medium">+20 109 153 6978</a>
+          </li>
+          <li class="flex items-center gap-3">
+            <i class="fas fa-envelope text-yellow-500"></i>
+            <a href="mailto:engahmedgamal086@gmail.com" class="hover:underline text-gray-800 font-medium">engahmedgamal086@gmail.com</a>
+          </li>
+        </ul>
+
+        <!-- Social Media -->
+        <div class="flex gap-4 text-xl mt-6">
+          <a href="https://facebook.com/elking.ahmed.35175" class="hover:text-yellow-500 transition"><i class="fab fa-facebook"></i></a>
+          <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" class="hover:text-yellow-500 transition"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ahmedgamal1254" class="hover:text-yellow-500 transition"><i class="fab fa-github"></i></a>
+          <a href="https://wa.link/bxtthy" class="hover:text-yellow-500 transition"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
+        <textarea rows="5" placeholder="Your Message" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition resize-none" required></textarea>
+        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-2 rounded-lg transition">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>© 2024 Ahmed Gamal – Web Developer. All rights reserved.</p>
+  </footer>
+
+     <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+    </script>
+</body>
+</html>

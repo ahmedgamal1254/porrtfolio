@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المهندس أحمد جمال | مطور ويب</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    body {
+      font-family: 'Tajawal', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+<header class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md text-white shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+        <h1 class="text-2xl text-center font-bold"><a href="#">أحمد جمال</a></h1>
+        
+        <!-- Hamburger Button for Mobile -->
+        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#" class="hover:text-yellow-400">الرئيسية</a>
+            <a href="#services" class="hover:text-yellow-400">الخدمات</a>
+            <a href="#projects" class="hover:text-yellow-400">المشاريع</a>
+            <a href="#contact" class="hover:text-yellow-400">تواصل معنا</a>
+            <a href="/" class="hover:text-yellow-400">English</a>
+        </nav>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden md:flex items-center justify-between gap-4">
+            <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+                المشاريع
+                <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="../assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+                تحميل السيرة الذاتية
+                <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
+        <div class="flex justify-end p-4">
+            <button id="menu-close" class="text-black focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+        <nav class="flex flex-col gap-6 px-6 py-6 text-lg font-medium text-gray-800 bg-white">
+            <a href="#" class="hover:text-yellow-400">الرئيسية</a>
+            <a href="#services" class="hover:text-yellow-400">الخدمات</a>
+            <a href="#projects" class="hover:text-yellow-400">المشاريع</a>
+            <a href="#contact" class="hover:text-yellow-400">تواصل معنا</a>
+            <a href="/" class="hover:text-yellow-400">English</a>
+            
+        </nav>
+    </div>
+</header>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
+    <video autoplay loop muted class="absolute w-full h-full object-cover">
+      <source src="../assets/vid.mp4" type="video/mp4" />
+    </video>
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10 max-w-7xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-12">
+      <div class="flex-1 text-center md:text-right space-y-6">
+        <h1 class="text-4xl md:text-4xl font-bold">أحمد جمال</h1>
+        <h2 class="text-2xl font-semibold text-yellow-400">مطور ويب</h2>
+        <p class="text-gray-300 text-lg">
+          مطور PHP مع خبرة أكثر من سنة في بناء تطبيقات ويب ديناميكية باستخدام PHP، Laravel، وMySQL. شغوف بكتابة كود نظيف، حل المشكلات، وتقديم أنظمة قوية. أسعى للانضمام إلى فريق ديناميكي حيث يمكنني النمو والمساهمة في مشاريع مؤثرة.
+        </p>
+        <div class="flex justify-center md:justify-start gap-4 mt-4 flex-wrap">
+          <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+            أعمالي
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="../assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
+            السيرة الذاتية
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="flex justify-center md:justify-start gap-4 text-2xl mt-6">
+          <a href="https://facebook.com/elking.ahmed.35175" target="_blank" class="hover:text-yellow-400"><i class="fab fa-facebook"></i></a>
+          <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/ahmedgamal1254" target="_blank" class="hover:text-yellow-400"><i class="fab fa-github"></i></a>
+          
+          <a href="https://wa.link/bxtthy" target="_blank" class="hover:text-yellow-400"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="flex-1 flex justify-center">
+        <img src="../assets/imgs/profile.png" alt="أحمد جمال" class="rounded-2xl shadow-xl w-64 md:w-80" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col items-start justify-center gap-3 mb-8">
+        <div class="flex items-end justify-end gap-3 mb-4">
+          <i class="fas fa-tools text-3xl text-indigo-600"></i>
+          <h2 class="text-3xl font-bold">خدماتي</h2>
+        </div>
+        <p class="text-right text-gray-600 mb-4 max-w-xl">
+          اكتشف مجموعة الخدمات الاحترافية التي أقدمها لتحويل أفكارك إلى واقع. من تطوير الويب الحديث إلى تجارب مستخدم سلسة.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-code text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">تطوير مواقع مخصصة</h3>
+          <p>تصميم وبناء مواقع ويب ديناميكية ومتجاوبة مصممة خصيصًا لاحتياجات عملك.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-shopping-cart text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">حلول التجارة الإلكترونية</h3>
+          <p>تطوير متاجر إلكترونية كاملة مع بوابات دفع آمنة وتجربة مستخدم محسنة.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-cogs text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">تطوير أنظمة إدارة المحتوى</h3>
+          <p>إنشاء أنظمة إدارة محتوى مخصصة أو قائمة على WordPress لتحكم سهل بالموقع.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-laptop-code text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">تطبيقات ويب كاملة</h3>
+          <p>بناء تطبيقات ويب متقدمة باستخدام Laravel، React، أو Vue.js مع هيكلية نظيفة وقابلة للتوسع.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-chart-line text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">تحسين محركات البحث</h3>
+          <p>تحسين رؤية موقعك الإلكتروني في نتائج محركات البحث من خلال أفضل ممارسات SEO.</p>
+        </div>
+        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+          <i class="fa-solid fa-tools text-3xl text-yellow-500 mb-4"></i>
+          <h3 class="text-xl font-semibold mb-2">صيانة المواقع</h3>
+          <p>دعم مستمر يشمل التحديثات، تعزيزات الأمان، والنسخ الاحتياطية الدورية.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 bg-gradient-to-br from-white to-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-right mb-12">
+        <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-start gap-3">
+          <i class="fas fa-tools text-yellow-500 text-3xl"></i>
+          مهاراتي
+        </h2>
+        <p class="text-gray-600 mt-2 text-sm">التقنيات والأدوات التي أستخدمها لبناء تطبيقات ويب حديثة وقابلة للتوسع.</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-800">
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fab fa-php text-3xl text-indigo-600"></i>
+          <h3 class="font-semibold">PHP</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fab fa-laravel text-3xl text-red-600"></i>
+          <h3 class="font-semibold">Laravel</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-database text-3xl text-blue-600"></i>
+          <h3 class="font-semibold">MySQL</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-cloud text-3xl text-cyan-600"></i>
+          <h3 class="font-semibold">RESTful API</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-paper-plane text-3xl text-orange-500"></i>
+          <h3 class="font-semibold">Postman</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fab fa-js-square text-3xl text-yellow-400"></i>
+          <h3 class="font-semibold">JavaScript</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fab fa-react text-3xl text-blue-400"></i>
+          <h3 class="font-semibold">React.js</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-layer-group text-3xl text-gray-800"></i>
+          <h3 class="font-semibold">Next.js</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-wind text-3xl text-teal-500"></i>
+          <h3 class="font-semibold">Tailwind CSS</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-cubes text-3xl text-purple-600"></i>
+          <h3 class="font-semibold">Material UI</h3>
+        </div>
+        <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
+          <i class="fas fa-palette text-3xl text-pink-500"></i>
+          <h3 class="font-semibold">Ant Design</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 bg-gray-100">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col items-start justify-center gap-3 mb-8">
+        <div class="flex items-end justify-end gap-3 mb-2">
+          <i class="fas fa-laptop-code text-3xl text-indigo-600"></i>
+          <h2 class="text-3xl font-bold">أعمالي</h2>
+        </div>
+        <p class="text-right text-gray-600 mb-4 max-w-xl">
+          اكتشف أعمالنا عبر مجموعة متنوعة من المشاريع الإبداعية والتقنية.
+        </p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/projects/img_1.webp" alt="منصة المحلاوي" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">منصة المحلاوي التعليمية</h3>
+            <p class="text-sm text-gray-600">منصة تعليمية لتدريس الفيزياء مزودة بلوحات تحكم إدارية وتكامل الدفع الإلكتروني.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+              <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+              <span class="bg-yellow-400 px-2 py-1 rounded">RestFul API</span>
+            </div>
+            <a href="https://zain-physics.online" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض المشروع
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/MAREN-Home.webp" alt="منصة مارين" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">منصة مارين التعليمية</h3>
+            <p class="text-sm text-gray-600">نظام تعليمي متعدد المستخدمين للمعلمين والطلاب مع أدوار تسجيل دخول ولوحات تحكم.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+              <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+              <span class="bg-green-600 px-2 py-1 rounded">Blade</span>
+            </div>
+            <a href="https://maren.live" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض المشروع
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Camera invertory -->
+      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+        <img src="../assets/imgs/projects/homepage.png" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
+        <div class="p-5 space-y-3">
+          <h3 class="text-xl font-semibold text-gray-800">منصة ادارة معدات تصوير</h3>
+          <p class="text-sm text-gray-600">
+            منصة ادارة معدات تصوير موقع ويب حديث لملف تعريف الشركة مبني باستخدام Laravel.
+          </p>
+          <div class="flex flex-wrap gap-2 text-xs text-white">
+            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+            <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+            <span class="bg-yellow-400 px-2 py-1 rounded">RestFul Api</span>
+            <span class="bg-yellow-400 px-2 py-1 rounded">NEXTjs</span>
+          </div>
+          <a href="#" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
+          hover:bg-yellow-600 transition text-sm">
+            View Project
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/lms.png" alt="تطبيق تعليمي Next.js" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">تطبيق تعليمي Next.js</h3>
+            <p class="text-sm text-gray-600">منصة تعليمية مبنية باستخدام تقنيات الواجهة الأمامية الحديثة للطلاب.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-black px-2 py-1 rounded">Next.js</span>
+              <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
+              <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
+            </div>
+            <a href="https://lms-nextapp.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض المشروع
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/projects/company.png" alt="موقع شركة" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">تطبيق ويب محفظة (Laravel)</h3>
+            <p class="text-sm text-gray-600">موقع ويب حديث لملف تعريف الشركة مبني باستخدام Laravel.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-indigo-500 px-2 py-1 rounded">Laravel</span>
+              <span class="bg-blue-600 px-2 py-1 rounded">MySQL</span>
+              <span class="bg-gray-700 px-2 py-1 rounded">Blade</span>
+            </div>
+            <a href="https://company-app-six.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض المشروع
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/eecommerc.webp" alt="واجهة تجارة إلكترونية" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">تطبيق تجارة إلكترونية أمامي</h3>
+            <p class="text-sm text-gray-600">واجهة تجارة إلكترونية مبنية باستخدام Next.js وTailwindCSS.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-black px-2 py-1 rounded">Next.js</span>
+              <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
+              <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
+            </div>
+            <a href="https://ecommerce-app-wheat-two.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض المشروع
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
+          <img src="../assets/imgs/img.webp" alt="تطبيق موبايل" class="rounded-t-lg w-full h-52 object-cover">
+          <div class="p-5 space-y-3">
+            <h3 class="text-xl font-semibold text-gray-800">تطبيق فيزياء للموبايل</h3>
+            <p class="text-sm text-gray-600">تطبيق أندرويد تعليمي لتدريس الفيزياء متاح على Google Play.</p>
+            <div class="flex flex-wrap gap-2 text-xs text-white">
+              <span class="bg-green-600 px-2 py-1 rounded">Android</span>
+              <span class="bg-blue-500 px-2 py-1 rounded">API</span>
+              <span class="bg-indigo-500 px-2 py-1 rounded">Laravel Backend</span>
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.dev3solutions.almahlawy_in_physics" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded hover:bg-yellow-600 transition text-sm">
+              عرض على Google Play
+              <i class="fas fa-arrow-up"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12 flex justify-end items-start flex-col">
+        <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-start gap-2">
+          <i class="fas fa-envelope text-yellow-500 text-3xl"></i>
+          تواصل معي
+        </h2>
+        <p class="text-gray-600 mt-2 text-sm">أنا متاح لمشاريع العمل الحر أو فرص العمل بدوام جزئي — لا تتردد في التواصل!</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-gray-700">
+          <h3 class="text-2xl font-semibold text-gray-800">أحمد جمال</h3>
+          <p class="text-gray-600">متاح للعمل الحر أو العمل بدوام جزئي في تطوير الويب الحديث وتصميم واجهات المستخدم.</p>
+          <ul class="space-y-3 text-sm">
+            <li class="flex items-center gap-3">
+              <i class="fas fa-phone-alt text-yellow-500"></i>
+              <a href="https://wa.link/bxtthy" class="hover:underline text-gray-800 font-medium">+20 109 153 6978</a>
+            </li>
+            <li class="flex items-center gap-3">
+              <i class="fas fa-envelope text-yellow-500"></i>
+              <a href="mailto:engahmedgamal086@gmail.com" class="hover:underline text-gray-800 font-medium">engahmedgamal086@gmail.com</a>
+            </li>
+          </ul>
+          <div class="flex gap-4 text-xl mt-6">
+            <a href="https://facebook.com/elking.ahmed.35175" class="hover:text-yellow-500 transition"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" class="hover:text-yellow-500 transition"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/ahmedgamal1254" class="hover:text-yellow-500 transition"><i class="fab fa-github"></i></a>
+            <a href="https://wa.link/bxtthy" class="hover:text-yellow-500 transition"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <form class="bg-white p-6 rounded-2xl shadow-md space-y-4">
+          <input type="text" placeholder="اسمك" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
+          <input type="email" placeholder="بريدك الإلكتروني" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
+          <textarea rows="5" placeholder="رسالتك" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition resize-none" required></textarea>
+          <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-2 rounded-lg transition">
+            إرسال الرسالة
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-4">
+    <p>© 2024 أحمد جمال – مطور ويب. جميع الحقوق محفوظة.</p>
+  </footer>
+
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menuClose = document.getElementById('menu-close');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.remove('translate-x-full');
+        });
+
+        menuClose.addEventListener('click', () => {
+            mobileMenu.classList.add('translate-x-full');
+        });
+
+        // Close menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('translate-x-full');
+            });
+        });
+    </script>
+</body>
+</html>
