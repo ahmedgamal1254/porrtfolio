@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&family=Cairo:wght@400;600;700&display=swap');
 
 :root {
     --primary: #001A41;
@@ -13,6 +13,21 @@
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[lang="ar"] {
+    font-family: 'Cairo', sans-serif;
+    direction: rtl;
+}
+
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3, [lang="ar"] h4 {
+    font-family: 'Cairo', sans-serif;
+    letter-spacing: normal;
+}
+
+[lang="ar"] .nav-links {
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 * {
@@ -116,6 +131,14 @@ select.form-control {
     background-size: 1.2em;
 }
 
+[dir="rtl"] select.form-control {
+    background-position: left 1rem center;
+}
+
+[dir="rtl"] .form-group {
+    text-align: right;
+}
+
 textarea.form-control {
     resize: vertical;
     min-height: 120px;
@@ -174,13 +197,13 @@ textarea.form-control {
 
 /* Navigation */
 nav {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
     border-bottom: 1px solid transparent;
     transition: var(--transition);
 }
@@ -197,13 +220,24 @@ nav.scrolled {
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--primary);
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    transition: var(--transition);
+    display: block;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 .nav-links {
     display: flex;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -441,3 +475,49 @@ section {
         right: 1.5rem;
     }
 }
+
+/* Arabic Redesign Refinements */
+[lang="ar"] {
+    line-height: 1.8;
+}
+
+[lang="ar"] h1, [lang="ar"] h2, [lang="ar"] h3 {
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+[lang="ar"] .hero {
+    background-image: radial-gradient(circle at 80% 20%, var(--accent-light) 0%, transparent 40%),
+                      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230070f3' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+[lang="ar"] .card {
+    border-right: 4px solid transparent;
+    transition: var(--transition);
+}
+
+[lang="ar"] .card:hover {
+    border-right-color: var(--accent);
+}
+
+[lang="ar"] .nav-links {
+    gap: 2.5rem;
+}
+
+[lang="ar"] .section-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+[lang="ar"] .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
