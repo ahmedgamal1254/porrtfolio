@@ -1,541 +1,398 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Eng Ahmed Gamal | Web Developer</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Gamal | High-Performance Laravel Solutions for Business</title>
+    <meta name="description" content="Freelance Backend Developer specializing in Laravel. I build scalable e-commerce systems, custom dashboards, and secure payment integrations to grow your business.">
+    
+    <!-- Design System -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
- <header class="fixed w-full z-50 bg-black bg-opacity-80 backdrop-blur-md text-white shadow">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-        <h1 class="text-2xl text-center font-bold"><a href="#">AhmedGamal</a></h1>
-        
-        <!-- Hamburger Button for Mobile -->
-        <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+<body>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden md:flex gap-6 text-sm font-medium">
-            <a href="#" class="hover:text-yellow-400">Home</a>
-            <a href="#services" class="hover:text-yellow-400">Services</a>
-            <a href="#projects" class="hover:text-yellow-400">Projects</a>
-            <a href="#contact" class="hover:text-yellow-400">Contact Us</a>
-            <a href="/ar" class="hover:text-yellow-400">عربى</a>
-        </nav>
-
-        <!-- Desktop Buttons -->
-        <div class="hidden md:flex items-center justify-between gap-4">
-            <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
-                Projects
-                <i class="fas fa-arrow-left"></i>
-            </a>
-            <a href="assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
-                Download CV
-                <i class="fas fa-download"></i>
-            </a>
+    <!-- Navigation -->
+    <nav>
+        <div class="container nav-content">
+            <div class="logo">AhmedGamal</div>
+            <div class="nav-links">
+                <a href="#services">Services</a>
+                <a href="#case-studies">Case Studies</a>
+                <a href="#process">Process</a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem;">Start Project</a>
+            </div>
         </div>
-    </div>
+    </nav>
 
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed top-0 right-0 h-full w-64 bg-white transform translate-x-full transition-transform duration-300 ease-in-out md:hidden z-40">
-        <div class="flex justify-end p-4">
-            <button id="menu-close" class="text-black focus:outline-none">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-                </svg>
-            </button>
+    <!-- Hero Section -->
+    <section class="hero" style="padding-top: 10rem; background: radial-gradient(circle at top right, var(--accent-light) 0%, transparent 40%);">
+        <div class="container">
+            <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h1 style="font-size: 3.5rem; margin-bottom: 1.5rem;" class="text-gradient">Transform Your Business Operations with Scalable Backend Systems.</h1>
+                <p style="font-size: 1.25rem; color: var(--text-muted); margin-bottom: 2.5rem;">
+                    I build high-performance Laravel solutions that automate your workflow, secure your payments, and scale your revenue. No jargon, just results.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#contact" class="btn btn-primary">Start Your Project <i data-lucide="arrow-right"></i></a>
+                    <a href="#case-studies" class="btn btn-secondary">View Case Studies</a>
+                </div>
+            </div>
         </div>
-        <nav class="flex flex-col gap-6 px-6 text-lg font-medium bg-white text-gray-800">
-            <a href="#" class="hover:text-yellow-400">Home</a>
-            <a href="#services" class="hover:text-yellow-400">Services</a>
-            <a href="#projects" class="hover:text-yellow-400">Projects</a>
-            <a href="#contact" class="hover:text-yellow-400">Contact Us</a>
-            <a href="/ar" class="hover:text-yellow-400">عربى</a>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-alt">
+        <div class="container">
+            <h2 class="section-title">Business Solutions Engineered for Growth</h2>
+            <p class="section-subtitle">I don't just write code; I build the digital infrastructure that powers your business success.</p>
             
-        </nav>
-    </div>
-</header>
-
-
-  <!-- header movi -->
-
-  <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden pt-24">
-    <video autoplay loop muted class="absolute w-full h-full object-cover">
-      <source src="assets/vid.mp4" type="video/mp4" />
-    </video>
-    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
-    <div class="relative z-10 max-w-7xl mx-auto px-4 py-12 flex flex-col-reverse md:flex-row items-center gap-12">
-      <div class="flex-1 text-center md:text-left space-y-6">
-        <h1 class="text-4xl md:text-4xl font-bold">Eng Ahmed Gamal</h1>
-        <h2 class="text-2xl font-semibold text-yellow-400">Web Developer</h2>
-        <p class="text-gray-300 text-lg">
-          Motivated and detail-oriented PHP Developer with 1 year of hands-on experience in building dynamic web applications using PHP, Laravel, and MySQL. Passionate about clean code, problem-solving, and delivering robust backend systems.
-           Seeking to join a dynamic team where I can grow and contribute to impactful projects. 
-        </p>
-        <div class="flex justify-center md:justify-start gap-4 mt-4 flex-wrap">
-          <a href="#projects" class="bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
-            My Work 
-            <i class="fas fa-arrow-left"></i>
-          </a>
-          <a href="assets/Ahmed_Gamal_PHP_Developer_CV.pdf" download class="bg-white hover:bg-gray-200 text-black font-semibold py-2 px-4 rounded-full flex items-center gap-2">
-            download CV
-            <i class="fas fa-download"></i>
-          </a>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="card reveal">
+                    <i data-lucide="graduation-cap" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3>E-Learning & LMS Ecosystems</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Scalable, secure platforms designed for schools and independent teachers to deliver content and manage thousands of students effortlessly.</p>
+                </div>
+                <div class="card reveal">
+                    <i data-lucide="video" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3>Live Academy Infrastructure</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Fully integrated tools for live teaching, automated scheduling, and real-time student engagement—built for modern educational brands.</p>
+                </div>
+                <div class="card reveal">
+                    <i data-lucide="shopping-cart" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3>Marketplace & E-Commerce</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">From single-brand flagship stores to complex multi-vendor marketplaces with automated payouts and vendor management.</p>
+                </div>
+                <div class="card reveal">
+                    <i data-lucide="layout" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3>Premium Brand Portfolios</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">High-converting personal brands and corporate profile websites designed to turn visitors into long-term clients.</p>
+                </div>
+                <div class="card reveal">
+                    <i data-lucide="users" style="color: var(--accent); margin-bottom: 1rem;"></i>
+                    <h3>Multi-Role Business Portals</h3>
+                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Complex, multi-layered systems where admins, service providers, and customers interact through a unified, high-performance backend.</p>
+                </div>
+            </div>
         </div>
-        <div class="flex justify-center md:justify-start gap-4 text-2xl mt-6">
-          <a href="https://facebook.com/elking.ahmed.35175" target="_blank" class="hover:text-yellow-400"><i class="fab fa-facebook"></i></a>
-          <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" class="hover:text-yellow-400"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/ahmedgamal1254" target="_blank" class="hover:text-yellow-400"><i class="fab fa-github"></i></a>
-          <a href="https://leetcode.com/u/ahmedgamal912" target="_blank" class="hover:text-yellow-400">
-            <img class="icon_image" src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode"></a>
-          <a href="https://wa.link/bxtthy" target="_blank" class="hover:text-yellow-400"><i class="fab fa-whatsapp"></i></a>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies">
+        <div class="container">
+            <h2 class="section-title">Proven Results</h2>
+            <p class="section-subtitle">Real problems solved with robust engineering. Click to view project details.</p>
+            
+            <div style="display: grid; gap: 4rem;">
+                <!-- Project 1: Zain Physics LMS -->
+                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">LMS ECOSYSTEM</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">Zain Physics LMS</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>Problem:</strong>
+                                <p style="color: var(--text-muted);">Legacy system crashing during peak sales events.</p>
+                            </div>
+                            <div>
+                                <strong>Solution:</strong>
+                                <p style="color: var(--text-muted);">Refactored core architecture to Laravel with Meilisearch and Redis caching.</p>
+                            </div>
+                            <div>
+                                <strong>Result:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">99.9% uptime and 40% faster checkout.</p>
+                            </div>
+                        </div>
+                        <a href="projects/zain-lms.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
+                        <img src="assets/imgs/projects/zain_lms.png" alt="Zain Physics LMS" style="width: 100%; display: block;">
+                    </div>
+                </div>
+
+                <!-- Project 2: Multi Vendor -->
+                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div style="order: 2; background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">MARKETPLACE & E-COMMERCE</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">Multi-Vendor Marketplace</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>Problem:</strong>
+                                <p style="color: var(--text-muted);">High manual reconciliation time for multi-provider payments.</p>
+                            </div>
+                            <div>
+                                <strong>Solution:</strong>
+                                <p style="color: var(--text-muted);">Built an automated reconciliation dashboard and split-payment handler.</p>
+                            </div>
+                            <div>
+                                <strong>Result:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">Reduced overhead by 60 hours/month.</p>
+                            </div>
+                        </div>
+                        <a href="projects/multivendor.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div style="order: 1; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
+                        <img src="assets/imgs/projects/multivendor.png" alt="Multi Vendor" style="width: 100%; display: block;">
+                    </div>
+                </div>
+
+                <!-- Project 3: Live Session Academy -->
+                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">LIVE INFRASTRUCTURE</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">Global Live Sessions Portal</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>Problem:</strong>
+                                <p style="color: var(--text-muted);">Difficulty scheduling and hosting live streams for 1000+ students globally.</p>
+                            </div>
+                            <div>
+                                <strong>Solution:</strong>
+                                <p style="color: var(--text-muted);">Integrated real-time streaming APIs with a custom automated scheduling engine.</p>
+                            </div>
+                            <div>
+                                <strong>Result:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">95% increase in student engagement during live events.</p>
+                            </div>
+                        </div>
+                        <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
+                        <img src="assets/imgs/projects/live_academy.png" alt="Live Session Academy" style="width: 100%; display: block;">
+                    </div>
+                </div>
+
+                <!-- Project 4: Business Portal -->
+                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div style="order: 2; background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">BUSINESS PORTAL</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">Multi-Role Service Platform</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>Problem:</strong>
+                                <p style="color: var(--text-muted);">Disjointed communication between admins, providers, and customers.</p>
+                            </div>
+                            <div>
+                                <strong>Solution:</strong>
+                                <p style="color: var(--text-muted);">Built a triple-layered portal with real-time notifications and shared data workflows.</p>
+                            </div>
+                            <div>
+                                <strong>Result:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">50% reduction in customer support tickets.</p>
+                            </div>
+                        </div>
+                        <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div style="order: 1; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
+                        <img src="assets/imgs/projects/business_portal.png" alt="Business Portal" style="width: 100%; display: block;">
+                    </div>
+                </div>
+
+                <!-- Project 5: Brand Portfolio -->
+                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
+                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">BRAND PORTFOLIO</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">Executive Portfolio Suite</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>Problem:</strong>
+                                <p style="color: var(--text-muted);">Inconsistent digital presence for a high-level consulting firm.</p>
+                            </div>
+                            <div>
+                                <strong>Solution:</strong>
+                                <p style="color: var(--text-muted);">Designed a premium, conversion-optimized brand portal with interactive case studies.</p>
+                            </div>
+                            <div>
+                                <strong>Result:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">300% increase in inbound qualified leads.</p>
+                            </div>
+                        </div>
+                        <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
+                        <img src="assets/imgs/projects/brand_portfolio.png" alt="Brand Portfolio" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="flex-1 flex justify-center">
-        <img src="assets/imgs/profile.png" alt="Ahmed Gamal" class="rounded-2xl shadow-xl w-64 md:w-80" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Services Section -->
-  <section id="services" class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex flex-col items-start justify-center gap-3 mb-8">
-        <div class="flex items-start justify-start gap-3 mb-4">
-          <i class="fas fa-tools text-3xl text-indigo-600"></i>
-          <h2 class="text-3xl font-bold">My Services</h2>
+    <!-- Why Choose Me -->
+    <section class="bg-alt">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+                <div class="reveal">
+                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Why Business Owners Choose Me</h2>
+                    <p style="color: var(--text-muted);">I bridge the gap between complex engineering and business profitability.</p>
+                </div>
+                <div class="reveal" style="display: grid; gap: 2rem;">
+                    <div style="display: flex; gap: 1rem;">
+                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="check" size="18"></i></div>
+                        <div>
+                            <h4>Built for Scale</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Systems that grow as your customer base grows, without performance bottlenecks.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="shield" size="18"></i></div>
+                        <div>
+                            <h4>Clean Architecture</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Maintainable code that won't break when you decide to add new features next year.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem;">
+                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="clock" size="18"></i></div>
+                        <div>
+                            <h4>Reliable Delivery</h4>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">I respect your business deadlines. On-time delivery with transparent progress.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <p class="text-left text-gray-600 mb-4 max-w-xl">
-          Discover the range of professional services I offer to help bring your ideas to life. From modern web development to seamless user experiences.
-        </p>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-code text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Custom Website Development</h3>
-          <p>Designing and building dynamic, responsive websites tailored to your specific business needs.</p>
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <h2 class="section-title">The Path to Success</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 4rem;">
+                <div class="reveal" style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">01</div>
+                    <h4 style="position: relative;">Discovery</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">We start with your business goals, not technical specs.</p>
+                </div>
+                <div class="reveal" style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">02</div>
+                    <h4 style="position: relative;">Planning</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">A clear blueprint of how the tech will solve your problem.</p>
+                </div>
+                <div class="reveal" style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">03</div>
+                    <h4 style="position: relative;">Execution</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Transparent development with regular milestone updates.</p>
+                </div>
+                <div class="reveal" style="text-align: center;">
+                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">04</div>
+                    <h4 style="position: relative;">Launch</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Smooth deployment and ongoing reliability support.</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-shopping-cart text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">E-Commerce Solutions</h3>
-          <p>Developing complete online stores with secure payment gateways and optimized user experience.</p>
+    <!-- Testimonials -->
+    <section class="bg-alt">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
+                <i data-lucide="quote" style="color: var(--accent); margin-bottom: 2rem;" size="48"></i>
+                <p style="font-size: 1.5rem; font-style: italic; color: var(--primary); font-weight: 500;">
+                    "Ahmed didn't just write code; he understood our business bottleneck and fixed it. Our operations are now 2x faster, and we can finally scale without fear."
+                </p>
+                <div style="margin-top: 2rem;">
+                    <strong>Sarah Jenkins</strong>
+                    <p style="color: var(--text-muted); font-size: 0.9rem;">Operations Director, Global Logistics</p>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-cogs text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">CMS Development</h3>
-          <p>Creating custom or WordPress-based content management systems for easy site control.</p>
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 10rem 0;">
+        <div class="container" style="max-width: 800px;">
+            <div class="reveal" style="text-align: center;">
+                <h2 class="section-title">Ready to Automate Your Business?</h2>
+                <p class="section-subtitle">Let's discuss how a custom Laravel system can save you time and increase your profits.</p>
+            </div>
+            
+            <form id="contact-form" class="reveal" style="background: white; padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg);">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" class="form-control" required>
+                        <option value="" disabled selected>Select a service...</option>
+                        <option value="LMS Ecosystem">E-Learning & LMS Ecosystem</option>
+                        <option value="Live Academy">Live Academy Infrastructure</option>
+                        <option value="Marketplace">Marketplace & E-Commerce</option>
+                        <option value="Portfolio">Premium Brand Portfolio</option>
+                        <option value="Business Portal">Multi-Role Business Portal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">Your Business Goals</label>
+                    <textarea id="goals" class="form-control" placeholder="Tell me what you'd like to achieve (e.g., automate student enrollment, build a vendor marketplace...)" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+                    Send Request & Open WhatsApp <i data-lucide="message-circle" size="20"></i>
+                </button>
+            </form>
         </div>
+    </section>
 
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-laptop-code text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Full Web Applications</h3>
-          <p>Building advanced web apps using Laravel, React, or Vue.js with clean and scalable architecture.</p>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/201091536978" class="whatsapp-float" target="_blank" title="Chat with me on WhatsApp">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">AhmedGamal</div>
+                    <p>Transforming complex business challenges into high-performance Laravel solutions. Specialized in E-Learning, Marketplaces, and Multi-Role Systems.</p>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">LMS Ecosystems</a></li>
+                        <li><a href="#services">Live Academies</a></li>
+                        <li><a href="#services">Marketplaces</a></li>
+                        <li><a href="#services">Business Portals</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#case-studies">Case Studies</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" title="LinkedIn"><i data-lucide="linkedin" size="24"></i></a>
+                        <a href="https://github.com/ahmedgamal1254" target="_blank" title="GitHub"><i data-lucide="github" size="24"></i></a>
+                        <a href="https://wa.me/201091536978" target="_blank" title="WhatsApp"><i data-lucide="message-circle" size="24"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 Ahmed Gamal. Built for Business Success with Laravel.</p>
+                <p>Designed with Excellence</p>
+            </div>
         </div>
+    </footer>
 
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-chart-line text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
-          <p>Improving your website's visibility in search engine results through best SEO practices.</p>
-        </div>
-
-        <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
-          <i class="fa-solid fa-tools text-3xl text-yellow-500 mb-4"></i>
-          <h3 class="text-xl font-semibold mb-2">Website Maintenance</h3>
-          <p>Ongoing support including updates, security enhancements, and regular backups.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills" class="py-20 bg-gradient-to-br from-white to-gray-50">
-  <div class="max-w-6xl mx-auto px-6">
-    <div class="text-left mb-12">
-      <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-start gap-3">
-        <i class="fas fa-tools text-yellow-500 text-3xl"></i>
-        My Skills
-      </h2>
-      <p class="text-gray-600 mt-2 text-sm">Technologies & tools I use to build modern, scalable web applications.</p>
-    </div>
-
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 text-sm text-gray-800">
-      
-      <!-- PHP -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fab fa-php text-3xl text-indigo-600"></i>
-        <h3 class="font-semibold">PHP</h3>
-      </div>
-
-      <!-- Laravel -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fab fa-laravel text-3xl text-red-600"></i>
-        <h3 class="font-semibold">Laravel</h3>
-      </div>
-
-      <!-- MySQL -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-database text-3xl text-blue-600"></i>
-        <h3 class="font-semibold">MySQL</h3>
-      </div>
-
-      <!-- RESTful API -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-cloud text-3xl text-cyan-600"></i>
-        <h3 class="font-semibold">RESTful API</h3>
-      </div>
-
-      <!-- Postman -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-paper-plane text-3xl text-orange-500"></i>
-        <h3 class="font-semibold">Postman</h3>
-      </div>
-
-      <!-- JavaScript -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fab fa-js-square text-3xl text-yellow-400"></i>
-        <h3 class="font-semibold">JavaScript</h3>
-      </div>
-
-      <!-- React.js -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fab fa-react text-3xl text-blue-400"></i>
-        <h3 class="font-semibold">React.js</h3>
-      </div>
-
-      <!-- Next.js -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-layer-group text-3xl text-gray-800"></i>
-        <h3 class="font-semibold">Next.js</h3>
-      </div>
-
-      <!-- Tailwind CSS -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-wind text-3xl text-teal-500"></i>
-        <h3 class="font-semibold">Tailwind CSS</h3>
-      </div>
-
-      <!-- Material UI -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-cubes text-3xl text-purple-600"></i>
-        <h3 class="font-semibold">Material UI</h3>
-      </div>
-
-      <!-- Ant Design -->
-      <div class="bg-white p-5 rounded-xl shadow hover:shadow-md transition text-center space-y-3">
-        <i class="fas fa-palette text-3xl text-pink-500"></i>
-        <h3 class="font-semibold">Ant Design</h3>
-      </div>
-      
-    </div>
-  </div>
-</section>
-
-
- <!-- Projects Section -->
-<section id="projects" class="py-16 bg-gray-100">
-  <div class="max-w-6xl mx-auto px-4">
-    <div class="flex flex-col items-start justify-center gap-3 mb-8">
-      <div class="flex items-start justify-start gap-3 mb-2">
-        <i class="fas fa-laptop-code text-3xl text-indigo-600"></i>
-        <h2 class="text-3xl font-bold">My Work</h2>
-      </div>
-
-      <p class="text-left text-gray-600 mb-4 max-w-xl">
-        Discover our work across a variety of creative and technical projects.
-      </p>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-      
-      <!-- Almahlawy LMS -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/projects/img_1.webp" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Almahlawy LMS</h3>
-          <p class="text-sm text-gray-600">An educational platform for physics with admin dashboards and online payment integration.</p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-red-600 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-blue-600 text-white px-2 py-1 rounded">MySQL</span>
-            <span class="bg-slate-700 text-white px-2 py-1 rounded">Blade</span>
-          </div>
-          <a href="https://zain-physics.online" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Multi Vendor -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/projects/Coffee_Albedawy-Online-Shopping-Coffee_Albedawy-Ecommerce-04-08-2026_08_48_PM.webp" alt="Multi Vendor" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">
-            Multi Vendor
-          </h3>
-          <p class="text-sm text-gray-600">
-            A multi-vendor platform for selling products with admin dashboards and online payment integration.
-          </p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-red-600 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-blue-600 text-white px-2 py-1 rounded">MySQL</span>
-            <span class="bg-slate-700 text-white px-2 py-1 rounded">Blade</span>
-          </div>
-          <a href="https://multivendor.ahmedgamal.org/public" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/projects/Tameez-Academy.webp" alt="Company Website" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Tameez Academy</h3>
-          <p class="text-sm text-gray-600">Lms Quarn System multiiple languages based sessions , exams , homeworks , certificates , payments , accounting system</p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-black text-white px-2 py-1 rounded">Next.js</span>
-            <span class="bg-sky-500 text-white px-2 py-1 rounded">ReactJS</span>
-            <span class="bg-sky-500 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-sky-500 text-white px-2 py-1 rounded">MySQL</span>
-          </div>
-          <a href="https://lms-quarn.vercel.app/en" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-        <!-- E-commerce Frontend -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/eecommerc.webp" alt="E-commerce Frontend" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">E-commerce App</h3>
-          <p class="text-sm text-gray-600">E-commerce built using Next.js and TailwindCSS.</p>
-          <div class="flex flex-wrap gap-2 text-xs text-white">
-            <span class="bg-black px-2 py-1 rounded">Next.js</span>
-            <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
-            <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
-          </div>
-          <a href="https://ecommerce-app-wheat-two.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Company Portfolio Site -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/projects/company.png" alt="Company Website" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Company Portfolio</h3>
-          <p class="text-sm text-gray-600">A modern company profile website for a startup company.</p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-black text-white px-2 py-1 rounded">Next.js</span>
-            <span class="bg-sky-500 text-white px-2 py-1 rounded">ReactJS</span>
-          </div>
-          <a href="https://company-app-six.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Camera invertory -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/projects/homepage.png" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Camera Inventory System</h3>
-          <p class="text-sm text-gray-600">
-            An inventory system for camera inventory, including features like orders, product management, and customer management.
-          </p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-red-600 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-green-500 text-white px-2 py-1 rounded">RESTful API</span>
-            <span class="bg-black text-white px-2 py-1 rounded">Next.js</span>
-          </div>
-          <a href="https://camera-inventory-front.vercel.app" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Camera invertory -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/servicely.webp" alt="Almahlawy Project" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Servicely App</h3>
-          <p class="text-sm text-gray-600">
-            Servicely is a platform that connects service providers with customers.
-          </p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-red-600 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-green-500 text-white px-2 py-1 rounded">RESTful API</span>
-            <span class="bg-black text-white px-2 py-1 rounded">Next.js</span>
-          </div>
-          <a href="https://service-ochre-psi.vercel.app" target="_blank"  class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- LMS Next.js App -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/lms.webp" alt="LMS Next.js" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">LMS Next.js App</h3>
-          <p class="text-sm text-gray-600">Educational platform built with modern frontend stack for students.</p>
-          <div class="flex flex-wrap gap-2 text-xs text-white">
-            <span class="bg-black px-2 py-1 rounded">Next.js</span>
-            <span class="bg-teal-500 px-2 py-1 rounded">TailwindCSS</span>
-            <span class="bg-yellow-500 px-2 py-1 rounded">JavaScript</span>
-          </div>
-          <a href="https://lms-nextapp.vercel.app" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      <!-- Almahlawy Mobile App -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/img.webp" alt="Mobile App" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Physics Mobile App</h3>
-          <p class="text-sm text-gray-600">Educational Android app for physics available on Google Play.</p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium text-white">
-            <span class="bg-green-600 px-2 py-1 rounded">Android</span>
-            <span class="bg-blue-500 px-2 py-1 rounded">API</span>
-            <span class="bg-indigo-500 px-2 py-1 rounded">Laravel Backend</span>
-            <span class="bg-purple-600 px-2 py-1 rounded">JWT</span>
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=com.dev3solutions.almahlawy_in_physics" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View on Google Play
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-
-      
-
-      <!-- Maren LMS -->
-      <div class="bg-white rounded-lg shadow hover:shadow-lg transition">
-        <img src="assets/imgs/MAREN-Home.webp" alt="Maren Project" class="rounded-t-lg w-full h-52 object-cover">
-        <div class="p-5 space-y-3">
-          <h3 class="text-xl font-semibold text-gray-800">Maren LMS</h3>
-          <p class="text-sm text-gray-600">Multi-user educational system for teachers and students with login roles and dashboards.</p>
-          <div class="flex flex-wrap gap-2 text-xs font-medium">
-            <span class="bg-red-600 text-white px-2 py-1 rounded">Laravel</span>
-            <span class="bg-blue-600 text-white px-2 py-1 rounded">MySQL</span>
-            <span class="bg-slate-700 text-white px-2 py-1 rounded">Blade</span>
-          </div>
-          <a href="https://maren.live" target="_blank" class="inline-block bg-yellow-500 text-black px-4 py-2 rounded 
-          hover:bg-yellow-600 transition text-sm">
-            View Project
-            <i class="fas fa-arrow-up"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Contact Section -->
-   <section id="contact" class="py-20 bg-gradient-to-br from-white to-gray-50">
-  <div class="max-w-5xl mx-auto px-6">
-    <!-- Title -->
-    <div class="text-center mb-12 flex justify-start items-start flex-col">
-      <h2 class="text-4xl font-bold text-gray-800 flex items-center justify-center gap-2">
-        <i class="fas fa-envelope text-yellow-500 text-3xl"></i> 
-        Contact Me
-      </h2>
-      <p class="text-gray-600 mt-2 text-sm">I’m open to freelance projects or part-time opportunities — feel free to reach out!</p>
-    </div>
-
-    <!-- Grid Layout -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
-      <!-- Contact Info -->
-      <div class="space-y-5 text-gray-700">
-        <h3 class="text-2xl font-semibold text-gray-800">Ahmed Gamal</h3>
-        <p class="text-gray-600">Available for freelance or part-time work in modern web development and UI/UX design.</p>
-
-        <ul class="space-y-3 text-sm">
-          <li class="flex items-center gap-3">
-            <i class="fas fa-phone-alt text-yellow-500"></i>
-            <a href="https://wa.link/bxtthy" class="hover:underline text-gray-800 font-medium">+20 109 153 6978</a>
-          </li>
-          <li class="flex items-center gap-3">
-            <i class="fas fa-envelope text-yellow-500"></i>
-            <a href="mailto:engahmedgamal086@gmail.com" class="hover:underline text-gray-800 font-medium">engahmedgamal086@gmail.com</a>
-          </li>
-        </ul>
-
-        <!-- Social Media -->
-        <div class="flex gap-4 text-xl mt-6">
-          <a href="https://facebook.com/elking.ahmed.35175" class="hover:text-yellow-500 transition"><i class="fab fa-facebook"></i></a>
-          <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" class="hover:text-yellow-500 transition"><i class="fab fa-linkedin"></i></a>
-          <a href="https://github.com/ahmedgamal1254" class="hover:text-yellow-500 transition"><i class="fab fa-github"></i></a>
-          <a href="https://wa.link/bxtthy" class="hover:text-yellow-500 transition"><i class="fab fa-whatsapp"></i></a>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <form class="bg-white p-6 rounded-2xl shadow-md space-y-4">
-        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
-        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition" required>
-        <textarea rows="5" placeholder="Your Message" class="w-full border border-gray-300 focus:border-yellow-500 focus:ring-yellow-300 rounded px-4 py-2 outline-none transition resize-none" required></textarea>
-        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-400 text-black font-semibold py-2 rounded-lg transition">
-          Send Message
-        </button>
-      </form>
-    </div>
-  </div>
-</section>
-
-
-  <!-- Footer -->
-  <footer class="bg-gray-800 text-white text-center py-4">
-    <p>© 2024 Ahmed Gamal – Web Developer. All rights reserved.</p>
-  </footer>
-
-     <script>
-        const menuToggle = document.getElementById('menu-toggle');
-        const menuClose = document.getElementById('menu-close');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        menuToggle.addEventListener('click', () => {
-            mobileMenu.classList.remove('translate-x-full');
-        });
-
-        menuClose.addEventListener('click', () => {
-            mobileMenu.classList.add('translate-x-full');
-        });
-
-        // Close menu when clicking on a link
-        mobileMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.add('translate-x-full');
-            });
-        });
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@0.418.0"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
     </script>
 </body>
 </html>

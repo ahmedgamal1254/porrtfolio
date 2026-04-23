@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Project Name] | Ahmed Gamal Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <nav class="scrolled">
+        <div class="container nav-content">
+            <div class="logo"><a href="../index.html">AhmedGamal</a></div>
+            <div class="nav-links">
+                <a href="../index.html#services">Services</a>
+                <a href="../index.html#case-studies">Case Studies</a>
+                <a href="../index.html#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem;">Start Project</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="project-hero">
+        <div class="container">
+            <div class="reveal">
+                <span class="project-tag">[CATEGORY NAME]</span>
+                <h1 class="text-gradient">[Project Name]</h1>
+                <p style="font-size: 1.4rem; color: var(--text-muted); max-width: 800px; margin-top: 1rem;">
+                    [Insert a powerful one-sentence summary of the business impact here].
+                </p>
+                
+                <div class="project-meta">
+                    <span><i data-lucide="calendar" size="18" style="color: var(--accent);"></i> [Year]</span>
+                    <span><i data-lucide="layers" size="18" style="color: var(--accent);"></i> [Tech Stack]</span>
+                    <span><i data-lucide="users" size="18" style="color: var(--accent);"></i> [Metric, e.g. 10k+ Users]</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="project-content">
+        <div class="container">
+            
+            <div class="reveal">
+                <div class="project-image-container">
+                    <!-- Replace with your project mockup -->
+                    <div style="height: 600px; display: flex; align-items: center; justify-content: center; background: #f8f9fa; color: #adb5bd; border: 2px dashed #dee2e6; border-radius: var(--radius);">
+                        <div style="text-align: center;">
+                            <i data-lucide="image" size="48" style="margin-bottom: 1rem;"></i>
+                            <p>Upload High-Quality Mockup (1200x800)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-grid">
+                <div class="reveal project-detail-card">
+                    <h3><i data-lucide="target" style="color: #e63946;"></i> The Challenge</h3>
+                    <p style="color: var(--text-muted);">
+                        [Describe the business problem you solved. What was the hurdle?]
+                    </p>
+                </div>
+                <div class="reveal project-detail-card">
+                    <h3><i data-lucide="code" style="color: var(--accent);"></i> The Solution</h3>
+                    <p style="color: var(--text-muted);">
+                        [Detail your technical approach and Laravel implementation.]
+                    </p>
+                </div>
+                <div class="reveal project-detail-card">
+                    <h3><i data-lucide="trending-up" style="color: #2a9d8f;"></i> The Result</h3>
+                    <p style="color: var(--text); font-weight: 700; font-size: 1.3rem;">
+                        [State the final business outcome and key metrics.]
+                    </p>
+                </div>
+            </div>
+
+            <div style="margin-top: 6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+                <div class="reveal">
+                    <h2 style="margin-bottom: 1.5rem;">Tech Stack</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
+                        <!-- Add tech badges here -->
+                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">Laravel</span>
+                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">MySQL</span>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h2 style="margin-bottom: 1.5rem;">Key Features</h2>
+                    <ul style="list-style: none; display: grid; gap: 1rem;">
+                        <!-- Add feature list items here -->
+                        <li style="display: flex; gap: 0.8rem; color: var(--text-muted);">
+                            <i data-lucide="check-circle" size="20" style="color: var(--accent);"></i>
+                            <span>[Key Feature #1]</span>
+                        </li>
+                        <li style="display: flex; gap: 0.8rem; color: var(--text-muted);">
+                            <i data-lucide="check-circle" size="20" style="color: var(--accent);"></i>
+                            <span>[Key Feature #2]</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reveal" style="margin-top: 8rem; text-align: center; background: var(--bg-alt); padding: 5rem; border-radius: var(--radius);">
+                <h2 style="margin-bottom: 1.5rem;">Experience the Live Solution</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+                    See this system in action or discuss how a similar solution can be tailored for your business.
+                </p>
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="#" target="_blank" class="btn btn-primary">Visit Live Website <i data-lucide="external-link" size="18"></i></a>
+                    <a href="../index.html#contact" class="btn btn-secondary">Book a Free Consultation <i data-lucide="calendar" size="18"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="https://wa.me/201091536978" class="whatsapp-float" target="_blank" title="Chat with me on WhatsApp">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <script src="https://unpkg.com/lucide@0.418.0"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
