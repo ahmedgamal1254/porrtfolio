@@ -42,6 +42,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Mobile menu (placeholder if needed)
-    // For now, keeping it simple as per the "minimal" design
+    // Mobile menu logic
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 });

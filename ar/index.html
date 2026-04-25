@@ -20,27 +20,32 @@
             <div class="logo">
                 <img src="../assets/imgs/logo.png" alt="أحمد جمال">
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#services">ماذا أقدم</a>
                 <a href="#case-studies">نتائج حقيقية</a>
                 <a href="#process">كيف ننمو</a>
-                <a href="../index.html" class="lang-switch" style="font-weight: 700; color: var(--accent); align-self: center; margin: 0 0.5rem;">EN</a>
-                <a href="#contact" class="btn btn-primary" style="padding: 0.7rem 1.5rem; box-shadow: 0 4px 15px rgba(0, 112, 243, 0.3);">ابدأ النمو الآن</a>
+                <a href="../index.html" class="lang-switch">EN</a>
+                <a href="#contact" class="btn btn-primary">ابدأ النمو الآن</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="padding: 14rem 0 10rem; background: radial-gradient(circle at 90% 20%, var(--accent-light) 0%, transparent 40%);">
+    <section class="hero" style="background: radial-gradient(circle at 90% 20%, var(--accent-light) 0%, transparent 40%);">
         <div class="container">
-            <div class="reveal" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h1 style="font-size: 4.5rem; line-height: 1.2; margin-bottom: 2rem; font-weight: 800;" class="text-gradient">
+            <div class="reveal hero-content">
+                <h1 class="text-gradient">
                     أتمتة أعمالك بالكامل. <br>ضاعف أرباحك.
                 </h1>
-                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 3.5rem; line-height: 1.8; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p class="hero-p">
                     أقوم ببناء أنظمة رقمية ذكية تدير عملياتك المعقدة آلياً، لتتفرغ أنت لتطوير مشروعك بينما يعمل نظامك بدلاً منك.
                 </p>
-                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <div class="btn-group">
                     <a href="#contact" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">احصل على استشارة مجانية <i data-lucide="calendar" size="20" style="margin-right: 0.5rem;"></i></a>
                     <a href="#case-studies" class="btn btn-secondary" style="padding: 1rem 2rem; font-size: 1.1rem;">شاهد نتائجنا</a>
                 </div>
@@ -49,15 +54,15 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" style="padding: 8rem 0; background: white; border-top: 1px solid var(--border);">
+    <section id="about" style="border-top: 1px solid var(--border);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+            <div class="grid-auto">
                 <div class="reveal">
-                    <h2 class="section-title" style="margin-bottom: 2rem;">مهندس الأنظمة الذي يقف خلف نجاحك</h2>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
+                    <h2 class="section-title" style="text-align: right; margin-bottom: 2rem;">مهندس الأنظمة الذي يقف خلف نجاحك</h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
                         أنا أحمد جمال، مستشار تقني ومهندس أنظمة مخصص لمساعدة أصحاب الأعمال على التخلص من فوضى العمل اليدوي من خلال الأتمتة الذكية.
                     </p>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
                         على عكس المطورين التقليديين الذين يركزون على المظهر فقط، أضع **منطق العمل، الأمان، وقابلية التوسع** كأولوية قصوى. هدفي هو ضمان أن تكون بنيتك التحتية الرقمية أصلاً يدر الأرباح، وليس عبئاً يتطلب صيانة مستمرة.
                     </p>
                     <div style="display: flex; gap: 2rem; align-items: center;">
@@ -68,28 +73,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">5+</div>
-                        <div style="font-weight: 600; color: var(--primary);">سنوات خبرة</div>
+                <div class="reveal stats-grid">
+                    <div class="stats-card">
+                        <div class="stats-number">5+</div>
+                        <div class="stats-label">سنوات خبرة</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">50+</div>
-                        <div style="font-weight: 600; color: var(--primary);">مشروع منجز</div>
+                    <div class="stats-card">
+                        <div class="stats-number">50+</div>
+                        <div class="stats-label">مشروع منجز</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">100%</div>
-                        <div style="font-weight: 600; color: var(--primary);">التزام بالمواعيد</div>
+                    <div class="stats-card">
+                        <div class="stats-number">100%</div>
+                        <div class="stats-label">التزام بالمواعيد</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">5+</div>
-                        <div style="font-weight: 600; color: var(--primary);">دول مخدومة</div>
+                    <div class="stats-card">
+                        <div class="stats-number">5+</div>
+                        <div class="stats-label">دول مخدومة</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
+            
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -98,7 +103,7 @@
                 <p class="section-subtitle">نركز على النتائج التجارية والأتمتة لزيادة الكفاءة والربحية.</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+            <div class="grid-auto" style="gap: 2rem;">
                 <div class="card reveal">
                     <i data-lucide="graduation-cap" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
                     <h3 style="margin-bottom: 1rem;">أنظمة التعليم الإلكتروني (LMS)</h3>
@@ -129,17 +134,17 @@
     </section>
 
     <!-- Case Studies Section -->
-    <section id="case-studies" style="background-color: var(--bg-alt);">
+    <section id="case-studies" class="bg-alt">
         <div class="container">
             <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
                 <h2 class="section-title">نتائج مثبتة</h2>
                 <p class="section-subtitle">شاهد كيف ساعدت عملائي على أتمتة أعمالهم وتحقيق قفزات نوعية.</p>
             </div>
 
-            <div style="display: grid; gap: 8rem;">
+            <div class="case-study-list">
                 <!-- Project 1 -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="background: white; padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card" style="background: white; border: 1px solid var(--border);">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">نظام تعليم إلكتروني</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">زين فيزيكس (Zain Physics)</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -158,14 +163,14 @@
                         </div>
                         <a href="../projects/zain-lms.html" class="btn btn-secondary" style="margin-top: 2rem;">تفاصيل المشروع <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="../assets/imgs/projects/zain_lms.png" alt="Zain Physics LMS" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="../assets/imgs/projects/zain_lms.png" alt="Zain Physics LMS">
                     </div>
                 </div>
 
                 <!-- Project 2 -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="order: 2; background: white; padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card" style="background: white; border: 1px solid var(--border);">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">متجر متعدد التجار</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">سوق التجارة الإلكترونية الشامل</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -184,8 +189,86 @@
                         </div>
                         <a href="../projects/multivendor.html" class="btn btn-secondary" style="margin-top: 2rem;">تفاصيل المشروع <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="order: 1; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="../assets/imgs/projects/multivendor.png" alt="Multi Vendor" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="../assets/imgs/projects/multivendor.png" alt="Multi Vendor">
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="reveal case-study-item">
+                    <div class="case-study-card" style="background: white; border: 1px solid var(--border);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">بنية تحتية مباشرة</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">بوابة المحاضرات المباشرة العالمية</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>المشكلة:</strong>
+                                <p style="color: var(--text-muted);">صعوبة جدولة واستضافة البث المباشر لأكثر من 1000 طالب عالمياً.</p>
+                            </div>
+                            <div>
+                                <strong>الحل:</strong>
+                                <p style="color: var(--text-muted);">دمج واجهات برمجة تطبيقات البث المباشر مع محرك جدولة آلي مخصص.</p>
+                            </div>
+                            <div>
+                                <strong>النتيجة:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">زيادة بنسبة 95% في تفاعل الطلاب خلال الفعاليات المباشرة.</p>
+                            </div>
+                        </div>
+                        <a href="../projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">تفاصيل المشروع <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div class="case-study-img">
+                        <img src="../assets/imgs/projects/live_academy.png" alt="Live Session Academy">
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="reveal case-study-item">
+                    <div class="case-study-card" style="background: white; border: 1px solid var(--border);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">بوابة أعمال</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">منصة الخدمات متعددة الأدوار</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>المشكلة:</strong>
+                                <p style="color: var(--text-muted);">تشتت التواصل بين المسؤولين ومقدمي الخدمات والعملاء.</p>
+                            </div>
+                            <div>
+                                <strong>الحل:</strong>
+                                <p style="color: var(--text-muted);">بناء بوابة ثلاثية الطبقات مع إشعارات فورية وسير عمل بيانات مشترك.</p>
+                            </div>
+                            <div>
+                                <strong>النتيجة:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">تقليل تذاكر دعم العملاء بنسبة 50%.</p>
+                            </div>
+                        </div>
+                        <a href="../projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">تفاصيل المشروع <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div class="case-study-img">
+                        <img src="../assets/imgs/projects/business_portal.png" alt="Business Portal">
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="reveal case-study-item">
+                    <div class="case-study-card" style="background: white; border: 1px solid var(--border);">
+                        <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">محفظة تجارية</span>
+                        <h3 style="font-size: 2rem; margin: 1rem 0;">جناح المحافظ التنفيذية</h3>
+                        <div style="margin-top: 2rem; display: grid; gap: 1rem;">
+                            <div>
+                                <strong>المشكلة:</strong>
+                                <p style="color: var(--text-muted);">الافتقار إلى تمثيل رقمي متميز للخدمات عالية القيمة.</p>
+                            </div>
+                            <div>
+                                <strong>الحل:</strong>
+                                <p style="color: var(--text-muted);">تصميم واجهة فاخرة مع التركيز على تجربة المستخدم والتحويل السريع.</p>
+                            </div>
+                            <div>
+                                <strong>النتيجة:</strong>
+                                <p style="color: var(--accent); font-weight: 700; font-size: 1.2rem;">زيادة بنسبة 30% في استفسارات العملاء المحتملين ذوي القيمة العالية.</p>
+                            </div>
+                        </div>
+                        <a href="../projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">تفاصيل المشروع <i data-lucide="external-link" size="16"></i></a>
+                    </div>
+                    <div class="case-study-img">
+                        <img src="../assets/imgs/projects/brand_suite.png" alt="Brand Portfolio">
                     </div>
                 </div>
             </div>
@@ -195,61 +278,59 @@
     <!-- Why Choose Me Section -->
     <section>
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+            <div class="why-me-grid">
                 <div class="reveal">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 2rem;">لماذا يختارني أصحاب الأعمال؟</h2>
+                    <h2 style="text-align: right; margin-bottom: 2rem;">لماذا يختارني أصحاب الأعمال؟</h2>
                     <p style="color: var(--text-muted); line-height: 1.8;">
                         أنا لا أقوم فقط بكتابة الكود؛ أنا أبني محركات رقمية تدفع عملك إلى الأمام. أركز على الأمان، السرعة، وقابلية التوسع لضمان استمرارية نجاحك.
                     </p>
                 </div>
-                <div class="reveal">
-                    <ul style="list-style: none; display: grid; gap: 1.5rem;">
-                        <li style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <i data-lucide="check-circle" style="color: #22c55e;"></i>
-                            <div>
-                                <strong>تسليم سريع وفعال</strong>
-                                <p style="color: var(--text-muted); font-size: 0.9rem;">نصل إلى السوق بسرعة دون المساس بالجودة.</p>
-                            </div>
-                        </li>
-                        <li style="display: flex; gap: 1rem; align-items: flex-start;">
-                            <i data-lucide="check-circle" style="color: #22c55e;"></i>
-                            <div>
-                                <strong>أنظمة قابلة للتوسع</strong>
-                                <p style="color: var(--text-muted); font-size: 0.9rem;">كود نظيف يتحمل نمو عملك من 100 إلى 100,000 مستخدم.</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="reveal why-me-list">
+                    <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                        <i data-lucide="check-circle" style="color: #22c55e;"></i>
+                        <div>
+                            <strong>تسليم سريع وفعال</strong>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">نصل إلى السوق بسرعة دون المساس بالجودة.</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                        <i data-lucide="check-circle" style="color: #22c55e;"></i>
+                        <div>
+                            <strong>أنظمة قابلة للتوسع</strong>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">كود نظيف يتحمل نمو عملك من 100 إلى 100,000 مستخدم.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Process Section -->
-    <section id="process" style="background-color: var(--bg-alt);">
+    <section id="process" class="bg-alt">
         <div class="container">
             <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
                 <h2 class="section-title">رحلة بناء مشروعك</h2>
                 <p class="section-subtitle">عملية واضحة وشفافة تضمن تحويل رؤيتك إلى حقيقة تقنية.</p>
             </div>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
-                <div class="reveal" style="text-align: center;">
-                    <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700;">1</div>
+            <div class="process-grid">
+                <div class="reveal process-step">
+                    <div class="process-number">1</div>
                     <h3>فهم العمل</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">نبدأ بفهم أهدافك التجارية وتحدياتك الحالية.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700;">2</div>
+                <div class="reveal process-step">
+                    <div class="process-number">2</div>
                     <h3>التخطيط المعماري</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">تصميم قاعدة البيانات وهيكلية النظام لضمان الأداء العالي.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700;">3</div>
+                <div class="reveal process-step">
+                    <div class="process-number">3</div>
                     <h3>التطوير والبرمجة</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">بناء النظام باستخدام أفضل ممارسات Laravel والأمان.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="background: var(--accent); color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem; font-weight: 700;">4</div>
+                <div class="reveal process-step">
+                    <div class="process-number">4</div>
                     <h3>التسليم والدعم</h3>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">إطلاق النظام مع دعم فني مستمر لضمان الاستقرار.</p>
                 </div>
@@ -258,15 +339,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="padding: 10rem 0;">
-        <div class="container" style="max-width: 800px;">
+    <section id="contact">
+        <div class="container contact-container">
             <div class="reveal" style="text-align: center;">
                 <h2 class="section-title">جاهز لأتمتة أعمالك؟</h2>
                 <p class="section-subtitle">دعنا نناقش كيف يمكن لنظام رقمي مخصص أن يوفر وقتك ويزيد أرباحك.</p>
             </div>
             
-            <form id="contact-form" class="reveal" style="background: white; padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg);">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <form id="contact-form" class="reveal contact-card">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="name">الاسم بالكامل</label>
                         <input type="text" id="name" class="form-control" placeholder="أحمد محمد" required>

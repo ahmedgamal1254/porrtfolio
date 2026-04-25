@@ -20,27 +20,32 @@
             <div class="logo">
                 <img src="assets/imgs/logo.png" alt="Ahmed Gamal Logo">
             </div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="#services">What I Do</a>
                 <a href="#case-studies">Real Results</a>
                 <a href="#process">How We Scale</a>
-                <a href="ar/index.html" class="lang-switch" style="font-weight: 700; color: var(--accent); align-self: center; margin: 0 0.5rem;">AR</a>
-                <a href="#contact" class="btn btn-primary" style="padding: 0.7rem 1.5rem; box-shadow: 0 4px 15px rgba(0, 112, 243, 0.3);">Start Growing</a>
+                <a href="ar/index.html" class="lang-switch">AR</a>
+                <a href="#contact" class="btn btn-primary">Start Growing</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="padding: 14rem 0 10rem; background: radial-gradient(circle at 10% 20%, var(--accent-light) 0%, transparent 40%);">
+    <section class="hero">
         <div class="container">
-            <div class="reveal" style="max-width: 900px; margin: 0 auto; text-align: center;">
-                <h1 style="font-size: 4.5rem; line-height: 1.1; margin-bottom: 2rem; font-weight: 800;" class="text-gradient">
+            <div class="reveal hero-content">
+                <h1 class="text-gradient">
                     Automate Your Business Operations. <br>Scale Your Profits.
                 </h1>
-                <p style="font-size: 1.4rem; color: var(--text-muted); margin-bottom: 3.5rem; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <p class="hero-p">
                     I build custom digital systems that handle your complex workflows automatically, so you can focus on growing your company while your technology handles the rest.
                 </p>
-                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                <div class="btn-group">
                     <a href="#contact" class="btn btn-primary" style="padding: 1rem 2rem; font-size: 1.1rem;">Get a Free Consultation <i data-lucide="calendar" size="20" style="margin-left: 0.5rem;"></i></a>
                     <a href="#case-studies" class="btn btn-secondary" style="padding: 1rem 2rem; font-size: 1.1rem;">See My Results</a>
                 </div>
@@ -49,15 +54,15 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" style="padding: 8rem 0; background: white; border-top: 1px solid var(--border);">
+    <section id="about" style="border-top: 1px solid var(--border);">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem; align-items: center;">
+            <div class="grid-auto">
                 <div class="reveal">
-                    <h2 class="section-title" style="margin-bottom: 2rem;">The Architect Behind Your Systems</h2>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
+                    <h2 class="section-title" style="text-align: left; margin-bottom: 2rem;">The Architect Behind Your Systems</h2>
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
                         I am Ahmed Gamal, a technical consultant and systems engineer dedicated to helping business owners escape manual chaos through automation. 
                     </p>
-                    <p style="font-size: 1.1rem; color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
+                    <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
                         Unlike traditional developers who focus on aesthetics alone, I prioritize **business logic, security, and scalability.** My goal is to ensure that your digital infrastructure is an asset that generates revenue, not a liability that requires constant maintenance.
                     </p>
                     <div style="display: flex; gap: 2rem; align-items: center;">
@@ -68,22 +73,22 @@
                         </div>
                     </div>
                 </div>
-                <div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">5+</div>
-                        <div style="font-weight: 600; color: var(--primary);">Years Experience</div>
+                <div class="reveal stats-grid">
+                    <div class="stats-card">
+                        <div class="stats-number">5+</div>
+                        <div class="stats-label">Years Experience</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">50+</div>
-                        <div style="font-weight: 600; color: var(--primary);">Projects Delivered</div>
+                    <div class="stats-card">
+                        <div class="stats-number">50+</div>
+                        <div class="stats-label">Projects Delivered</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">100%</div>
-                        <div style="font-weight: 600; color: var(--primary);">On-Time Launch</div>
+                    <div class="stats-card">
+                        <div class="stats-number">100%</div>
+                        <div class="stats-label">On-Time Launch</div>
                     </div>
-                    <div style="background: var(--bg-alt); padding: 2rem; border-radius: var(--radius); text-align: center; border: 1px solid var(--border);">
-                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); margin-bottom: 0.5rem;">5+</div>
-                        <div style="font-weight: 600; color: var(--primary);">Countries Served</div>
+                    <div class="stats-card">
+                        <div class="stats-number">5+</div>
+                        <div class="stats-label">Countries Served</div>
                     </div>
                 </div>
             </div>
@@ -96,7 +101,7 @@
             <h2 class="section-title">Business Solutions Engineered for Growth</h2>
             <p class="section-subtitle">I don't just write code; I build the digital infrastructure that powers your business success.</p>
             
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            <div class="grid-auto" style="gap: 2rem;">
                 <div class="card reveal">
                     <i data-lucide="graduation-cap" style="color: var(--accent); margin-bottom: 1rem;"></i>
                     <h3>E-Learning & LMS Ecosystems</h3>
@@ -132,10 +137,10 @@
             <h2 class="section-title">Proven Results</h2>
             <p class="section-subtitle">Real problems solved with robust engineering. Click to view project details.</p>
             
-            <div style="display: grid; gap: 4rem;">
+            <div class="case-study-list">
                 <!-- Project 1: Zain Physics LMS -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">LMS ECOSYSTEM</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">Zain Physics LMS</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -154,14 +159,14 @@
                         </div>
                         <a href="projects/zain-lms.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="assets/imgs/projects/zain_lms.png" alt="Zain Physics LMS" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="assets/imgs/projects/zain_lms.png" alt="Zain Physics LMS">
                     </div>
                 </div>
 
                 <!-- Project 2: Multi Vendor -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="order: 2; background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">MARKETPLACE & E-COMMERCE</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">Multi-Vendor Marketplace</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -180,14 +185,14 @@
                         </div>
                         <a href="projects/multivendor.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="order: 1; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="assets/imgs/projects/multivendor.png" alt="Multi Vendor" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="assets/imgs/projects/multivendor.png" alt="Multi Vendor">
                     </div>
                 </div>
 
                 <!-- Project 3: Live Session Academy -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">LIVE INFRASTRUCTURE</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">Global Live Sessions Portal</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -206,14 +211,14 @@
                         </div>
                         <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="assets/imgs/projects/live_academy.png" alt="Live Session Academy" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="assets/imgs/projects/live_academy.png" alt="Live Session Academy">
                     </div>
                 </div>
 
                 <!-- Project 4: Business Portal -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="order: 2; background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                <div class="reveal case-study-item reverse">
+                    <div class="case-study-card">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">BUSINESS PORTAL</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">Multi-Role Service Platform</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -232,14 +237,14 @@
                         </div>
                         <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="order: 1; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="assets/imgs/projects/business_portal.png" alt="Business Portal" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="assets/imgs/projects/business_portal.png" alt="Business Portal">
                     </div>
                 </div>
 
                 <!-- Project 5: Brand Portfolio -->
-                <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; align-items: center;">
-                    <div style="background: var(--bg-alt); padding: 3rem; border-radius: var(--radius);">
+                <div class="reveal case-study-item">
+                    <div class="case-study-card">
                         <span style="background: var(--accent-light); color: var(--accent); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.8rem; font-weight: 600;">BRAND PORTFOLIO</span>
                         <h3 style="font-size: 2rem; margin: 1rem 0;">Executive Portfolio Suite</h3>
                         <div style="margin-top: 2rem; display: grid; gap: 1rem;">
@@ -258,8 +263,8 @@
                         </div>
                         <a href="projects/template.html" class="btn btn-secondary" style="margin-top: 2rem;">View Project Details <i data-lucide="external-link" size="16"></i></a>
                     </div>
-                    <div style="border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg);">
-                        <img src="assets/imgs/projects/brand_portfolio.png" alt="Brand Portfolio" style="width: 100%; display: block;">
+                    <div class="case-study-img">
+                        <img src="assets/imgs/projects/brand_portfolio.png" alt="Brand Portfolio">
                     </div>
                 </div>
             </div>
@@ -269,12 +274,12 @@
     <!-- Why Choose Me -->
     <section class="bg-alt">
         <div class="container">
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem;">
+            <div class="why-me-grid">
                 <div class="reveal">
-                    <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Why Business Owners Choose Me</h2>
+                    <h2 style="text-align: left; margin-bottom: 1rem;">Why Business Owners Choose Me</h2>
                     <p style="color: var(--text-muted);">I bridge the gap between complex engineering and business profitability.</p>
                 </div>
-                <div class="reveal" style="display: grid; gap: 2rem;">
+                <div class="reveal why-me-list">
                     <div style="display: flex; gap: 1rem;">
                         <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="check" size="18"></i></div>
                         <div>
@@ -305,24 +310,24 @@
     <section id="process">
         <div class="container">
             <h2 class="section-title">The Path to Success</h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 4rem;">
-                <div class="reveal" style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">01</div>
+            <div class="process-grid">
+                <div class="reveal process-step">
+                    <div class="process-number">01</div>
                     <h4 style="position: relative;">Discovery</h4>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">We start with your business goals, not technical specs.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">02</div>
+                <div class="reveal process-step">
+                    <div class="process-number">02</div>
                     <h4 style="position: relative;">Planning</h4>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">A clear blueprint of how the tech will solve your problem.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">03</div>
+                <div class="reveal process-step">
+                    <div class="process-number">03</div>
                     <h4 style="position: relative;">Execution</h4>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Transparent development with regular milestone updates.</p>
                 </div>
-                <div class="reveal" style="text-align: center;">
-                    <div style="font-size: 3rem; font-weight: 800; color: var(--accent-light); margin-bottom: -1.5rem;">04</div>
+                <div class="reveal process-step">
+                    <div class="process-number">04</div>
                     <h4 style="position: relative;">Launch</h4>
                     <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Smooth deployment and ongoing reliability support.</p>
                 </div>
@@ -347,15 +352,15 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" style="padding: 10rem 0;">
-        <div class="container" style="max-width: 800px;">
+    <section id="contact">
+        <div class="container contact-container">
             <div class="reveal" style="text-align: center;">
                 <h2 class="section-title">Ready to Automate Your Business?</h2>
                 <p class="section-subtitle">Let's discuss how a custom digital system can save you time and increase your profits.</p>
             </div>
             
-            <form id="contact-form" class="reveal" style="background: white; padding: 3rem; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-lg);">
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+            <form id="contact-form" class="reveal contact-card">
+                <div class="form-row">
                     <div class="form-group">
                         <label for="name">Your Name</label>
                         <input type="text" id="name" class="form-control" placeholder="John Doe" required>

@@ -12,10 +12,15 @@
     <nav class="scrolled">
         <div class="container nav-content">
             <div class="logo"><a href="../index.html">AhmedGamal</a></div>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
                 <a href="../index.html#services">Services</a>
                 <a href="../index.html#case-studies">Case Studies</a>
-                <a href="../index.html#contact" class="btn btn-primary" style="padding: 0.5rem 1.2rem;">Start Project</a>
+                <a href="../index.html#contact" class="btn btn-primary">Start Project</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
     </nav>
@@ -25,7 +30,7 @@
             <div class="reveal">
                 <span class="project-tag">MARKETPLACE & E-COMMERCE</span>
                 <h1 class="text-gradient">Multi Vendor Marketplace</h1>
-                <p style="font-size: 1.4rem; color: var(--text-muted); max-width: 800px; margin-top: 1rem;">
+                <p class="hero-p" style="text-align: left; margin-left: 0; margin-top: 1rem;">
                     A powerful marketplace solution that simplifies complex vendor logistics and multi-provider payment processing.
                 </p>
                 
@@ -62,20 +67,20 @@
                 </div>
                 <div class="reveal project-detail-card">
                     <h3><i data-lucide="trending-up" style="color: #2a9d8f;"></i> The Result</h3>
-                    <p style="color: var(--text); font-weight: 700; font-size: 1.3rem;">
+                    <p style="color: var(--text); font-weight: 700; font-size: clamp(1.1rem, 3vw, 1.3rem);">
                         Successfully onboarded 500+ vendors and achieved a 40% reduction in order processing time.
                     </p>
                 </div>
             </div>
 
-            <div style="margin-top: 6rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4rem;">
+            <div class="grid-auto" style="margin-top: 6rem; align-items: start;">
                 <div class="reveal">
                     <h2 style="margin-bottom: 1.5rem;">Tech Stack</h2>
-                    <div style="display: flex; flex-wrap: wrap; gap: 0.8rem;">
-                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">Laravel 11</span>
-                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">Redis</span>
-                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">PostgreSQL</span>
-                        <span style="background: var(--bg-alt); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 500;">Docker</span>
+                    <div class="tag-list">
+                        <span class="tag">Laravel 11</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Docker</span>
                     </div>
                 </div>
                 <div class="reveal">
@@ -97,12 +102,12 @@
                 </div>
             </div>
 
-            <div class="reveal" style="margin-top: 8rem; text-align: center; background: var(--bg-alt); padding: 5rem; border-radius: var(--radius);">
+            <div class="reveal cta-box">
                 <h2 style="margin-bottom: 1.5rem;">Experience the Live Solution</h2>
                 <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
                     See this system in action or discuss how a similar solution can be tailored for your business.
                 </p>
-                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <div class="btn-group">
                     <a href="https://multivendor.ahmedgamal.org/public" target="_blank" class="btn btn-primary">Visit Live Website <i data-lucide="external-link" size="18"></i></a>
                     <a href="../index.html#contact" class="btn btn-secondary">Book a Free Consultation <i data-lucide="calendar" size="18"></i></a>
                 </div>
