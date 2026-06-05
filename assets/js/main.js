@@ -66,4 +66,41 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // Scroll Spy for Mobile Bottom Navigation
+    const spySections = document.querySelectorAll('section[id]');
+    const mobileNavItems = document.querySelectorAll('.mobile-bottom-nav .mobile-nav-item');
+    
+    if (mobileNavItems.length > 0 && spySections.length > 0) {
+        const scrollSpy = () => {
+            let currentSectionId = '';
+            // We want to detect the section occupying the top 1/3 of the viewport
+            const scrollPosition = window.scrollY + window.innerHeight / 3;
+
+            spySections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    currentSectionId = section.getAttribute('id');
+                }
+            });
+
+            // Special case: if scrolled to the absolute bottom of the page, activate the last section (Contact)
+            if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 20) {
+                currentSectionId = 'contact';
+            }
+
+            mobileNavItems.forEach(item => {
+                const href = item.getAttribute('href');
+                if (href === `#${currentSectionId}`) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                }
+            });
+        };
+
+        window.addEventListener('scroll', scrollSpy);
+        scrollSpy(); // Run once on load
+    }
 });
