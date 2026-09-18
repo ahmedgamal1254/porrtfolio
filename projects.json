@@ -466,7 +466,7 @@
       "en": "Clothe E-commerce",
       "ar": "متجر لبيع الملابس الرجالى"
     },
-    "liveUrl": "https://store.ahmedgamal.org/ar",
+    "liveUrl": "https://amstore.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=clothe-ecommerce",
     "challenge": {
       "en": "Managing large product catalogs with size/color variants, multi-provider payment reconciliation, and real-time inventory updates without slowdowns.",
