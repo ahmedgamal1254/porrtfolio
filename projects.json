@@ -52,7 +52,7 @@
       "en": "Kenzi Clinic Preview",
       "ar": "معاينة مركز كنزي الطبي"
     },
-    "liveUrl": "",
+    "liveUrl": "https://staging.kenzi-iq.com",
     "detailsUrl": "projects/detail.html?id=kenzi",
     "challenge": {
       "en": "Managing high-volume clinic bookings across multi-specialty doctors and multiple clinic branches while preventing race conditions (double bookings), supporting complex slot calculations with buffer times, dynamic coupon rules, loyalty point redemptions, and seamless tri-lingual localized user experiences (Arabic, English, Kurdish) across mobile and web platforms.",
@@ -273,7 +273,7 @@
       "en": "Qaf LMS Preview",
       "ar": "معاينة منصة قاف التعليمية"
     },
-    "liveUrl": "https://ivory-oryx-959875.hostingersite.com",
+    "liveUrl": "https://qaf-demo.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=qaf-lms",
     "challenge": {
       "en": "Independent educators needed a cost-effective platform to deliver online courses, manage multiple teachers with separate dashboards, handle student payments, and track progress—without the overhead of building a custom system from scratch.",
@@ -370,7 +370,7 @@
       "en": "Zain Physics LMS",
       "ar": "زين فيزيكس LMS"
     },
-    "liveUrl": "https://zain-physics.online",
+    "liveUrl": "https://lms-demo.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=zain-physics-lms",
     "challenge": {
       "en": "Physics students needed a dedicated mobile platform to access course materials, take quizzes, and track their learning progress with reliable performance across all devices and network conditions.",
