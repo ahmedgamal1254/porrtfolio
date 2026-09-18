@@ -1,0 +1,926 @@
+// Fallback projects data for local file:// protocol access where fetch() is blocked by browser CORS.
+// When hosted on a web server (http/https), projects.json is dynamically fetched.
+window.PORTFOLIO_PROJECTS = [
+  {
+    "id": "kenzi",
+    "badge": {
+      "en": "HEALTHCARE & CLINIC SAAS",
+      "ar": "إدارة العيادات والمراكز الطبية"
+    },
+    "title": {
+      "en": "Kenzi Clinic Center",
+      "ar": "مركز كنزي الطبي (Kenzi Clinic)"
+    },
+    "description": {
+      "en": "Enterprise clinic booking and management ecosystem with multi-branch doctor scheduling, Redis distributed lock concurrency, loyalty rewards, and tri-lingual patient/admin portals.",
+      "ar": "منظومة سحابية متقدمة لإدارة العيادات والمراكز الطبية تشمل حجز المواعيد الذكي لمنع التضارب، وإدارة الأطباء والفروع، ونظام ولاء وكوبونات، مع دعم ثلاث لغات."
+    },
+    "heroSummary": {
+      "en": "A next-generation clinic SaaS ecosystem built with .NET 10 Clean Architecture and Next.js, powering high-concurrency medical appointment scheduling, loyalty programs, and tri-lingual operations.",
+      "ar": "منصة سحابية متكاملة لإدارة المراكز الطبية والعيادات مبنية بـ .NET 10 بمعمارية Clean Architecture و Next.js، توفر جدولة مواعيد فورية بدون تضارب، مع إدارة الكوبونات ونقاط الولاء ودعم ثلاث لغات."
+    },
+    "year": "2026",
+    "techStackSummary": ".NET 10, Next.js, TanStack Query, shadcn/ui",
+    "metric": {
+      "en": "10k+ Bookings, 0 Collisions",
+      "ar": "10,000+ موعد، صفر تضارب مواعيد"
+    },
+    "image": "assets/imgs/projects/kenzi/1.webp",
+    "images": [
+      "assets/imgs/projects/kenzi/1.webp",
+      "assets/imgs/projects/kenzi/2.webp",
+      "assets/imgs/projects/kenzi/3.webp",
+      "assets/imgs/projects/kenzi/4.webp",
+      "assets/imgs/projects/kenzi/5.webp",
+      "assets/imgs/projects/kenzi/6.webp",
+      "assets/imgs/projects/kenzi/7.webp",
+      "assets/imgs/projects/kenzi/8.webp",
+      "assets/imgs/projects/kenzi/9.webp",
+      "assets/imgs/projects/kenzi/10.webp",
+      "assets/imgs/projects/kenzi/11.webp",
+      "assets/imgs/projects/kenzi/12.webp",
+      "assets/imgs/projects/kenzi/13.webp",
+      "assets/imgs/projects/kenzi/14.webp",
+      "assets/imgs/projects/kenzi/15.webp",
+      "assets/imgs/projects/kenzi/16.webp",
+      "assets/imgs/projects/kenzi/17.webp",
+      "assets/imgs/projects/kenzi/18.webp",
+      "assets/imgs/projects/kenzi/19.webp",
+      "assets/imgs/projects/kenzi/20.webp",
+      "assets/imgs/projects/kenzi/21.webp",
+      "assets/imgs/projects/kenzi/22.webp"
+    ],
+    "alt": {
+      "en": "Kenzi Clinic Preview",
+      "ar": "معاينة مركز كنزي الطبي"
+    },
+    "liveUrl": "",
+    "detailsUrl": "projects/detail.html?id=kenzi",
+    "challenge": {
+      "en": "Managing high-volume clinic bookings across multi-specialty doctors and multiple clinic branches while preventing race conditions (double bookings), supporting complex slot calculations with buffer times, dynamic coupon rules, loyalty point redemptions, and seamless tri-lingual localized user experiences (Arabic, English, Kurdish) across mobile and web platforms.",
+      "ar": "إدارة الحجوزات الطبية عالية الكثافة عبر فروع وتخصصات متعددة مع منع تضارب المواعيد (Race Conditions) بشكل قطعي، واحتساب الفترات الزمنية بدقة مع فترات التجهيز، بالإضافة لمعالجة برامج الولاء والخصومات، وتقديم واجهات سلسة تدعم ثلاث لغات (العربية، الإنجليزية، الكردية) مع توافق كامل مع اتجاهات القراءة (RTL/LTR)."
+    },
+    "solution": {
+      "en": "Engineered a robust .NET 10 backend applying Clean Architecture and CQRS with Redis distributed locks for zero-collision appointment reservations. Built an interactive, high-performance Next.js admin dashboard utilizing TanStack React Query for real-time caching and optimistic mutations, React Hook Form + Zod for strict validation, and shadcn/ui with bidirectional RTL/LTR layout support. Integrated automated background jobs via Hangfire and centralized exception handling with localized envelopes.",
+      "ar": "بناء معمارية خلفية فائقة القوة باستخدام .NET 10 مع Clean Architecture و CQRS مع أقفال موزعة (Redis Distributed Locks) لضمان حجز المواعيد بدون أي تضارب. وتطوير لوحة تحكم إدارية تفاعلية بـ Next.js مع TanStack React Query للمزامنة الفورية، و React Hook Form + Zod للتحقق الدقيق من المدخلات، ومكونات shadcn/ui المتوافقة مع الاتجاهين RTL/LTR، مع معالجة المهام الخلفية عبر Hangfire ورسائل خطأ مترجمة وموحدة."
+    },
+    "result": {
+      "en": "Achieved zero scheduling collisions over 10,000+ bookings, reduced patient waiting times by 40%, cut admin booking processing overhead by 65%, and ensured sub-100ms API response times across peak clinic consultation hours.",
+      "ar": "تحقيق دقة مطلقة وصفر تضارب في المواعيد لأكثر من 10,000 حجز، وتقليل وقت انتظار المرضى بنسبة 40%، وخفض وقت المعالجة الإدارية للحجوزات بنسبة 65%، مع سرعة استجابة فائقة للـ API بأقل من 100ms حتى في أوقات الذروة."
+    },
+    "techStack": [
+      ".NET 10",
+      "Next.js",
+      "React TanStack Query",
+      "C# Clean Architecture",
+      "TypeScript",
+      "shadcn/ui",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Redis Distributed Locks",
+      "Hangfire",
+      "React Hook Form & Zod",
+      "JWT & RBAC"
+    ],
+    "features": {
+      "en": [
+        "Smart slot reservation engine with Redis distributed locking preventing double bookings",
+        "High-performance Next.js dashboard with TanStack React Query for real-time schedule management",
+        "Multi-branch & multi-doctor scheduling with buffer times, breaks, and dynamic availability",
+        "Automated loyalty points calculation and wallet system for returning clinic clients",
+        "Tiered coupon engine with usage limits, minimum spend, and category restrictions",
+        "Comprehensive tri-lingual internationalization (Arabic, Kurdish, English) with RTL support",
+        "Role-based access control (RBAC) and audit logs for receptionists, doctors, and branch managers",
+        "Automated reminders and notifications via background Hangfire processing"
+      ],
+      "ar": [
+        "محرك حجز ذكي مدعوم بأقفال Redis الموزعة لمنع أي تضارب في المواعيد بين المرضى",
+        "لوحة تحكم إدارية سريعة بـ Next.js و TanStack React Query للمزامنة الفورية لجدول الحجوزات",
+        "إدارة متكاملة للفروع وجداول الأطباء وتحديد فترات الراحة والأوقات المتاحة ديناميكياً",
+        "نظام محفظة ونقاط ولاء آلي يمنح المرضى مكافآت وخصومات عند تكرار الزيارات",
+        "محرك كوبونات وخصومات متقدم مع حدود استخدام وشروط إنفاق وأقسام مخصصة",
+        "دعم متكامل لثلاث لغات (العربية، الكردية، الإنجليزية) مع توافق كامل لاتجاه RTL",
+        "نظام صلاحيات متقدم (RBAC) وسجل تدقيق تفصيلي لموظفي الاستقبال والأطباء ومدراء الفروع",
+        "إشعارات وتنبيهات مجدولة آلياً للمواعيد عبر خوادم المهام الخلفية Hangfire"
+      ]
+    },
+    "impact": [
+      {
+        "number": "10k+",
+        "label": {
+          "en": "Bookings Managed",
+          "ar": "حجز مدار بدون أخطاء"
+        }
+      },
+      {
+        "number": "0",
+        "label": {
+          "en": "Double Bookings (100% Reliable)",
+          "ar": "تضارب مواعيد (دقة 100%)"
+        }
+      },
+      {
+        "number": "40%",
+        "label": {
+          "en": "Wait Time Reduction",
+          "ar": "تقليل زمن انتظار المرضى"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "System Uptime",
+          "ar": "استقرار وجاهزية النظام"
+        }
+      }
+    ]
+  },
+  {
+    "id": "beeto",
+    "badge": {
+      "en": "CLEANING & ECO-COMMERCE",
+      "ar": "منظفات وإعادة تدوير"
+    },
+    "title": {
+      "en": "Beeto",
+      "ar": "بيتو (Beeto)"
+    },
+    "description": {
+      "en": "Specialized platform for cleaning supplies, custom chemical mixture formulas, and a smart used cooking oil exchange recycling rewards system.",
+      "ar": "منصة متخصصة لبيع أدوات التنظيف، وتركيب خلطات التنظيف المخصصة، مع نظام ذكي لاستبدال زيوت الطعام المستعملة بمكافآت."
+    },
+    "heroSummary": {
+      "en": "An innovative commerce and recycling ecosystem combining cleaning supplies retail, custom mixture formulation, and used oil collection logistics.",
+      "ar": "منصة رقمية رائدة تجمع بين تجارة منظفات ومعدات النظافة، وتحضير الخلطات المخصصة، وإدارة منظومة استبدال زيوت الطعام المستعملة بيئياً."
+    },
+    "year": "2026",
+    "techStackSummary": "Laravel, React, MySQL, REST API",
+    "metric": {
+      "en": "15k+ Liters Recycled, 5k+ Orders",
+      "ar": "15k+ لتر زيت مستبدل، 5000+ طلب"
+    },
+    "image": "assets/imgs/projects/beeto/1.jpg",
+    "images": [
+      "assets/imgs/projects/beeto/1.jpg",
+      "assets/imgs/projects/beeto/2.jpg",
+      "assets/imgs/projects/beeto/3.jpg",
+      "assets/imgs/projects/beeto/4.jpg",
+      "assets/imgs/projects/beeto/5.jpg",
+      "assets/imgs/projects/beeto/6.jpg",
+      "assets/imgs/projects/beeto/7.jpg",
+      "assets/imgs/projects/beeto/8.jpg",
+      "assets/imgs/projects/beeto/9.jpg",
+      "assets/imgs/projects/beeto/10.jpg",
+      "assets/imgs/projects/beeto/11.jpg",
+      "assets/imgs/projects/beeto/12.jpg"
+    ],
+    "alt": {
+      "en": "Beeto Preview",
+      "ar": "معاينة بيتو"
+    },
+    "liveUrl": "https://beeto.ahmedgamal.de",
+    "detailsUrl": "projects/detail.html?id=beeto",
+    "challenge": {
+      "en": "Building a unified commerce platform capable of handling regular retail orders for cleaning supplies, while simultaneously orchestrating reverse-logistics for collecting used cooking oil from households and calculating dynamic custom cleaning chemical mixtures.",
+      "ar": "بناء منصة متكاملة قادرة على إدارة مبيعات أدوات ومواد التنظيف، إلى جانب إدارة الخدمات اللوجستية العكسية لجمع واستبدال زيوت الطعام المستعملة من المنازل، وتوفير نظام مرن لحساب وتجهيز خلطات المنظفات حسب رغبة العميل."
+    },
+    "solution": {
+      "en": "Architected a full-featured Laravel & React system featuring a used-oil recycling rewards engine (points & cash payouts), interactive custom cleaning mixture builder with ratio auto-calculation, driver pickup scheduling, and comprehensive order and inventory management.",
+      "ar": "تم تطوير منصة متقدمة بـ Laravel و React تدعم نظام مكافآت ونقاط لاستبدال الزيوت المستعملة، ومحرك تفاعلي لحساب نسب وتركيب خلطات التنظيف، مع جدولة مواعيد استلام الشحنات وتعيين خطوط سير للمناديب، وإدارة متكاملة للمخزون والطلبات."
+    },
+    "result": {
+      "en": "15,000+ liters of used cooking oil successfully recycled, 35% higher customer retention through personalized cleaning mixtures, and 99.9% system reliability.",
+      "ar": "إعادة تدوير أكثر من 15,000 لتر من زيوت الطعام المستعملة، وزيادة ولاء وتكرار طلبات العملاء بنسبة 35% بفضل خدمة الخلطات المخصصة، مع كفاءة واستقرار بنسبة 99.9%."
+    },
+    "techStack": [
+      "Laravel",
+      "React",
+      "MySQL",
+      "Tailwind CSS",
+      "RESTful API",
+      "Payment Gateways"
+    ],
+    "features": {
+      "en": [
+        "Used cooking oil exchange system with automated wallet rewards",
+        "Interactive custom cleaning mixture builder & ratio calculator",
+        "Comprehensive store for cleaning tools, detergents, and chemicals",
+        "Automated pickup dispatching and route scheduling for drivers",
+        "Customer loyalty program with points-to-discounts conversion",
+        "Real-time order tracking and inventory alert system"
+      ],
+      "ar": [
+        "نظام متكامل لطلب استبدال زيت الطعام المستعمل بمكافآت ونقاط",
+        "محرك تفاعلي لتركيب وحساب نسب خلطات المنظفات والتعقيم المخصصة",
+        "متجر شامل لأدوات ومنتجات التنظيف المنزلية والمؤسسية",
+        "جدولة مواعيد الاستلام وتعيين خطوط سير المناديب آلياً",
+        "محفظة ولاء للعملاء لتحويل النقاط إلى خصومات أو مستحقات نقدية",
+        "تتبع فوري لمراحل الطلبات وإدارة متقدمة لمخزون المستودعات"
+      ]
+    },
+    "impact": [
+      {
+        "number": "15k+ L",
+        "label": {
+          "en": "Used Oil Recycled",
+          "ar": "لتر زيت مستبدل ومدور"
+        }
+      },
+      {
+        "number": "35%",
+        "label": {
+          "en": "Repeat Order Rate",
+          "ar": "زيادة في تكرار الطلبات"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "Platform Uptime",
+          "ar": "استقرار وجاهزية النظام"
+        }
+      }
+    ]
+  },
+  {
+    "id": "qaf-lms",
+    "badge": {
+      "en": "LMS ECOSYSTEM",
+      "ar": "نظام تعليم إلكتروني"
+    },
+    "title": {
+      "en": "Qaf LMS (Multi Vendor)",
+      "ar": "منصة قاف التعليمية"
+    },
+    "description": {
+      "en": "Multi-vendor learning platform allowing independent teachers to manage courses, students, and payments from individual dashboards.",
+      "ar": "منصة تعليمية متعددة المعلمين تمكن المعلمين المستقلين من إدارة الدورات والطلاب والمدفوعات من لوحات تحكم منفصلة."
+    },
+    "heroSummary": {
+      "en": "A scalable, multi-vendor learning platform empowering independent teachers to manage courses, students, and payments from individual dashboards.",
+      "ar": "منصة تعليمية متكاملة وقابلة للتوسع تمكّن المعلمين المستقلين من إدارة المقررات والطلاب والمدفوعات من لوحات تحكم مخصصة."
+    },
+    "year": "2025",
+    "techStackSummary": "Laravel, React, MySQL",
+    "metric": {
+      "en": "100+ Teachers, 10k+ Students",
+      "ar": "100+ معلم، 10k+ طالب"
+    },
+    "image": "assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp",
+    "images": [
+      "assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp",
+      "assets/imgs/projects/lms.png"
+    ],
+    "alt": {
+      "en": "Qaf LMS Preview",
+      "ar": "معاينة منصة قاف التعليمية"
+    },
+    "liveUrl": "https://ivory-oryx-959875.hostingersite.com",
+    "detailsUrl": "projects/detail.html?id=qaf-lms",
+    "challenge": {
+      "en": "Independent educators needed a cost-effective platform to deliver online courses, manage multiple teachers with separate dashboards, handle student payments, and track progress—without the overhead of building a custom system from scratch.",
+      "ar": "احتاج المعلمون المستقلون إلى منصة فعالة من حيث التكلفة لتقديم الدورات التدريبية عبر الإنترنت، وإدارة معلمين متعددين من لوحات تحكم منفصلة، ومعالجة مدفوعات الطلاب وتتبع تقدمهم دون الحاجة لبناء نظام من الصفر."
+    },
+    "solution": {
+      "en": "Built a comprehensive multi-vendor LMS with separate dashboards for each teacher, automated payment processing, course content management, quiz system, progress tracking, and mobile app support for students.",
+      "ar": "تم بناء نظام تعليمي متكامل متعدد الموردين مع لوحة تحكم مخصصة لكل معلم، ومعالجة تلقائية للمدفوعات، وإدارة محتوى الدورات، ونظام اختبارات ذكي، وتتبع لتقدم الطلاب مع دعم كامل للتطبيقات الذكية."
+    },
+    "result": {
+      "en": "99.9% uptime, 40% faster checkout, 100+ active teachers on platform generating recurring revenue.",
+      "ar": "جاهزية بنسبة 99.9%، وعمليات دفع أسرع بنسبة 40%، وأكثر من 100 معلم نشط يحققون إيرادات دورية مستمرة."
+    },
+    "techStack": [
+      "Laravel",
+      "React",
+      "MySQL",
+      "Stripe API",
+      "Firebase",
+      "AWS S3"
+    ],
+    "features": {
+      "en": [
+        "Multi-vendor dashboard with individual analytics",
+        "Automated payment processing & vendor payouts",
+        "Course management with content versioning",
+        "Quiz system with auto-grading",
+        "Student progress tracking & certificates",
+        "Mobile app for iOS & Android"
+      ],
+      "ar": [
+        "لوحة تحكم متعددة المعلمين مع تحليلات منفصلة",
+        "معالجة المدفوعات والتحويلات المالية تلقائياً",
+        "إدارة شاملة للدورات وإصدارات المحتوى",
+        "نظام اختبارات متقدم وتصحيح تلقائي",
+        "تتبع تقدم الطلاب وإصدار الشهادات",
+        "تطبيق هاتف يدعم iOS و Android"
+      ]
+    },
+    "impact": [
+      {
+        "number": "100+",
+        "label": {
+          "en": "Active Teachers",
+          "ar": "معلم نشط على المنصة"
+        }
+      },
+      {
+        "number": "10k+",
+        "label": {
+          "en": "Active Students",
+          "ar": "طالب يستفيد من النظام"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "System Uptime",
+          "ar": "نسبة استقرار وجاهزية النظام"
+        }
+      }
+    ]
+  },
+  {
+    "id": "zain-physics-lms",
+    "badge": {
+      "en": "LMS ECOSYSTEM",
+      "ar": "نظام تعليم إلكتروني"
+    },
+    "title": {
+      "en": "Zain Physics LMS",
+      "ar": "منصة أحمد المحلاوى"
+    },
+    "description": {
+      "en": "Comprehensive mobile learning platform for physics students to explore content, take quizzes, and track progress with 99.9% uptime.",
+      "ar": "منصة تعليمية شاملة للطلاب لاستكشاف المحتوى والقيام بالاختبارات وتتبع التقدم مع توفر 99.9%."
+    },
+    "heroSummary": {
+      "en": "A comprehensive mobile learning platform enabling physics students to explore content, take quizzes, and track progress with 99.9% uptime.",
+      "ar": "منصة تعليمية مخصصة لطلاب مادة الفيزياء للوصول للمحاضرات وحل الاختبارات ومتابعة التقدم الدراسي بسهولة."
+    },
+    "year": "2025",
+    "techStackSummary": "Laravel, React Native, MySQL",
+    "metric": {
+      "en": "5000+ Students",
+      "ar": "5000+ طالب"
+    },
+    "image": "assets/imgs/projects/zain-physics.webp",
+    "images": [
+      "assets/imgs/projects/zain-physics.webp",
+      "assets/imgs/projects/zain_lms.png"
+    ],
+    "alt": {
+      "en": "Zain Physics LMS",
+      "ar": "زين فيزيكس LMS"
+    },
+    "liveUrl": "https://zain-physics.online",
+    "detailsUrl": "projects/detail.html?id=zain-physics-lms",
+    "challenge": {
+      "en": "Physics students needed a dedicated mobile platform to access course materials, take quizzes, and track their learning progress with reliable performance across all devices and network conditions.",
+      "ar": "احتاج طلاب مادة الفيزياء إلى منصة رقمية مخصصة للوصول إلى المواد التعليمية، وحل الاختبارات، وتتبع مستواهم مع أداء سريع وموثوق تحت مختلف سرعات الإنترنت."
+    },
+    "solution": {
+      "en": "Built a comprehensive mobile LMS with course content management, interactive quizzes with auto-grading, progress tracking, offline mode support, and real-time performance analytics for teachers.",
+      "ar": "تم تطوير منصة تعليمية وتطبيق تفاعلي يشمل إدارة الدروس، واختبارات تفاعلية بتصحيح فوري، وتتبع تقدم الطلاب، مع لوحة تحكم ذكية للتحليلات التربوية."
+    },
+    "result": {
+      "en": "99.9% uptime, 40% faster checkout, 5000+ active students, 85% quiz completion rate.",
+      "ar": "نسبة استقرار 99.9%، وأكثر من 5000 طالب نشط، ونسبة إكمال للاختبارات تخطت 85%."
+    },
+    "techStack": [
+      "Laravel",
+      "React Native",
+      "MySQL",
+      "Firebase",
+      "AWS S3",
+      "Stripe"
+    ],
+    "features": {
+      "en": [
+        "Comprehensive course content management",
+        "Interactive quiz system with auto-grading",
+        "Real-time progress tracking & analytics",
+        "Offline mode for content access",
+        "Mobile app for iOS & Android",
+        "Teacher performance dashboard"
+      ],
+      "ar": [
+        "إدارة متكاملة للمحتوى التعليمي والمحاضرات",
+        "نظام اختبارات ذكي مع التصحيح الفوري",
+        "تتبع إحصائي دقيق لمستوى الطلاب",
+        "لوحة إدارية شاملة للمعلم لمتابعة النتائج",
+        "أداء فائق واستجابة سريعة على كافة الشاشات"
+      ]
+    },
+    "impact": [
+      {
+        "number": "5000+",
+        "label": {
+          "en": "Active Students",
+          "ar": "طالب مسجل"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "Platform Uptime",
+          "ar": "نسبة جاهزية الخادم"
+        }
+      },
+      {
+        "number": "85%",
+        "label": {
+          "en": "Quiz Completion Rate",
+          "ar": "نسبة إتمام الاختبارات"
+        }
+      }
+    ]
+  },
+  {
+    "id": "clothe-ecommerce",
+    "badge": {
+      "en": "E-COMMERCE",
+      "ar": "متجر لبيع الملابس الرجالى"
+    },
+    "title": {
+      "en": "Clothe E-commerce",
+      "ar": "متجر الملابس الرجالية"
+    },
+    "description": {
+      "en": "Automated reconciliation system for multi-provider payments with intelligent split-payment handling, saving 60 hours monthly.",
+      "ar": "نظام تسوية المدفوعات الآلي مع معالجة سريعة للمخزون وخيارات المقاسات والألوان المتعددة."
+    },
+    "heroSummary": {
+      "en": "A modern fashion e-commerce storefront with optimized variant selection, instant checkout, and automated multi-channel inventory management.",
+      "ar": "متجر أزياء إلكتروني حديث يتميز بتحديد المقاسات والألوان بسهولة، وإتمام فوري للطلبات، وإدارة مؤتمتة للمخزون."
+    },
+    "year": "2024",
+    "techStackSummary": "Laravel, Vue.js, MySQL",
+    "metric": {
+      "en": "10k+ Orders Fulfilled",
+      "ar": "10k+ طلب مكتمل"
+    },
+    "image": "assets/imgs/projects/image.webp",
+    "images": [
+      "assets/imgs/projects/image.webp",
+      "assets/imgs/projects/ecommerce.webp"
+    ],
+    "alt": {
+      "en": "Clothe E-commerce",
+      "ar": "متجر لبيع الملابس الرجالى"
+    },
+    "liveUrl": "https://store.ahmedgamal.org/ar",
+    "detailsUrl": "projects/detail.html?id=clothe-ecommerce",
+    "challenge": {
+      "en": "Managing large product catalogs with size/color variants, multi-provider payment reconciliation, and real-time inventory updates without slowdowns.",
+      "ar": "إدارة كتالوج ضخم من الملابس مع تعدد المقاسات والألوان ومزامنة المخزون اللحظية وربط بوابات دفع متعددة بشكل موثوق."
+    },
+    "solution": {
+      "en": "Engineered an optimized e-commerce system with variant caching, automated payment verification, fast multi-step checkout, and seamless order dispatch tracking.",
+      "ar": "تم بناء متجر متقدم عالي السرعة بنظام كاشينج ذكي، ومزامنة فورية للمخزون، وتجربة شراء سلسة في أقل من دقيقة."
+    },
+    "result": {
+      "en": "60% faster page loading, zero order duplication, and automated reconciliation saving 60 hours monthly.",
+      "ar": "سرعة تحميل أكبر بنسبة 60% وتوفير أكثر من 60 ساعة عمل شهرياً في مطابقة الحسابات المالية."
+    },
+    "techStack": [
+      "Laravel",
+      "Vue.js",
+      "MySQL",
+      "Redis",
+      "Payment Gateways",
+      "Tailwind CSS"
+    ],
+    "features": {
+      "en": [
+        "Smart inventory & color/size variant manager",
+        "Automated payment reconciliation system",
+        "Real-time order tracking & SMS notifications",
+        "Fast one-page checkout experience",
+        "High performance image optimization",
+        "Customer review & rating system"
+      ],
+      "ar": [
+        "إدارة ذكية للمنتجات والمقاسات والألوان",
+        "تسوية وتدقيق آلي لمدفوعات البطاقات والمحافظ",
+        "تتبع لحظي لحالة الشحنات مع تنبيهات SMS",
+        "إتمام طلب سريع ومبسط لتحقيق أعلى معدل تحويل",
+        "تحسين فائق للصور وسرعة التصفح",
+        "نظام تقييمات وآراء العملاء"
+      ]
+    },
+    "impact": [
+      {
+        "number": "60h",
+        "label": {
+          "en": "Saved Monthly",
+          "ar": "ساعات عمل موفرة شهرياً"
+        }
+      },
+      {
+        "number": "99.8%",
+        "label": {
+          "en": "Payment Accuracy",
+          "ar": "دقة مطابقة المدفوعات"
+        }
+      },
+      {
+        "number": "40%",
+        "label": {
+          "en": "Sales Growth",
+          "ar": "نمو في المبيعات"
+        }
+      }
+    ]
+  },
+  {
+    "id": "multi-vendor-marketplace",
+    "badge": {
+      "en": "MARKETPLACE & E-COMMERCE",
+      "ar": "متجر متعدد التجار"
+    },
+    "title": {
+      "en": "Multi-Vendor Marketplace",
+      "ar": "سوق متعدد التجار"
+    },
+    "description": {
+      "en": "Automated reconciliation system for multi-provider payments with intelligent split-payment handling, saving 60 hours monthly.",
+      "ar": "نظام تسوية المدفوعات الآلي لمئات الموردين مع معالجة ذكية للتقسيم، وتوفير 60 ساعة عمل شهرياً."
+    },
+    "heroSummary": {
+      "en": "A powerful marketplace solution that simplifies complex vendor logistics and multi-provider payment processing.",
+      "ar": "حل متكامل للأسواق الإلكترونية يسهل العمليات اللوجستية المعقدة بين التجار المتعددين وبوابات الدفع."
+    },
+    "year": "2024",
+    "techStackSummary": "Laravel 11, Redis, PostgreSQL",
+    "metric": {
+      "en": "500+ Vendors Onboarded",
+      "ar": "500+ تاجر ومورد"
+    },
+    "image": "assets/imgs/projects/mult-_vendor.webp",
+    "images": [
+      "assets/imgs/projects/mult-_vendor.webp",
+      "assets/imgs/projects/multivendor.png"
+    ],
+    "alt": {
+      "en": "Multi-Vendor Marketplace",
+      "ar": "سوق متعدد التجار"
+    },
+    "liveUrl": "https://multivendor.ahmedgamal.org/public",
+    "detailsUrl": "projects/detail.html?id=multi-vendor-marketplace",
+    "challenge": {
+      "en": "The goal was to create a unified platform where hundreds of vendors could manage their own products, orders, and shipping, while providing customers with a seamless single-cart experience.",
+      "ar": "كان الهدف بناء منصة موحدة تتيح لمئات التجار إدارة منتجاتهم وطلباتهم وشحناتهم الخاصة، مع توفير سلة مشتريات موحدة وتجربة مستخدم سهلة للمشتري."
+    },
+    "solution": {
+      "en": "I engineered a multi-tenant backend architecture with separate vendor panels. I implemented an automated split-payment system and a complex shipping calculation engine using Redis for real-time speed.",
+      "ar": "تم تصميم بنية خلفية متعددة المستأجرين مع لوحات تحكم مستقلة للتجار، ونظام تقسيم مدفوعات تلقائي، ومحرك لحساب تكاليف الشحن المتعدد في الوقت الفعلي."
+    },
+    "result": {
+      "en": "Successfully onboarded 500+ vendors and achieved a 40% reduction in order processing time.",
+      "ar": "تسجيل وضم أكثر من 500 تاجر وتقليل زمن معالجة الطلبات بنسبة 40%."
+    },
+    "techStack": [
+      "Laravel 11",
+      "Redis",
+      "PostgreSQL",
+      "Docker",
+      "Stripe Connect"
+    ],
+    "features": {
+      "en": [
+        "Automated Split-Payment Gateway (Stripe Connect)",
+        "Advanced Vendor Inventory Management",
+        "Real-time Multi-carrier Shipping Calculator",
+        "Dedicated Vendor Dashboards",
+        "Commission and Payout Management",
+        "Multi-vendor dispute handling system"
+      ],
+      "ar": [
+        "بوابة دفع وتقسيم أرباح آلية لكل تاجر",
+        "إدارة مخزون متقدمة لكل بائع",
+        "حاسبة شحن متعددة الشركات فورية",
+        "لوحات تحكم وتحليلات مالية لكل تاجر",
+        "إدارة العمولات والتحويلات البنكية",
+        "نظام حل النزاعات بين التاجر والعميل"
+      ]
+    },
+    "impact": [
+      {
+        "number": "500+",
+        "label": {
+          "en": "Active Vendors",
+          "ar": "تاجر ومورد نشط"
+        }
+      },
+      {
+        "number": "40%",
+        "label": {
+          "en": "Faster Processing",
+          "ar": "تسريع إنجاز الطلبات"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "Platform Uptime",
+          "ar": "جاهزية واستقرار النظام"
+        }
+      }
+    ]
+  },
+  {
+    "id": "live-sessions",
+    "badge": {
+      "en": "LIVE INFRASTRUCTURE",
+      "ar": "بنية تحتية مباشرة"
+    },
+    "title": {
+      "en": "Global Live Sessions Portal",
+      "ar": "بوابة المحاضرات المباشرة العالمية"
+    },
+    "description": {
+      "en": "Real-time streaming platform with automated scheduling engine for 1000+ global students, increasing engagement by 95%.",
+      "ar": "منصة بث فيديو فوري مع محرك جدولة ذكي لأكثر من 1000 طالب عالمي، بزيادة تفاعل بنسبة 95%."
+    },
+    "heroSummary": {
+      "en": "Real-time streaming platform with automated scheduling engine enabling 1000+ global students to engage in live learning sessions.",
+      "ar": "منصة بث مباشر تفاعلية مع محرك جدولة ذكي تمكن أكثر من 1000 طالب حول العالم من الحضور والتفاعل الفوري."
+    },
+    "year": "2024",
+    "techStackSummary": "Laravel, Vue.js, WebRTC",
+    "metric": {
+      "en": "1000+ Global Students",
+      "ar": "1000+ طالب عالمي"
+    },
+    "image": {
+      "en": "assets/imgs/projects/tameez.webp",
+      "ar": "assets/imgs/projects/tameez_ar.webp"
+    },
+    "images": [
+      "assets/imgs/projects/tameez.webp",
+      "assets/imgs/projects/live_academy.png",
+      "assets/imgs/projects/Tameez-Academy.webp"
+    ],
+    "alt": {
+      "en": "Global Live Sessions Portal",
+      "ar": "بوابة المحاضرات المباشرة"
+    },
+    "liveUrl": "https://lms-quarn.vercel.app/en",
+    "detailsUrl": "projects/detail.html?id=live-sessions",
+    "challenge": {
+      "en": "Scaling live interactive sessions for 1000+ students across multiple time zones required robust infrastructure, seamless scheduling, real-time notifications, and reliable streaming without latency issues.",
+      "ar": "إدارة وبث جلسات تفاعلية مباشرة لأكثر من 1000 طالب عبر مناطق زمنية متعددة مع الحاجة لبنية تحتية قوية وبث سريع بدون تأخير أو انقطاع."
+    },
+    "solution": {
+      "en": "Built a comprehensive live streaming platform with automated scheduling engine, WebRTC integration for high-quality video, real-time chat, interactive Q&A, and attendance tracking with global CDN support.",
+      "ar": "تم بناء منصة بث مباشر متكاملة بمحرك جدولة ذكي، وتكامل WebRTC للبث الفوري، وغرف محادثة مباشرة، ونظام تسجيل حضور وتوزيع محتوى عالمي."
+    },
+    "result": {
+      "en": "95% increase in student engagement, <50ms latency, zero dropped connections during peak hours.",
+      "ar": "زيادة بنسبة 95% في تفاعل الطلاب، وزمن استجابة أقل من 50 مللي ثانية، واستقرار تام وقت الذروة."
+    },
+    "techStack": [
+      "Laravel",
+      "Vue.js",
+      "WebRTC",
+      "Socket.io",
+      "AWS CloudFront",
+      "Redis"
+    ],
+    "features": {
+      "en": [
+        "Automated intelligent scheduling engine",
+        "High-quality WebRTC streaming",
+        "Real-time chat & interactive Q&A",
+        "Automatic attendance tracking",
+        "Session recording & on-demand playback",
+        "Global CDN for minimal latency"
+      ],
+      "ar": [
+        "محرك جدولة ذكي للجلسات والمواعيد",
+        "بث فائق الجودة بتقنية WebRTC",
+        "دردشة تفاعلية واستبيانات مباشرة",
+        "تسجيل تلقائي لحضور الطلاب",
+        "تسجيل المحاضرات ومشاهدتها لاحقاً",
+        "شبكة CDN لتسريع البث عالمياً"
+      ]
+    },
+    "impact": [
+      {
+        "number": "95%",
+        "label": {
+          "en": "Engagement Increase",
+          "ar": "زيادة تفاعل الطلاب"
+        }
+      },
+      {
+        "number": "<50ms",
+        "label": {
+          "en": "Average Latency",
+          "ar": "زمن التأخير في البث"
+        }
+      },
+      {
+        "number": "1000+",
+        "label": {
+          "en": "Live Students",
+          "ar": "طالب في الجلسات المتزامنة"
+        }
+      }
+    ]
+  },
+  {
+    "id": "single-vendor-ecommerce",
+    "badge": {
+      "en": "BUSINESS E-commerce",
+      "ar": "متجر إلكترونى"
+    },
+    "title": {
+      "en": "Single Vendor E-commerce",
+      "ar": "متجر إلكترونى متكامل"
+    },
+    "description": {
+      "en": "Single vendor e-commerce platform with custom CMS and inventory management, reducing manual updates by 80% and increasing sales by 40%.",
+      "ar": "منصة تجارية إلكترونية مخصصة مع نظام إدارة المحتوى وتتبع المخزون، مما يقلل من التحديثات اليدوية بنسبة 80% ويزيد المبيعات بنسبة 40%."
+    },
+    "heroSummary": {
+      "en": "A tailor-made single-vendor e-commerce platform with bespoke CMS, automated inventory sync, and conversion-first UI.",
+      "ar": "متجر إلكتروني مخصص لعلامة تجارية رائدة بنظام إدارة محتوى مرن، وتحديث آلي للمخزون، وتصميم يركز على زيادة المبيعات."
+    },
+    "year": "2024",
+    "techStackSummary": "Laravel, React, MySQL",
+    "metric": {
+      "en": "5000+ Satisfied Customers",
+      "ar": "5000+ عميل مسجل"
+    },
+    "image": "assets/imgs/projects/weaver.webp",
+    "images": [
+      "assets/imgs/projects/weaver.webp",
+      "assets/imgs/projects/business_portal.png"
+    ],
+    "alt": {
+      "en": "Single Vendor E-commerce",
+      "ar": "متجر إلكترونى"
+    },
+    "liveUrl": "https://weaver-woad.vercel.app",
+    "detailsUrl": "projects/detail.html?id=single-vendor-ecommerce",
+    "challenge": {
+      "en": "Businesses needed an agile e-commerce platform with specialized CMS capabilities, rapid checkout flow, and custom inventory automation tailored to unique operational requirements.",
+      "ar": "احتاجت الشركة إلى متجر إلكتروني مخصص سريع مع نظام إدارة محتوى مرن، وتجربة شراء سلسة، ومزامنة أوتوماتيكية مع المستودع."
+    },
+    "solution": {
+      "en": "Engineered a bespoke commerce solution with headless architecture, dynamic promo engine, instant order invoicing, and centralized operations control.",
+      "ar": "تم تطوير حل تجاري مخصص بتصميم عصري سريع، مع محرك عروض ترويجية، ونظام فواتير آلي، ولوحة تحكم مركزية للإدارة."
+    },
+    "result": {
+      "en": "Reduced manual catalog updates by 80% and drove a 40% increase in direct sales conversion.",
+      "ar": "تقليل وقت التحديث اليدوي للبيانات بنسبة 80% مع زيادة المبيعات بنسبة 40%."
+    },
+    "techStack": [
+      "Laravel",
+      "React",
+      "MySQL",
+      "Socket.io",
+      "Redis",
+      "AWS"
+    ],
+    "features": {
+      "en": [
+        "Custom CMS & product builder",
+        "Real-time stock reservation system",
+        "Automated invoicing & shipping labels",
+        "Comprehensive sales analytics",
+        "Loyalty points & coupon management",
+        "Dynamic banner and promo management"
+      ],
+      "ar": [
+        "نظام إدارة محتوى ومنتجات مخصص",
+        "حجز فوري للمنتجات أثناء الشراء",
+        "توليد تلقائي للفواتير وبوالص الشحن",
+        "تحليلات وإحصائيات بيع متقدمة",
+        "إدارة نقاط الولاء وقسائم الخصم",
+        "لوحة تحكم بالحملات والعروض الترويجية"
+      ]
+    },
+    "impact": [
+      {
+        "number": "80%",
+        "label": {
+          "en": "Manual Work Saved",
+          "ar": "توفير في الجهد اليدوي"
+        }
+      },
+      {
+        "number": "40%",
+        "label": {
+          "en": "Sales Increase",
+          "ar": "زيادة في المبيعات"
+        }
+      },
+      {
+        "number": "5000+",
+        "label": {
+          "en": "Happy Customers",
+          "ar": "عميل راضٍ"
+        }
+      }
+    ]
+  },
+  {
+    "id": "stock-management",
+    "badge": {
+      "en": "Stock Management System",
+      "ar": "نظام إدارة المخزون"
+    },
+    "title": {
+      "en": "Stock Management System",
+      "ar": "نظام إدارة المخزون والأصول"
+    },
+    "description": {
+      "en": "Custom stock management system with real-time analytics and automated reporting, improving inventory accuracy by 99% and reducing stockouts by 50%.",
+      "ar": "نظام إدارة مخزون مخصص مع تحليلات في الوقت الحقيقي والتقارير الآلية، مما يحسن دقة المخزون بنسبة 99% ويقلل من اكتظال المخازن بنسبة 50%."
+    },
+    "heroSummary": {
+      "en": "A real-time enterprise inventory platform designed for multi-branch gear tracking, automated audits, and predictive restocking.",
+      "ar": "منصة مؤسسية سحابية لإدارة وتتبع المعدات والأصول والمخزون في الوقت الحقيقي بدقة 99%."
+    },
+    "year": "2024",
+    "techStackSummary": "Next.js, React, Tailwind, Node",
+    "metric": {
+      "en": "10k+ Tracked Items",
+      "ar": "10k+ صنف ومعدّة"
+    },
+    "image": "assets/imgs/projects/homepage.png",
+    "images": [
+      "assets/imgs/projects/homepage.png",
+      "assets/imgs/projects/brand_portfolio.png"
+    ],
+    "alt": {
+      "en": "Stock Management System",
+      "ar": "نظام إدارة المخزون"
+    },
+    "liveUrl": "https://camera-inventory-front.vercel.app",
+    "detailsUrl": "projects/detail.html?id=stock-management",
+    "challenge": {
+      "en": "Warehouses and rental businesses faced frequent stockouts, lost inventory, and inefficient tracking across multiple storage locations.",
+      "ar": "واجهت الشركة صعوبة في تتبع المعدات والمخزون، مع أخطاء مستمرة في الجرد ونقص مفاجئ في القطع الحيوية عبر عدة فروع."
+    },
+    "solution": {
+      "en": "Built a real-time stock management system with barcode/QR tracking, automated low-stock reordering alerts, audit logs, and predictive stock analytics.",
+      "ar": "تم بناء نظام سحابي لإدارة المخزون يدعم الباركود والـ QR Code، مع تنبيهات آلية عند وصول المخزون للحد الأدنى، وسجل تدقيق شامل."
+    },
+    "result": {
+      "en": "Improved inventory accuracy to 99% and reduced costly stockouts by 50%.",
+      "ar": "رفع دقة جرد المخزون إلى 99% وخفض نفاد المخزون بنسبة 50%."
+    },
+    "techStack": [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL"
+    ],
+    "features": {
+      "en": [
+        "Real-time barcode/QR asset tracking",
+        "Multi-warehouse location management",
+        "Low stock alerts & auto-reorder triggers",
+        "Comprehensive audit trails & reports",
+        "Equipment check-in and check-out tracking",
+        "Maintenance and service scheduling"
+      ],
+      "ar": [
+        "تتبع فوري للأصول باستخدام الباركود و QR",
+        "إدارة مستودعات وفروع متعددة",
+        "تنبيهات فورية عند انخفاض المخزون",
+        "تقارير جرد ومراجعة تفصيلية",
+        "تسجيل استعارة وإرجاع المعدات",
+        "جدولة الصيانة الدورية للأجهزة"
+      ]
+    },
+    "impact": [
+      {
+        "number": "99%",
+        "label": {
+          "en": "Inventory Accuracy",
+          "ar": "دقة جرد المخزون"
+        }
+      },
+      {
+        "number": "50%",
+        "label": {
+          "en": "Stockouts Reduced",
+          "ar": "تقليل نسبة النقص المفاجئ"
+        }
+      },
+      {
+        "number": "10k+",
+        "label": {
+          "en": "Tracked Items",
+          "ar": "قطعة مدارة بالنظام"
+        }
+      }
+    ]
+  }
+];

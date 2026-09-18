@@ -8,6 +8,7 @@
     
     <!-- Design System -->
     <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
     
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -21,11 +22,12 @@
                 Ahmed Gamal
             </div>
             <div class="nav-links" id="navLinks">
-                <a href="#services">What I Do</a>
-                <a href="#case-studies">Real Results</a>
-                <a href="#process">How We Scale</a>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#why-us">Why Us</a>
+                <a href="#projects">Projects</a>
                 <a href="ar/index.html" class="lang-switch">AR</a>
-                <a href="#contact" class="btn btn-primary">Start Growing</a>
+                <a href="#contact" class="btn btn-primary">Contact Us</a>
             </div>
             
         </div>
@@ -34,7 +36,7 @@
     
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-decoration hero-dec-1"></div>
         <div class="hero-decoration hero-dec-2"></div>
@@ -42,7 +44,7 @@
         <div class="container">
             <div class="reveal hero-content">
                 <div class="hero-badge">
-                    <i data-lucide="zap" size="16"></i>
+                    <i data-lucide="shield-check" size="16"></i>
                     <span>Trusted by 50+ Businesses</span>
                 </div>
                 
@@ -82,28 +84,45 @@
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
                         Unlike traditional developers who focus on aesthetics alone, I prioritize **business logic, security, and scalability.** My goal is to ensure that your digital infrastructure is an asset that generates revenue, not a liability that requires constant maintenance.
                     </p>
-                    <div style="display: flex; gap: 2rem; align-items: center;">
-                        <div style="width: 60px; height: 60px; background: var(--accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent); font-size: 1.2rem;">AG</div>
-                        <div>
-                            <strong style="display: block; font-size: 1.1rem;">Ahmed Gamal</strong>
-                            <span style="color: var(--text-muted); font-size: 0.9rem;">Lead Systems Architect</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="reveal stats-grid">
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="award" size="20"></i>
+                            </div>
+                            <span class="stats-chip">Proven</span>
+                        </div>
                         <div class="stats-number">5+</div>
                         <div class="stats-label">Years Experience</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="layers" size="20"></i>
+                            </div>
+                            <span class="stats-chip">Delivered</span>
+                        </div>
                         <div class="stats-number">50+</div>
                         <div class="stats-label">Projects Delivered</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="check-circle-2" size="20"></i>
+                            </div>
+                            <span class="stats-chip">Reliable</span>
+                        </div>
                         <div class="stats-number">100%</div>
                         <div class="stats-label">On-Time Launch</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="globe" size="20"></i>
+                            </div>
+                            <span class="stats-chip">Global</span>
+                        </div>
                         <div class="stats-number">5+</div>
                         <div class="stats-label">Countries Served</div>
                     </div>
@@ -117,191 +136,150 @@
         <div class="container">
             <h2 class="section-title">Business Solutions Engineered for Growth</h2>
             <p class="section-subtitle">I don't just write code; I build the digital infrastructure that powers your business success.</p>
-            
-            <div class="grid-auto" style="gap: 2rem;">
-                <div class="card reveal">
-                    <i data-lucide="graduation-cap" style="color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>E-Learning & LMS Ecosystems</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Scalable, secure platforms designed for schools and independent teachers to deliver content and manage thousands of students effortlessly.</p>
+
+            <div class="service-cards-grid">
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="graduation-cap" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">E-Learning & LMS Ecosystems</h3>
+                        <p class="service-card-desc">Scalable, secure platforms designed for schools and independent teachers to deliver content and manage thousands of students effortlessly.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta">Contact Us <i data-lucide="arrow-right" size="14"></i></a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="video" style="color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Live Academy Infrastructure</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Fully integrated tools for live teaching, automated scheduling, and real-time student engagement—built for modern educational brands.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="video" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">Live Academy Infrastructure</h3>
+                        <p class="service-card-desc">Fully integrated tools for live teaching, automated scheduling, and real-time student engagement—built for modern educational brands.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta">Contact Us <i data-lucide="arrow-right" size="14"></i></a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="shopping-cart" style="color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Marketplace & E-Commerce</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">From single-brand flagship stores to complex multi-vendor marketplaces with automated payouts and vendor management.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="shopping-cart" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">Marketplace & E-Commerce</h3>
+                        <p class="service-card-desc">From single-brand flagship stores to complex multi-vendor marketplaces with automated payouts and vendor management.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta">Contact Us <i data-lucide="arrow-right" size="14"></i></a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="layout" style="color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Premium Brand Portfolios</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">High-converting personal brands and corporate profile websites designed to turn visitors into long-term clients.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="layout" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">Premium Brand Portfolios</h3>
+                        <p class="service-card-desc">High-converting personal brands and corporate profile websites designed to turn visitors into long-term clients.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta">Contact Us <i data-lucide="arrow-right" size="14"></i></a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="users" style="color: var(--accent); margin-bottom: 1rem;"></i>
-                    <h3>Multi-Role Business Portals</h3>
-                    <p style="color: var(--text-muted); margin-top: 0.5rem;">Complex, multi-layered systems where admins, service providers, and customers interact through a unified, high-performance backend.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="users" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">Multi-Role Business Portals</h3>
+                        <p class="service-card-desc">Complex, multi-layered systems where admins, service providers, and customers interact through a unified, high-performance backend.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta">Contact Us <i data-lucide="arrow-right" size="14"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies">
+    <!-- Projects Section -->
+    <section id="projects">
+        <span id="case-studies" style="position: absolute; margin-top: -100px;"></span>
         <div class="container">
             <h2 class="section-title">Proven Results</h2>
             <p class="section-subtitle">Real problems solved with robust engineering. Click to view project details.</p>
             
-            <div class="projects-grid">
-                <!-- Project 1: Qaf LMS -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp" alt="Qaf LMS">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">LMS ECOSYSTEM</span>
-                        <h3 class="project-title">Qaf LMS (Multi Vendor)</h3>
-                        <p class="project-description">Multi-vendor learning platform allowing independent teachers to manage courses, students, and payments from individual dashboards.</p>
-                        <div class="project-buttons">
-                            <a href="https://ivory-oryx-959875.hostingersite.com" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/qaf-lms.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Zain Physics LMS -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/zain-physics.webp" alt="Zain Physics LMS">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">LMS ECOSYSTEM</span>
-                        <h3 class="project-title">Zain Physics LMS</h3>
-                        <p class="project-description">Comprehensive mobile learning platform for physics students to explore content, take quizzes, and track progress with 99.9% uptime.</p>
-                        <div class="project-buttons">
-                            <a href="https://zain-physics.online" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/zain-physics-lms.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 3: Online Store -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/image.webp" alt="Multi-Vendor Marketplace">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">E-COMMERCE</span>
-                        <h3 class="project-title">Clothe E-commerce</h3>
-                        <p class="project-description">Automated reconciliation system for multi-provider payments with intelligent split-payment handling, saving 60 hours monthly.</p>
-                        <div class="project-buttons">
-                            <a href="https://store.ahmedgamal.org/ar" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/multivendor.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Multi-Vendor Marketplace -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/mult-_vendor.webp" alt="Multi-Vendor Marketplace">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">MARKETPLACE & E-COMMERCE</span>
-                        <h3 class="project-title">Multi-Vendor Marketplace</h3>
-                        <p class="project-description">Automated reconciliation system for multi-provider payments with intelligent split-payment handling, saving 60 hours monthly.</p>
-                        <div class="project-buttons">
-                            <a href="https://multivendor.ahmedgamal.org/public" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/multi-vendor-marketplace.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Global Live Sessions Portal -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/tameez.webp" alt="Global Live Sessions Portal">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">LIVE INFRASTRUCTURE</span>
-                        <h3 class="project-title">Global Live Sessions Portal</h3>
-                        <p class="project-description">Real-time streaming platform with automated scheduling engine for 1000+ global students, increasing engagement by 95%.</p>
-                        <div class="project-buttons">
-                            <a href="https://lms-quarn.vercel.app/en" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/live-sessions.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Multi-Role Service Platform -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/weaver.webp" alt="Multi-Role Service Platform">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">BUSINESS E-commerce</span>
-                        <h3 class="project-title">Single Vendor E-commerce</h3>
-                        <p class="project-description">
-                            Single vendor e-commerce platform with custom CMS and inventory management, reducing manual updates by 80% and increasing sales by 40%.
-                        </p>
-                        <div class="project-buttons">
-                            <a href="https://weaver-woad.vercel.app" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/service-platform.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7: Executive Portfolio Suite -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="assets/imgs/projects/homepage.png" alt="Executive Portfolio Suite">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">Stock Management System</span>
-                        <h3 class="project-title">Stock Management System</h3>
-                        <p class="project-description">
-                            Custom stock management system with real-time analytics and automated reporting, improving inventory accuracy by 99% and reducing stockouts by 50%.
-                        </p>
-                        <div class="project-buttons">
-                            <a href="https://camera-inventory-front.vercel.app" class="btn btn-primary">Live Preview</a>
-                            <a href="projects/portfolio-suite.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
+            <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be dynamically rendered from projects.json -->
             </div>
         </div>
     </section>
 
     <!-- Why Choose Me -->
-    <section class="bg-alt">
+    <section id="why-us" class="why-section">
         <div class="container">
             <div class="why-me-grid">
-                <div class="reveal">
-                    <h2 style="text-align: left; margin-bottom: 1rem;">Why Business Owners Choose Me</h2>
-                    <p style="color: var(--text-muted);">I bridge the gap between complex engineering and business profitability.</p>
+                <div class="why-left reveal">
+                    <span class="why-eyebrow">VALUE PROPOSITION</span>
+                    <h2 class="why-title">Why Business Owners Choose Me</h2>
+                    <p class="why-desc">I bridge the gap between complex engineering and business profitability. Every system is built to eliminate bottlenecks, protect revenue, and scale seamlessly.</p>
+                    
+                    <div class="why-highlights">
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>Senior Backend & System Architecture Specialist</span>
+                        </div>
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>Enterprise Clean Architecture & Zero Tech Debt</span>
+                        </div>
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>Direct Communication & 100% On-Time Delivery</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="reveal why-me-list">
-                    <div style="display: flex; gap: 1rem;">
-                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="check" size="18"></i></div>
-                        <div>
-                            <h4>Engineered for Growth</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Systems that grow as your customer base grows, without performance bottlenecks.</p>
+
+                <div class="why-cards-stack reveal">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="trending-up" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">Engineered for Growth & Scale</h4>
+                                <span class="why-card-tag">High Concurrency</span>
+                            </div>
+                            <p class="why-card-desc">High-performance backends and database architectures designed to handle traffic spikes from 100 to 100,000+ active users without latency or system downtime.</p>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 1rem;">
-                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="shield" size="18"></i></div>
-                        <div>
-                            <h4>Future-Proof Design</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">Highly reliable systems that evolve with your business needs.</p>
+
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="shield-check" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">Future-Proof & Bulletproof Reliability</h4>
+                                <span class="why-card-tag">Zero Bottlenecks</span>
+                            </div>
+                            <p class="why-card-desc">Strict adherence to Clean Architecture, distributed locking to prevent race conditions, and rock-solid validation to protect your transactions and business data.</p>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 1rem;">
-                        <div style="background: var(--accent); color: white; min-width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;"><i data-lucide="clock" size="18"></i></div>
-                        <div>
-                            <h4>Reliable Delivery</h4>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">I respect your business deadlines. On-time delivery with transparent progress.</p>
+
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="clock-4" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">On-Time Delivery & Transparency</h4>
+                                <span class="why-card-tag">100% On Schedule</span>
+                            </div>
+                            <p class="why-card-desc">No surprises or missed deadlines. Clear milestones, transparent progress updates, and a steadfast commitment to your commercial launch goals.</p>
                         </div>
                     </div>
                 </div>
@@ -311,90 +289,162 @@
 
     <!-- Process Section -->
     <section id="process">
-        <div class="container">
+        <div class="process-header reveal">
+            <span class="process-eyebrow">HOW IT WORKS</span>
             <h2 class="section-title">The Path to Success</h2>
-            <div class="process-grid">
-                <div class="reveal process-step">
-                    <div class="process-number">01</div>
-                    <h4 style="position: relative;">Discovery</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">We start with your business goals, not technical specs.</p>
+            <p class="section-subtitle">A clear, transparent process that turns your vision into a working product — on time and on budget.</p>
+        </div>
+
+        <div class="process-timeline">
+            <!-- connecting line -->
+            <div class="process-line"></div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="search" size="22" stroke-width="1.75"></i>
                 </div>
-                <div class="reveal process-step">
-                    <div class="process-number">02</div>
-                    <h4 style="position: relative;">Planning</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">A clear blueprint of how the tech will solve your problem.</p>
-                </div>
-                <div class="reveal process-step">
-                    <div class="process-number">03</div>
-                    <h4 style="position: relative;">Execution</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Transparent development with regular milestone updates.</p>
-                </div>
-                <div class="reveal process-step">
-                    <div class="process-number">04</div>
-                    <h4 style="position: relative;">Launch</h4>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 1rem;">Smooth deployment and ongoing reliability support.</p>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">Discovery</h4>
+                    <p class="process-step-desc">We start with your business goals, not technical specs.</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Testimonials -->
-    <section class="bg-alt">
-        <div class="container">
-            <div style="max-width: 800px; margin: 0 auto; text-align: center;" class="reveal">
-                <i data-lucide="quote" style="color: var(--accent); margin-bottom: 2rem;" size="48"></i>
-                <p style="font-size: 1.5rem; font-style: italic; color: var(--primary); font-weight: 500;">
-                    "Ahmed didn't just write code; he understood our business bottleneck and fixed it. Our operations are now 2x faster, and we can finally scale without fear."
-                </p>
-                <div style="margin-top: 2rem;">
-                    <strong>Sarah Jenkins</strong>
-                    <p style="color: var(--text-muted); font-size: 0.9rem;">Operations Director, Global Logistics</p>
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="layout-list" size="22" stroke-width="1.75"></i>
+                </div>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">Planning</h4>
+                    <p class="process-step-desc">A clear blueprint of how the tech will solve your problem.</p>
+                </div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="code-2" size="22" stroke-width="1.75"></i>
+                </div>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">Execution</h4>
+                    <p class="process-step-desc">Transparent development with regular milestone updates.</p>
+                </div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="rocket" size="22" stroke-width="1.75"></i>
+                </div>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">Launch</h4>
+                    <p class="process-step-desc">Smooth deployment and ongoing reliability support.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container contact-container">
-            <div class="reveal" style="text-align: center;">
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-header reveal">
+                <span class="contact-eyebrow">GET IN TOUCH</span>
                 <h2 class="section-title">Ready to Automate Your Business?</h2>
                 <p class="section-subtitle">Let's discuss how a custom digital system can save you time and increase your profits.</p>
             </div>
             
-            <form id="contact-form" class="reveal contact-card">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+            <div class="contact-grid">
+                <!-- First Column: Contact Info & Map -->
+                <div class="contact-info-col reveal">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Let's Connect Directly</h3>
+                        <p class="contact-info-desc">Have a project in mind or need technical consultancy? Reach out directly or send an inquiry.</p>
+
+                        <div class="contact-items-list">
+                            <!-- Tel / Phone -->
+                            <a href="tel:+201091536978" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="phone" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Phone / WhatsApp</span>
+                                    <span class="contact-item-val">+20 109 153 6978</span>
+                                </div>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:ahmedgamal1254@gmail.com" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="mail" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Email Address</span>
+                                    <span class="contact-item-val">ahmedgamal1254@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <!-- Address -->
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="map-pin" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">Location / Address</span>
+                                    <span class="contact-item-val">Cairo, Egypt • Available Worldwide (Remote)</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+
+                    <!-- Map -->
+                    <div class="contact-map-card">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.6118504068!2d31.188423456885668!3d30.059611343394807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg" 
+                            width="100%" 
+                            height="230" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Cairo, Egypt Location Map">
+                        </iframe>
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="project-type">Project Type</label>
-                    <select id="project-type" class="form-control" required>
-                        <option value="" disabled selected>Select a service...</option>
-                        <option value="LMS Ecosystem">E-Learning & LMS Ecosystem</option>
-                        <option value="Live Academy">Live Academy Infrastructure</option>
-                        <option value="Marketplace">Marketplace & E-Commerce</option>
-                        <option value="Portfolio">Premium Brand Portfolio</option>
-                        <option value="Business Portal">Multi-Role Business Portal</option>
-                    </select>
+
+                <!-- Second Column: Form -->
+                <div class="contact-form-col reveal">
+                    <form id="contact-form" class="contact-card">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="project-type">Project Type</label>
+                            <select id="project-type" class="form-control" required>
+                                <option value="" disabled selected>Select a service...</option>
+                                <option value="LMS Ecosystem">E-Learning & LMS Ecosystem</option>
+                                <option value="Live Academy">Live Academy Infrastructure</option>
+                                <option value="Marketplace">Marketplace & E-Commerce</option>
+                                <option value="Portfolio">Premium Brand Portfolio</option>
+                                <option value="Business Portal">Multi-Role Business Portal</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="goals">Your Business Goals</label>
+                            <textarea id="goals" class="form-control" placeholder="Tell me what you'd like to achieve (e.g., automate student enrollment, build a vendor marketplace...)" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-contact-submit">
+                            Contact Us <i data-lucide="message-circle" size="16"></i>
+                        </button>
+                    </form>
                 </div>
-                
-                <div class="form-group">
-                    <label for="goals">Your Business Goals</label>
-                    <textarea id="goals" class="form-control" placeholder="Tell me what you'd like to achieve (e.g., automate student enrollment, build a vendor marketplace...)" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
-                    Send Request & Open WhatsApp <i data-lucide="message-circle" size="20"></i>
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -469,6 +519,8 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@0.418.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="assets/js/projects-data.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
         lucide.createIcons();

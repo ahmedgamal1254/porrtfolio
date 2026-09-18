@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="pageTitle">Project Details | Ahmed Gamal Portfolio</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <script src="https://unpkg.com/lucide@0.418.0"></script>
+    <style>
+        /* Modern Slider Styles */
+        .project-slider-wrapper {
+            margin: 3.5rem 0 2rem;
+            position: relative;
+        }
+
+        .project-slider {
+            position: relative;
+            width: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+            background: #0f172a;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(226, 232, 240, 0.8);
+            user-select: none;
+        }
+
+        .slider-viewport {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            max-height: 600px;
+            min-height: 300px;
+            overflow: hidden;
+            background: #090d16;
+            display: flex;
+            align-items: center;
+        }
+
+        .slider-track {
+            display: flex;
+            width: 100%;
+            height: 100%;
+            transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+            will-change: transform;
+        }
+
+        .slider-slide {
+            min-width: 100%;
+            width: 100%;
+            height: 100%;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0b0f19;
+            position: relative;
+        }
+
+        .slider-slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            z-index: 10;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        .slider-btn:hover {
+            background: var(--accent);
+            color: #ffffff;
+            transform: translateY(-50%) scale(1.1);
+            border-color: var(--accent);
+        }
+
+        .slider-btn:active {
+            transform: translateY(-50%) scale(0.95);
+        }
+
+        .slider-btn-prev {
+            left: 1.25rem;
+        }
+
+        .slider-btn-next {
+            right: 1.25rem;
+        }
+
+        html[dir="rtl"] .slider-btn-prev {
+            left: auto;
+            right: 1.25rem;
+        }
+
+        html[dir="rtl"] .slider-btn-next {
+            right: auto;
+            left: 1.25rem;
+        }
+
+        .slider-counter {
+            position: absolute;
+            top: 1.25rem;
+            right: 1.25rem;
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(8px);
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            padding: 0.35rem 0.85rem;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            z-index: 10;
+            letter-spacing: 0.05em;
+        }
+
+        html[dir="rtl"] .slider-counter {
+            right: auto;
+            left: 1.25rem;
+        }
+
+        .slider-dots {
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 0.5rem;
+            z-index: 10;
+            padding: 0.4rem 0.8rem;
+            background: rgba(15, 23, 42, 0.65);
+            backdrop-filter: blur(8px);
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        .slider-dot {
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.35);
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+            border: none;
+            padding: 0;
+        }
+
+        .slider-dot.active {
+            width: 26px;
+            border-radius: 12px;
+            background: var(--accent);
+        }
+
+        /* Thumbnails Strip */
+        .slider-thumbs {
+            display: flex;
+            gap: 0.85rem;
+            margin-top: 1rem;
+            overflow-x: auto;
+            padding: 0.5rem 0.2rem;
+            scrollbar-width: thin;
+        }
+
+        .slider-thumb {
+            width: 110px;
+            height: 68px;
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            border: 2px solid transparent;
+            opacity: 0.55;
+            transition: all 0.25s ease;
+            flex-shrink: 0;
+            background: #0f172a;
+        }
+
+        .slider-thumb:hover {
+            opacity: 0.9;
+        }
+
+        .slider-thumb.active {
+            opacity: 1;
+            border-color: var(--accent);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        .slider-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Back Link */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .back-link:hover {
+            color: var(--accent);
+            transform: translateX(-4px);
+        }
+
+        html[dir="rtl"] .back-link:hover {
+            transform: translateX(4px);
+        }
+
+        /* Project Navigation Bottom Bar */
+        .project-bottom-nav {
+            margin-top: 5rem;
+            padding: 2.5rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .project-bottom-nav a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-weight: 600;
+            color: var(--text);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .project-bottom-nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Language Toggle Button */
+        .lang-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+            padding: 0.45rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+        }
+
+        .lang-btn:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* RTL Text Alignment */
+        html[dir="rtl"] .project-hero {
+            text-align: right;
+        }
+
+        html[dir="rtl"] .project-meta {
+            justify-content: flex-start;
+        }
+
+        html[dir="rtl"] .hero-p {
+            text-align: right !important;
+            margin-right: 0 !important;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .slider-viewport {
+                aspect-ratio: 4 / 3;
+            }
+            .slider-btn {
+                width: 40px;
+                height: 40px;
+            }
+            .slider-thumb {
+                width: 80px;
+                height: 52px;
+            }
+            .project-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="scrolled">
+        <div class="container nav-content">
+            <div class="logo"><a href="../index.html" id="logoLink">Ahmed Gamal</a></div>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html#case-studies" id="navProjectsLink">Projects</a>
+                <a href="../index.html#services" id="navServicesLink">Services</a>
+                <button id="langToggleBtn" class="lang-btn" type="button" title="Switch Language">
+                    <i data-lucide="globe" size="16"></i>
+                    <span id="langBtnText">العربية</span>
+                </button>
+                <a href="../index.html#contact" id="navContactBtn" class="btn btn-primary">Contact Us</a>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Hero Header -->
+    <header class="project-hero">
+        <div class="container">
+            <div class="reveal">
+                <a href="../index.html#case-studies" class="back-link" id="heroBackLink">
+                    <i data-lucide="arrow-left" id="backArrowIcon" size="18"></i>
+                    <span id="backLinkText">Back to Projects</span>
+                </a>
+                <br>
+                <span class="project-tag" id="projectTag">LMS ECOSYSTEM</span>
+                <h1 class="text-gradient" id="projectTitle">Loading Project...</h1>
+                <p class="hero-p" id="projectHeroSummary" style="text-align: left; margin-left: 0; margin-top: 1rem;">
+                    Please wait while the project details are loaded.
+                </p>
+                
+                <div class="project-meta">
+                    <span id="metaYearWrapper">
+                        <i data-lucide="calendar" size="18" style="color: var(--accent);"></i>
+                        <span id="projectYear">2025</span>
+                    </span>
+                    <span id="metaTechWrapper">
+                        <i data-lucide="layers" size="18" style="color: var(--accent);"></i>
+                        <span id="projectTechSummary">Laravel, MySQL</span>
+                    </span>
+                    <span id="metaMetricWrapper">
+                        <i data-lucide="users" size="18" style="color: var(--accent);"></i>
+                        <span id="projectMetric">1000+ Users</span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="project-content">
+        <div class="container">
+
+            <!-- Dynamic Image Slider -->
+            <div class="project-slider-wrapper reveal">
+                <div class="project-slider" id="projectSlider">
+                    <div class="slider-viewport" id="sliderViewport">
+                        <div class="slider-track" id="sliderTrack">
+                            <!-- Slides dynamically injected here -->
+                        </div>
+                    </div>
+
+                    <!-- Slide Navigation Arrows (hidden if only 1 image) -->
+                    <button type="button" class="slider-btn slider-btn-prev" id="sliderPrevBtn" aria-label="Previous Slide">
+                        <i data-lucide="chevron-left" id="sliderPrevIcon" size="24"></i>
+                    </button>
+                    <button type="button" class="slider-btn slider-btn-next" id="sliderNextBtn" aria-label="Next Slide">
+                        <i data-lucide="chevron-right" id="sliderNextIcon" size="24"></i>
+                    </button>
+
+                    <!-- Counter Badge -->
+                    <div class="slider-counter" id="sliderCounter">1 / 1</div>
+
+                    <!-- Dots Indicators -->
+                    <div class="slider-dots" id="sliderDots"></div>
+                </div>
+
+                <!-- Thumbnail Strip -->
+                <div class="slider-thumbs" id="sliderThumbs"></div>
+            </div>
+
+            <!-- Challenge / Solution / Result Grid -->
+            <div class="project-grid">
+                <div class="reveal project-detail-card">
+                    <h3 id="challengeTitle"><i data-lucide="target" style="color: #e63946;"></i> The Challenge</h3>
+                    <p style="color: var(--text-muted);" id="projectChallenge">
+                        Loading challenge...
+                    </p>
+                </div>
+                <div class="reveal project-detail-card">
+                    <h3 id="solutionTitle"><i data-lucide="code" style="color: var(--accent);"></i> The Solution</h3>
+                    <p style="color: var(--text-muted);" id="projectSolution">
+                        Loading solution...
+                    </p>
+                </div>
+                <div class="reveal project-detail-card">
+                    <h3 id="resultTitle"><i data-lucide="trending-up" style="color: #2a9d8f;"></i> The Result</h3>
+                    <p style="color: var(--text); font-weight: 700; font-size: clamp(1.1rem, 3vw, 1.3rem);" id="projectResult">
+                        Loading result...
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tech Stack and Key Features Grid -->
+            <div class="grid-auto" style="margin-top: 5rem; align-items: start;">
+                <div class="reveal">
+                    <h2 style="margin-bottom: 1.5rem;" id="techStackHeading">Tech Stack</h2>
+                    <div class="tag-list" id="techStackTags">
+                        <!-- Dynamically filled -->
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h2 style="margin-bottom: 1.5rem;" id="featuresHeading">Key Features</h2>
+                    <ul style="list-style: none; display: grid; gap: 1rem;" id="featuresList">
+                        <!-- Dynamically filled -->
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Business Impact Section -->
+            <div style="margin-top: 5rem; padding: 3rem; background: var(--bg-alt); border-radius: var(--radius); border: 1px solid var(--border);" class="reveal">
+                <h2 style="margin-bottom: 2rem;" id="impactHeading">Business Impact</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;" id="impactGrid">
+                    <!-- Dynamically filled -->
+                </div>
+            </div>
+
+            <!-- Bottom Call to Action -->
+            <div class="reveal cta-box" style="margin-top: 5rem;">
+                <h2 style="margin-bottom: 1.5rem;" id="ctaHeading">Experience the Live Solution</h2>
+                <p style="color: var(--text-muted); margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto;" id="ctaSubheading">
+                    See this system in action or discuss how a similar solution can be tailored for your business.
+                </p>
+                <div class="btn-group">
+                    <a href="#" id="livePreviewBtn" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                        <span id="liveBtnText">Visit Live Website</span> <i data-lucide="external-link" size="18"></i>
+                    </a>
+                    <a href="../index.html#contact" id="consultationBtn" class="btn btn-secondary">
+                        <span id="consultationBtnText">Book a Consultation</span> <i data-lucide="calendar" size="18"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Previous / Next Project Navigator -->
+            <div class="project-bottom-nav reveal" id="projectNavBottom">
+                <a href="#" id="prevProjectLink">
+                    <i data-lucide="arrow-left" id="prevNavIcon"></i>
+                    <span id="prevProjectText">Previous Project</span>
+                </a>
+                <a href="../index.html#case-studies" id="allProjectsCenterLink" class="btn btn-secondary" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">
+                    <i data-lucide="grid-3x3" size="16"></i> <span id="allProjectsText">All Projects</span>
+                </a>
+                <a href="#" id="nextProjectLink">
+                    <span id="nextProjectText">Next Project</span>
+                    <i data-lucide="arrow-right" id="nextNavIcon"></i>
+                </a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background: var(--primary); color: white; padding: 3.5rem 0; text-align: center; margin-top: 7rem;">
+        <div class="container">
+            <p id="footerCopy">&copy; 2026 Ahmed Gamal. All rights reserved.</p>
+            <a href="../index.html#contact" id="footerCta" class="btn btn-primary" style="margin-top: 1.2rem;">Start Your Project</a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Action Button -->
+    <a href="https://wa.me/201091536978" class="whatsapp-float" target="_blank" rel="noopener noreferrer" title="Chat with me on WhatsApp">
+        <i data-lucide="message-circle" size="32"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/js/projects-data.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            // URL and Language Detection
+            const urlParams = new URLSearchParams(window.location.search);
+            const projectId = urlParams.get('id');
+            
+            // Detect language from URL param, localStorage, or referrer
+            let currentLang = urlParams.get('lang') || 
+                              localStorage.getItem('portfolio_lang') || 
+                              (document.referrer && document.referrer.includes('/ar/') ? 'ar' : 'en');
+
+            // Set up page language and direction
+            const applyLanguageDirection = (lang) => {
+                currentLang = lang;
+                localStorage.setItem('portfolio_lang', lang);
+                document.documentElement.lang = lang;
+                document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+
+                // Update static UI elements
+                const isAr = (lang === 'ar');
+                document.getElementById('langBtnText').textContent = isAr ? 'English' : 'العربية';
+                document.getElementById('logoLink').href = isAr ? '../ar/index.html' : '../index.html';
+                document.getElementById('navProjectsLink').href = isAr ? '../ar/index.html#case-studies' : '../index.html#case-studies';
+                document.getElementById('navProjectsLink').textContent = isAr ? 'المشاريع' : 'Projects';
+                document.getElementById('navServicesLink').href = isAr ? '../ar/index.html#services' : '../index.html#services';
+                document.getElementById('navServicesLink').textContent = isAr ? 'الخدمات' : 'Services';
+                document.getElementById('navContactBtn').href = isAr ? '../ar/index.html#contact' : '../index.html#contact';
+                document.getElementById('navContactBtn').textContent = isAr ? 'تواصل معي' : 'Contact Us';
+
+                document.getElementById('heroBackLink').href = isAr ? '../ar/index.html#case-studies' : '../index.html#case-studies';
+                document.getElementById('backLinkText').textContent = isAr ? 'العودة للمشاريع' : 'Back to Projects';
+                document.getElementById('allProjectsCenterLink').href = isAr ? '../ar/index.html#case-studies' : '../index.html#case-studies';
+                document.getElementById('allProjectsText').textContent = isAr ? 'كافة المشاريع' : 'All Projects';
+
+                // Change back button arrow icon direction in RTL
+                const backIcon = document.getElementById('backArrowIcon');
+                if (backIcon) {
+                    backIcon.setAttribute('data-lucide', isAr ? 'arrow-right' : 'arrow-left');
+                }
+
+                // Section headings
+                document.getElementById('challengeTitle').innerHTML = `<i data-lucide="target" style="color: #e63946;"></i> ${isAr ? 'التحدي' : 'The Challenge'}`;
+                document.getElementById('solutionTitle').innerHTML = `<i data-lucide="code" style="color: var(--accent);"></i> ${isAr ? 'الحل الهندسي' : 'The Solution'}`;
+                document.getElementById('resultTitle').innerHTML = `<i data-lucide="trending-up" style="color: #2a9d8f;"></i> ${isAr ? 'النتائج المحققة' : 'The Result'}`;
+                document.getElementById('techStackHeading').textContent = isAr ? 'التقنيات المستخدمة' : 'Tech Stack';
+                document.getElementById('featuresHeading').textContent = isAr ? 'المميزات الرئيسية' : 'Key Features';
+                document.getElementById('impactHeading').textContent = isAr ? 'الأثر على الأعمال' : 'Business Impact';
+                document.getElementById('ctaHeading').textContent = isAr ? 'شاهد المشروع على أرض الواقع' : 'Experience the Live Solution';
+                document.getElementById('ctaSubheading').textContent = isAr ? 'تصفح النظام أو تواصل معي لبناء حل تقني يلبي متطلبات عملك بدقة.' : 'See this system in action or discuss how a similar solution can be tailored for your business.';
+                document.getElementById('liveBtnText').textContent = isAr ? 'معاينة الموقع مباشرة' : 'Visit Live Website';
+                document.getElementById('consultationBtn').href = isAr ? '../ar/index.html#contact' : '../index.html#contact';
+                document.getElementById('consultationBtnText').textContent = isAr ? 'طلب استشارة مجانية' : 'Book a Consultation';
+                document.getElementById('prevProjectText').textContent = isAr ? 'المشروع السابق' : 'Previous Project';
+                document.getElementById('nextProjectText').textContent = isAr ? 'المشروع التالي' : 'Next Project';
+                document.getElementById('footerCopy').textContent = isAr ? '© 2026 أحمد جمال. جميع الحقوق محفوظة.' : '© 2026 Ahmed Gamal. All rights reserved.';
+                document.getElementById('footerCta').href = isAr ? '../ar/index.html#contact' : '../index.html#contact';
+                document.getElementById('footerCta').textContent = isAr ? 'ابدأ مشروعك الآن' : 'Start Your Project';
+
+                // Fix RTL arrow icons for prev/next
+                const prevNavIcon = document.getElementById('prevNavIcon');
+                const nextNavIcon = document.getElementById('nextNavIcon');
+                if (prevNavIcon && nextNavIcon) {
+                    prevNavIcon.setAttribute('data-lucide', isAr ? 'arrow-right' : 'arrow-left');
+                    nextNavIcon.setAttribute('data-lucide', isAr ? 'arrow-left' : 'arrow-right');
+                }
+            };
+
+            // Toggle language click event
+            document.getElementById('langToggleBtn').addEventListener('click', () => {
+                const newLang = (currentLang === 'ar') ? 'en' : 'ar';
+                applyLanguageDirection(newLang);
+                if (allProjects.length > 0 && currentProject) {
+                    renderProjectDetails(currentProject);
+                }
+            });
+
+            // Localized value helper
+            const getLocalized = (val) => {
+                if (!val) return '';
+                if (typeof val === 'object') {
+                    return val[currentLang] || val['en'] || val['ar'] || Object.values(val)[0] || '';
+                }
+                return val;
+            };
+
+            // Path resolver: ensures paths starting with assets/ become ../assets/
+            const resolveAssetPath = (path) => {
+                if (!path) return '';
+                if (path.startsWith('http://') || path.startsWith('https://') || path.startsWith('//')) {
+                    return path;
+                }
+                if (!path.startsWith('../') && !path.startsWith('/')) {
+                    return '../' + path;
+                }
+                return path;
+            };
+
+            // Load Projects Data
+            let allProjects = [];
+            try {
+                const res = await fetch('../projects.json');
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                allProjects = await res.json();
+            } catch (err) {
+                if (window.PORTFOLIO_PROJECTS && Array.isArray(window.PORTFOLIO_PROJECTS)) {
+                    allProjects = window.PORTFOLIO_PROJECTS;
+                } else {
+                    console.error('Failed to load projects data:', err);
+                    document.getElementById('projectTitle').textContent = 'Project Not Found';
+                    return;
+                }
+            }
+
+            // Find requested project or default to first
+            let currentIndex = allProjects.findIndex(p => p.id === projectId);
+            if (currentIndex === -1) {
+                currentIndex = 0;
+            }
+            let currentProject = allProjects[currentIndex];
+
+            // Initialize Language
+            applyLanguageDirection(currentLang);
+
+            // Render project details
+            const renderProjectDetails = (project) => {
+                const title = getLocalized(project.title);
+                const badge = getLocalized(project.badge);
+                const heroSummary = getLocalized(project.heroSummary) || getLocalized(project.description);
+                const challenge = getLocalized(project.challenge) || getLocalized(project.description);
+                const solution = getLocalized(project.solution) || '';
+                const result = getLocalized(project.result) || '';
+                const year = project.year || '2025';
+                const techSummary = project.techStackSummary || (Array.isArray(project.techStack) ? project.techStack.slice(0, 3).join(', ') : 'Laravel, MySQL');
+                const metric = getLocalized(project.metric) || '1000+ Users';
+                const liveUrl = project.liveUrl || '';
+
+                // Title & Hero
+                document.title = `${title} | Ahmed Gamal`;
+                document.getElementById('projectTitle').textContent = title;
+                document.getElementById('projectTag').textContent = badge;
+                document.getElementById('projectHeroSummary').textContent = heroSummary;
+                document.getElementById('projectYear').textContent = year;
+                document.getElementById('projectTechSummary').textContent = techSummary;
+                document.getElementById('projectMetric').textContent = metric;
+
+                // Challenge / Solution / Result
+                document.getElementById('projectChallenge').textContent = challenge;
+                document.getElementById('projectSolution').textContent = solution;
+                document.getElementById('projectResult').textContent = result;
+
+                // Live Preview Button
+                const liveBtn = document.getElementById('livePreviewBtn');
+                if (liveUrl) {
+                    liveBtn.href = liveUrl;
+                    liveBtn.style.display = 'inline-flex';
+                } else {
+                    liveBtn.style.display = 'none';
+                }
+
+                // Tech Stack Tags
+                const tagsContainer = document.getElementById('techStackTags');
+                tagsContainer.innerHTML = '';
+                const stack = Array.isArray(project.techStack) ? project.techStack : ['Laravel', 'MySQL'];
+                stack.forEach(tech => {
+                    const span = document.createElement('span');
+                    span.className = 'tag';
+                    span.textContent = tech;
+                    tagsContainer.appendChild(span);
+                });
+
+                // Key Features List
+                const featuresList = document.getElementById('featuresList');
+                featuresList.innerHTML = '';
+                const features = (project.features && Array.isArray(project.features[currentLang]))
+                    ? project.features[currentLang]
+                    : (Array.isArray(project.features) ? project.features : []);
+                
+                features.forEach(feat => {
+                    const li = document.createElement('li');
+                    li.style.display = 'flex';
+                    li.style.gap = '0.8rem';
+                    li.style.color = 'var(--text-muted)';
+                    li.innerHTML = `<i data-lucide="check-circle" size="20" style="color: var(--accent); flex-shrink: 0; margin-top: 2px;"></i> <span>${feat}</span>`;
+                    featuresList.appendChild(li);
+                });
+
+                // Business Impact
+                const impactGrid = document.getElementById('impactGrid');
+                impactGrid.innerHTML = '';
+                const impactItems = Array.isArray(project.impact) ? project.impact : [];
+                impactItems.forEach(item => {
+                    const div = document.createElement('div');
+                    const label = getLocalized(item.label);
+                    div.innerHTML = `
+                        <div style="font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1.2;">${item.number}</div>
+                        <p style="color: var(--text-muted); margin-top: 0.4rem;">${label}</p>
+                    `;
+                    impactGrid.appendChild(div);
+                });
+
+                // Bottom Prev/Next Links
+                const prevIndex = (currentIndex - 1 + allProjects.length) % allProjects.length;
+                const nextIndex = (currentIndex + 1) % allProjects.length;
+                const prevProj = allProjects[prevIndex];
+                const nextProj = allProjects[nextIndex];
+
+                document.getElementById('prevProjectLink').href = `detail.html?id=${prevProj.id}&lang=${currentLang}`;
+                document.getElementById('nextProjectLink').href = `detail.html?id=${nextProj.id}&lang=${currentLang}`;
+
+                // Render Image Slider
+                setupImageSlider(project);
+
+                // Refresh Icons
+                if (window.lucide && typeof window.lucide.createIcons === 'function') {
+                    window.lucide.createIcons();
+                }
+            };
+
+            // Image Slider Implementation
+            let currentSlideIndex = 0;
+            let slideImages = [];
+            let sliderInterval = null;
+
+            const setupImageSlider = (project) => {
+                const track = document.getElementById('sliderTrack');
+                const dotsContainer = document.getElementById('sliderDots');
+                const thumbsContainer = document.getElementById('sliderThumbs');
+                const counter = document.getElementById('sliderCounter');
+                const prevBtn = document.getElementById('sliderPrevBtn');
+                const nextBtn = document.getElementById('sliderNextBtn');
+
+                // Extract all images
+                slideImages = [];
+                if (Array.isArray(project.images) && project.images.length > 0) {
+                    slideImages = project.images.map(img => resolveAssetPath(getLocalized(img)));
+                } else if (project.image) {
+                    slideImages = [resolveAssetPath(getLocalized(project.image))];
+                }
+
+                track.innerHTML = '';
+                dotsContainer.innerHTML = '';
+                thumbsContainer.innerHTML = '';
+                currentSlideIndex = 0;
+
+                if (slideImages.length === 0) {
+                    document.getElementById('projectSlider').style.display = 'none';
+                    return;
+                }
+                document.getElementById('projectSlider').style.display = 'block';
+
+                // Populate Slides
+                slideImages.forEach((imgSrc, index) => {
+                    const slide = document.createElement('div');
+                    slide.className = 'slider-slide';
+                    slide.innerHTML = `
+                        <a href="${imgSrc}" data-fancybox="detail-gallery" data-caption="${getLocalized(project.title)} - ${index + 1}/${slideImages.length}" style="display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; cursor: zoom-in;">
+                            <img src="${imgSrc}" alt="${getLocalized(project.title)} - Slide ${index + 1}" loading="${index === 0 ? 'eager' : 'lazy'}">
+                        </a>
+                    `;
+                    track.appendChild(slide);
+
+                    // Dots
+                    const dot = document.createElement('button');
+                    dot.type = 'button';
+                    dot.className = `slider-dot ${index === 0 ? 'active' : ''}`;
+                    dot.setAttribute('aria-label', `Go to slide ${index + 1}`);
+                    dot.addEventListener('click', () => goToSlide(index));
+                    dotsContainer.appendChild(dot);
+
+                    // Thumbnails
+                    const thumb = document.createElement('div');
+                    thumb.className = `slider-thumb ${index === 0 ? 'active' : ''}`;
+                    thumb.innerHTML = `<img src="${imgSrc}" alt="Thumb ${index + 1}">`;
+                    thumb.addEventListener('click', () => goToSlide(index));
+                    thumbsContainer.appendChild(thumb);
+                });
+
+                // Initialize Fancybox on Detail Gallery
+                if (window.Fancybox) {
+                    Fancybox.bind('[data-fancybox="detail-gallery"]', {
+                        Thumbs: { autoStart: true },
+                        Carousel: { transition: "slide" }
+                    });
+                }
+
+                // Hide controls if only 1 image
+                const multiple = slideImages.length > 1;
+                prevBtn.style.display = multiple ? 'flex' : 'none';
+                nextBtn.style.display = multiple ? 'flex' : 'none';
+                dotsContainer.style.display = multiple ? 'flex' : 'none';
+                thumbsContainer.style.display = multiple ? 'flex' : 'none';
+                counter.style.display = multiple ? 'block' : 'none';
+
+                updateSliderUI();
+                startAutoPlay();
+            };
+
+            const goToSlide = (index) => {
+                if (index < 0) {
+                    currentSlideIndex = slideImages.length - 1;
+                } else if (index >= slideImages.length) {
+                    currentSlideIndex = 0;
+                } else {
+                    currentSlideIndex = index;
+                }
+                updateSliderUI();
+            };
+
+            const updateSliderUI = () => {
+                const track = document.getElementById('sliderTrack');
+                const isRtl = document.documentElement.dir === 'rtl';
+                // For LTR: translate -X. For RTL: translate +X
+                const offset = currentSlideIndex * 100;
+                track.style.transform = `translateX(${isRtl ? offset : -offset}%)`;
+
+                // Update dots
+                const dots = document.querySelectorAll('.slider-dot');
+                dots.forEach((dot, idx) => {
+                    dot.classList.toggle('active', idx === currentSlideIndex);
+                });
+
+                // Update thumbnails
+                const thumbs = document.querySelectorAll('.slider-thumb');
+                thumbs.forEach((thumb, idx) => {
+                    thumb.classList.toggle('active', idx === currentSlideIndex);
+                    if (idx === currentSlideIndex) {
+                        thumb.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+                    }
+                });
+
+                // Update counter
+                const counter = document.getElementById('sliderCounter');
+                if (counter) {
+                    counter.textContent = `${currentSlideIndex + 1} / ${slideImages.length}`;
+                }
+            };
+
+            // Navigation Buttons
+            document.getElementById('sliderPrevBtn').addEventListener('click', () => {
+                goToSlide(currentSlideIndex - 1);
+                resetAutoPlay();
+            });
+
+            document.getElementById('sliderNextBtn').addEventListener('click', () => {
+                goToSlide(currentSlideIndex + 1);
+                resetAutoPlay();
+            });
+
+            // Keyboard navigation
+            document.addEventListener('keydown', (e) => {
+                if (slideImages.length <= 1) return;
+                if (e.key === 'ArrowLeft') {
+                    if (document.documentElement.dir === 'rtl') {
+                        goToSlide(currentSlideIndex + 1);
+                    } else {
+                        goToSlide(currentSlideIndex - 1);
+                    }
+                    resetAutoPlay();
+                } else if (e.key === 'ArrowRight') {
+                    if (document.documentElement.dir === 'rtl') {
+                        goToSlide(currentSlideIndex - 1);
+                    } else {
+                        goToSlide(currentSlideIndex + 1);
+                    }
+                    resetAutoPlay();
+                }
+            });
+
+            // Touch Swipe Support
+            let touchStartX = 0;
+            let touchEndX = 0;
+            const sliderViewport = document.getElementById('sliderViewport');
+
+            sliderViewport.addEventListener('touchstart', (e) => {
+                touchStartX = e.changedTouches[0].screenX;
+            }, { passive: true });
+
+            sliderViewport.addEventListener('touchend', (e) => {
+                touchEndX = e.changedTouches[0].screenX;
+                handleSwipe();
+            }, { passive: true });
+
+            const handleSwipe = () => {
+                const diff = touchEndX - touchStartX;
+                const threshold = 45;
+                const isRtl = document.documentElement.dir === 'rtl';
+
+                if (Math.abs(diff) > threshold) {
+                    if (diff > 0) {
+                        // Swiped right
+                        goToSlide(isRtl ? currentSlideIndex + 1 : currentSlideIndex - 1);
+                    } else {
+                        // Swiped left
+                        goToSlide(isRtl ? currentSlideIndex - 1 : currentSlideIndex + 1);
+                    }
+                    resetAutoPlay();
+                }
+            };
+
+            // Auto Play
+            function startAutoPlay() {
+                if (slideImages.length <= 1) return;
+                clearInterval(sliderInterval);
+                sliderInterval = setInterval(() => {
+                    goToSlide(currentSlideIndex + 1);
+                }, 5000);
+            }
+
+            function resetAutoPlay() {
+                clearInterval(sliderInterval);
+                startAutoPlay();
+            }
+
+            // Pause autoplay on mouse enter
+            const sliderEl = document.getElementById('projectSlider');
+            sliderEl.addEventListener('mouseenter', () => clearInterval(sliderInterval));
+            sliderEl.addEventListener('mouseleave', () => startAutoPlay());
+
+            // Initial render
+            renderProjectDetails(currentProject);
+
+            // Mobile menu logic
+            const menuToggle = document.getElementById('menuToggle');
+            const navLinks = document.getElementById('navLinks');
+            if (menuToggle && navLinks) {
+                menuToggle.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    navLinks.classList.toggle('active');
+                });
+                document.addEventListener('click', (e) => {
+                    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
+                        navLinks.classList.remove('active');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

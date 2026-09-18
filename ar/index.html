@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>أحمد جمال | حلول رقمية عالية الأداء لنجاح الأعمال</title>
-    <meta name="description" content="أبني أنظمة رقمية مخصصة تزيد من أتمتة عملياتك، وتؤمن مدفوعاتك، وتضاعف أرباحك. تركيز تام على العائد من الاستثمار لأصحاب الشركات.">
-    
+    <meta name="description"
+        content="أبني أنظمة رقمية مخصصة تزيد من أتمتة عملياتك، وتؤمن مدفوعاتك، وتضاعف أرباحك. تركيز تام على العائد من الاستثمار لأصحاب الشركات.">
+
     <!-- Design System -->
     <link rel="stylesheet" href="../assets/css/main.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
     <!-- Icons -->
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -21,13 +25,14 @@
                 Ahmed Gamal
             </div>
             <div class="nav-links" id="navLinks">
-                <a href="#services">ماذا أقدم</a>
-                <a href="#case-studies">نتائج حقيقية</a>
-                <a href="#process">كيف ننمو</a>
+                <a href="#home">الرئيسية</a>
+                <a href="#about">من أنا</a>
+                <a href="#why-us">لماذا تختارني</a>
+                <a href="#projects">المشاريع</a>
                 <a href="../index.html" class="lang-switch">EN</a>
-                <a href="#contact" class="btn btn-primary">ابدأ النمو الآن</a>
+                <a href="#contact" class="btn btn-primary">تواصل معي</a>
             </div>
-            
+
         </div>
     </nav>
 
@@ -35,26 +40,26 @@
 
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-bg"></div>
         <div class="hero-decoration hero-dec-1"></div>
         <div class="hero-decoration hero-dec-2"></div>
-        
+
         <div class="container">
             <div class="reveal hero-content">
                 <div class="hero-badge">
-                    <i data-lucide="zap" size="16"></i>
+                    <i data-lucide="shield-check" size="16"></i>
                     <span>موثوق من قبل 50+ عميل</span>
                 </div>
-                
+
                 <h1 class="hero-title">
                     بناء مواقع وتطبيقات<span class="text-highlight"> قوية وقابلة للتوسع</span>
                 </h1>
-                
+
                 <p class="hero-subtitle">
                     أبني حلول رقمية قوية وقابلة للتوسع تتعامل مع ملايين المستخدمين دون أي مشاكل.
                 </p>
-                
+
                 <div class="btn-group">
                     <a href="#contact" class="btn btn-primary btn-lg">
                         <i data-lucide="calendar" size="20"></i>
@@ -74,35 +79,56 @@
         <div class="container">
             <div class="grid-auto">
                 <div class="reveal">
-                    <h2 class="section-title" style="text-align: right; margin-bottom: 2rem;">مهندس الأنظمة الذي يقف خلف نجاحك</h2>
+                    <h2 class="section-title" style="text-align: right; margin-bottom: 2rem;">مهندس الأنظمة الذي يقف خلف
+                        نجاحك</h2>
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2rem;">
-                        أنا أحمد جمال، مستشار تقني ومهندس أنظمة مخصص لمساعدة أصحاب الأعمال على التخلص من فوضى العمل اليدوي من خلال الأتمتة الذكية.
+                        أنا أحمد جمال، مستشار تقني ومهندس أنظمة مخصص لمساعدة أصحاب الأعمال على التخلص من فوضى العمل
+                        اليدوي من خلال الأتمتة الذكية.
                     </p>
                     <p style="color: var(--text-muted); line-height: 1.8; margin-bottom: 2.5rem;">
-                        على عكس المطورين التقليديين الذين يركزون على المظهر فقط، أضع **منطق العمل، الأمان، وقابلية التوسع** كأولوية قصوى. هدفي هو ضمان أن تكون بنيتك التحتية الرقمية أصلاً يدر الأرباح، وليس عبئاً يتطلب صيانة مستمرة.
+                        على عكس المطورين التقليديين الذين يركزون على المظهر فقط، أضع **منطق العمل، الأمان، وقابلية
+                        التوسع** كأولوية قصوى. هدفي هو ضمان أن تكون بنيتك التحتية الرقمية أصلاً يدر الأرباح، وليس عبئاً
+                        يتطلب صيانة مستمرة.
                     </p>
-                    <div style="display: flex; gap: 2rem; align-items: center;">
-                        <div style="width: 60px; height: 60px; background: var(--accent-light); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; color: var(--accent); font-size: 1.2rem;">AG</div>
-                        <div>
-                            <strong style="display: block; font-size: 1.1rem;">أحمد جمال</strong>
-                            <span style="color: var(--text-muted); font-size: 0.9rem;">كبير مهندسي الأنظمة</span>
-                        </div>
-                    </div>
                 </div>
                 <div class="reveal stats-grid">
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="award" size="20"></i>
+                            </div>
+                            <span class="stats-chip">خبرة موثوقة</span>
+                        </div>
                         <div class="stats-number">5+</div>
                         <div class="stats-label">سنوات خبرة</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="layers" size="20"></i>
+                            </div>
+                            <span class="stats-chip">إنجاز عالي</span>
+                        </div>
                         <div class="stats-number">50+</div>
                         <div class="stats-label">مشروع منجز</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="check-circle-2" size="20"></i>
+                            </div>
+                            <span class="stats-chip">دقة والتزام</span>
+                        </div>
                         <div class="stats-number">100%</div>
                         <div class="stats-label">التزام بالمواعيد</div>
                     </div>
                     <div class="stats-card">
+                        <div class="stats-card-header">
+                            <div class="stats-icon-wrap">
+                                <i data-lucide="globe" size="20"></i>
+                            </div>
+                            <span class="stats-chip">نطاق دولي</span>
+                        </div>
                         <div class="stats-number">5+</div>
                         <div class="stats-label">دول مخدومة</div>
                     </div>
@@ -110,47 +136,93 @@
             </div>
         </div>
     </section>
-            
+
     <!-- Services Section -->
-    <section id="services">
+    <section id="services" class="bg-alt">
         <div class="container">
-            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
+            <div class="reveal" style="text-align: center; margin-bottom: 3.5rem;">
                 <h2 class="section-title">حلول مخصصة لنمو عملك</h2>
                 <p class="section-subtitle">نركز على النتائج التجارية والأتمتة لزيادة الكفاءة والربحية.</p>
             </div>
-            
-            <div class="grid-auto" style="gap: 2rem;">
-                <div class="card reveal">
-                    <i data-lucide="graduation-cap" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
-                    <h3 style="margin-bottom: 1rem;">أنظمة التعليم الإلكتروني (LMS)</h3>
-                    <p style="color: var(--text-muted);">بناء منصات تعليمية متكاملة تدير آلاف الطلاب والدروس والامتحانات بشكل آلي تماماً.</p>
+
+            <div class="service-cards-grid">
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="graduation-cap" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">أنظمة التعليم الإلكتروني (LMS)</h3>
+                        <p class="service-card-desc">بناء منصات تعليمية متكاملة تدير آلاف الطلاب والدروس والامتحانات
+                            بشكل آلي تماماً.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta"><i data-lucide="arrow-left" size="14"></i> تواصل
+                            معي</a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="video" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
-                    <h3 style="margin-bottom: 1rem;">البنية التحتية للأكاديميات</h3>
-                    <p style="color: var(--text-muted);">حلول تقنية للمحاضرات المباشرة مع إدارة الجلسات والحجز التلقائي ونظام الإشعارات.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="video" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">البنية التحتية للأكاديميات</h3>
+                        <p class="service-card-desc">حلول تقنية للمحاضرات المباشرة مع إدارة الجلسات والحجز التلقائي
+                            ونظام الإشعارات.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta"><i data-lucide="arrow-left" size="14"></i> تواصل
+                            معي</a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="shopping-cart" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
-                    <h3 style="margin-bottom: 1rem;">المتاجر الإلكترونية (Marketplace)</h3>
-                    <p style="color: var(--text-muted);">تطوير متاجر متعددة التجار أو أحادية مع أنظمة دفع متطورة (فوري، سترايب) وإدارة لوجستية.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="shopping-cart" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">المتاجر الإلكترونية (Marketplace)</h3>
+                        <p class="service-card-desc">تطوير متاجر متعددة التجار أو أحادية مع أنظمة دفع متطورة وإدارة
+                            لوجستية.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta"><i data-lucide="arrow-left" size="14"></i> تواصل
+                            معي</a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="layout" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
-                    <h3 style="margin-bottom: 1rem;">بوابات أعمال العلامات التجارية</h3>
-                    <p style="color: var(--text-muted);">تصميم بوابات فاخرة تعرض خدماتك بشكل احترافي يحول الزوار إلى عملاء دائمين.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="layout" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">بوابات أعمال العلامات التجارية</h3>
+                        <p class="service-card-desc">تصميم بوابات فاخرة تعرض خدماتك بشكل احترافي يحول الزوار إلى عملاء
+                            دائمين.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta"><i data-lucide="arrow-left" size="14"></i> تواصل
+                            معي</a>
+                    </div>
                 </div>
-                <div class="card reveal">
-                    <i data-lucide="users" size="40" style="color: var(--accent); margin-bottom: 1.5rem;"></i>
-                    <h3 style="margin-bottom: 1rem;">بوابات الأعمال متعددة الأدوار</h3>
-                    <p style="color: var(--text-muted);">أنظمة إدارية معقدة تدعم مستويات مختلفة (مدير، موفر خدمة، عميل) مع لوحات تحكم متكاملة.</p>
+                <div class="service-card reveal">
+                    <div class="service-card-icon">
+                        <i data-lucide="users" size="22"></i>
+                    </div>
+                    <div class="service-card-body">
+                        <h3 class="service-card-title">بوابات الأعمال متعددة الأدوار</h3>
+                        <p class="service-card-desc">أنظمة إدارية معقدة تدعم مستويات مختلفة (مدير، موفر خدمة، عميل) مع
+                            لوحات تحكم متكاملة.</p>
+                    </div>
+                    <div class="service-card-footer">
+                        <a href="#contact" class="service-card-cta"><i data-lucide="arrow-left" size="14"></i> تواصل
+                            معي</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Case Studies Section -->
-    <section id="case-studies" class="bg-alt">
+    <!-- Projects Section -->
+    <section id="projects" class="bg-alt">
+        <span id="case-studies" style="position: absolute; margin-top: -100px;"></span>
         <div class="container">
             <div class="reveal" style="text-align: center;">
                 <h2 class="section-title">مشاريعنا</h2>
@@ -159,153 +231,77 @@
                 </p>
             </div>
 
-            <div class="projects-grid">
-                <!-- Project 1: Qaf LMS -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp" alt="قاف LMS">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">نظام تعليم إلكتروني</span>
-                        <h3 class="project-title">
-                            منصة قاف التعليمية
-                        </h3>
-                        <p class="project-description">منصة تعليمية متعددة المعلمين تمكن المعلمين المستقلين من إدارة الدورات والطلاب والمدفوعات من لوحات تحكم منفصلة.</p>
-                        <div class="project-buttons">
-                            <a href="https://ivory-oryx-959875.hostingersite.com" class="btn btn-primary">معاينة مباشرة</a>
-                            <a href="../projects/qaf-lms.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 2: Zain Physics LMS -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/zain-physics.webp" alt="زين فيزيكس LMS">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">نظام تعليم إلكتروني</span>
-                        <h3 class="project-title">منصة أحمد المحلاوى</h3>
-                        <p class="project-description">منصة تعليمية شاملة للطلاب لاستكشاف المحتوى والقيام بالاختبارات وتتبع التقدم مع توفر 99.9%.</p>
-                        <div class="project-buttons">
-                            <a href="https://zain-physics.online" class="btn btn-primary">معاينة مباشرة</a>
-                            <a href="../projects/zain-physics-lms.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-
-                <!-- Project 3: Online Store -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/image.webp" alt="متجر لبيع الملابس الرجالى">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">متجر لبيع الملابس الرجالى</span>
-                        <h3 class="project-title">سوق التجارة الإلكترونية الشامل</h3>
-                        <p class="project-description">نظام تسوية المدفوعات الآلي لمئات الموردين مع معالجة ذكية للتقسيم، وتوفير 60 ساعة عمل شهرياً.</p>
-                        <div class="project-buttons">
-                            <a href="https://store.ahmedgamal.org/ar" class="btn btn-primary">معاينة مباشرة</a>
-                            <a href="../projects/multi-vendor-marketplace.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 4: Multi-Vendor Marketplace -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/mult-_vendor.webp" alt="سوق متعدد التجار">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">متجر متعدد التجار</span>
-                        <h3 class="project-title">سوق التجارة الإلكترونية الشامل</h3>
-                        <p class="project-description">نظام تسوية المدفوعات الآلي لمئات الموردين مع معالجة ذكية للتقسيم، وتوفير 60 ساعة عمل شهرياً.</p>
-                        <div class="project-buttons">
-                            <a href="https://multivendor.ahmedgamal.org/public" class="btn btn-primary">معاينة مباشرة</a>
-                            <a href="../projects/multi-vendor-marketplace.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 5: Global Live Sessions Portal -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/tameez_ar.webp" alt="بوابة المحاضرات المباشرة">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">بنية تحتية مباشرة</span>
-                        <h3 class="project-title">بوابة المحاضرات المباشرة العالمية</h3>
-                        <p class="project-description">منصة بث فيديو فوري مع محرك جدولة ذكي لأكثر من 1000 طالب عالمي، بزيادة تفاعل بنسبة 95%.</p>
-                        <div class="project-buttons">
-                            <a href="https://lms-quarn.vercel.app/en" class="btn btn-primary">معاينة مباشرة</a>
-                            <a href="../projects/live-sessions.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 6: Multi-Role Service Platform -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/weaver.webp" alt="Multi-Role Service Platform">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">متجر إلكترونى </span>
-                        <h3 class="project-title">متجر إلكترونى</h3>
-                        <p class="project-description">
-                            منصة تجارية إلكترونية مخصصة مع نظام إدارة المحتوى وتتبع المخزون، مما يقلل من التحديثات اليدوية بنسبة 80% ويزيد المبيعات بنسبة 40%.
-                        </p>
-                        <div class="project-buttons">
-                            <a href="https://weaver-woad.vercel.app" class="btn btn-primary">Live Preview</a>
-                            <a href="../projects/service-platform.html" class="btn btn-secondary">التفاصيل <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project 7: Executive Portfolio Suite -->
-                <div class="reveal project-card">
-                    <div class="project-image">
-                        <img src="../assets/imgs/projects/homepage.png" alt="Executive Portfolio Suite">
-                    </div>
-                    <div class="project-content">
-                        <span class="project-badge">نظام إدارة المخزون</span>
-                        <h3 class="project-title">نظام إدارة المخزون</h3>
-                        <p class="project-description">
-                            نظام إدارة مخزون مخصص مع تحليلات في الوقت الحقيقي والتقارير الآلية، مما يحسن دقة المخزون بنسبة 99% ويقلل من اكتظال المخازن بنسبة 50%.
-                        </p>
-                        <div class="project-buttons">
-                            <a href="https://camera-inventory-front.vercel.app" class="btn btn-primary">Live Preview</a>
-                            <a href="../projects/portfolio-suite.html" class="btn btn-secondary">Details <i data-lucide="external-link" size="16"></i></a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="projects-grid" id="projects-grid">
+                <!-- يتم تحميل المشاريع تلقائياً من projects.json -->
             </div>
         </div>
     </section>
 
     <!-- Why Choose Me Section -->
-    <section>
+    <section id="why-us" class="why-section">
         <div class="container">
             <div class="why-me-grid">
-                <div class="reveal">
-                    <h2 style="text-align: right; margin-bottom: 2rem;">لماذا يختارني أصحاب الأعمال؟</h2>
-                    <p style="color: var(--text-muted); line-height: 1.8;">
-                        أنا لا أقوم فقط بكتابة الكود؛ أنا أبني محركات رقمية تدفع عملك إلى الأمام. أركز على الأمان، السرعة، وقابلية التوسع لضمان استمرارية نجاحك.
-                    </p>
-                </div>
-                <div class="reveal why-me-list">
-                    <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                        <i data-lucide="check-circle" style="color: #22c55e;"></i>
-                        <div>
-                            <strong>تسليم سريع وفعال</strong>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">نصل إلى السوق بسرعة دون المساس بالجودة.</p>
+                <div class="why-left reveal">
+                    <span class="why-eyebrow">القيمة المضافة</span>
+                    <h2 class="why-title">لماذا يختارني أصحاب الأعمال؟</h2>
+                    <p class="why-desc">أنا لا أكتب مجرد كود برمجي؛ بل أبني محركات رقمية تعزز أرباحك وتوفر وقتك، مع التركيز الكامل على الأمان، السرعة، وقابلية التوسع لضمان استمرارية نجاح مشروعك.</p>
+                    
+                    <div class="why-highlights">
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>تخصص متقدم في هندسة الأنظمة والمعمارية النظيفة</span>
+                        </div>
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>كود عالي الجودة وخالي من الديون التقنية</span>
+                        </div>
+                        <div class="why-highlight-item">
+                            <i data-lucide="check-circle-2" size="18"></i>
+                            <span>تواصل مباشر والتزام صارم بمواعيد التسليم</span>
                         </div>
                     </div>
-                    <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                        <i data-lucide="check-circle" style="color: #22c55e;"></i>
-                        <div>
-                            <strong>أنظمة قابلة للتوسع</strong>
-                            <p style="color: var(--text-muted); font-size: 0.9rem;">كود نظيف يتحمل نمو عملك من 100 إلى 100,000 مستخدم.</p>
+                </div>
+
+                <div class="why-cards-stack reveal">
+                    <!-- Card 1 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="trending-up" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">أنظمة مصممة للنمو والتوسع</h4>
+                                <span class="why-card-tag">أداء فائق</span>
+                            </div>
+                            <p class="why-card-desc">بنية برمجية وقواعد بيانات متينة تتحمل نمو عملك من مئات إلى مئات الآلاف من المستخدمين بكفاءة تامة ودون أي اختناقات في الأداء.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="shield-check" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">أمان عالي واعتمادية طويلة الأمد</h4>
+                                <span class="why-card-tag">حماية متكاملة</span>
+                            </div>
+                            <p class="why-card-desc">تطبيق أفضل ممارسات Clean Architecture ومعايير الأمان المتقدمة لحماية بياناتك ومعاملات عملائك من أي ثغرات أو أخطاء تزامنية.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="why-card">
+                        <div class="why-card-icon">
+                            <i data-lucide="clock-4" size="24"></i>
+                        </div>
+                        <div class="why-card-content">
+                            <div class="why-card-header">
+                                <h4 class="why-card-title">التزام دقيق بالمواعيد وشفافية كاملة</h4>
+                                <span class="why-card-tag">في الموعد المحدد</span>
+                            </div>
+                            <p class="why-card-desc">احترام كامل للمواعيد النهائية للعمل مع تحديثات منتظمة ومستمرة في كل مرحلة، لتكون دائماً على دراية كاملة بمسار مشروعك.</p>
                         </div>
                     </div>
                 </div>
@@ -314,85 +310,162 @@
     </section>
 
     <!-- Process Section -->
-    <section id="process" class="bg-alt">
-        <div class="container">
-            <div class="reveal" style="text-align: center; margin-bottom: 5rem;">
-                <h2 class="section-title">رحلة بناء مشروعك</h2>
-                <p class="section-subtitle">عملية واضحة وشفافة تضمن تحويل رؤيتك إلى حقيقة تقنية.</p>
+    <section id="process">
+        <div class="process-header reveal">
+            <span class="process-eyebrow">كيف نعمل</span>
+            <h2 class="section-title">رحلة بناء مشروعك</h2>
+            <p class="section-subtitle">عملية واضحة وشفافة تضمن تحويل رؤيتك إلى حقيقة تقنية في الوقت المحدد.</p>
+        </div>
+
+        <div class="process-timeline">
+            <div class="process-line"></div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="search" size="22" stroke-width="1.75"></i>
+                </div>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">فهم العمل</h4>
+                    <p class="process-step-desc">نبدأ بفهم أهدافك التجارية وتحدياتك الحالية.</p>
+                </div>
             </div>
-            
-            <div class="process-grid">
-                <div class="reveal process-step">
-                    <div class="process-number">1</div>
-                    <h3>فهم العمل</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">نبدأ بفهم أهدافك التجارية وتحدياتك الحالية.</p>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="layout-list" size="22" stroke-width="1.75"></i>
                 </div>
-                <div class="reveal process-step">
-                    <div class="process-number">2</div>
-                    <h3>التخطيط المعماري</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">تصميم قاعدة البيانات وهيكلية النظام لضمان الأداء العالي.</p>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">التخطيط المعماري</h4>
+                    <p class="process-step-desc">تصميم قاعدة البيانات وهيكلية النظام لضمان الأداء العالي.</p>
                 </div>
-                <div class="reveal process-step">
-                    <div class="process-number">3</div>
-                    <h3>التطوير والبرمجة</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">بناء النظام باستخدام أفضل ممارسات Laravel والأمان.</p>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="code-2" size="22" stroke-width="1.75"></i>
                 </div>
-                <div class="reveal process-step">
-                    <div class="process-number">4</div>
-                    <h3>التسليم والدعم</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem;">إطلاق النظام مع دعم فني مستمر لضمان الاستقرار.</p>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">التطوير والبرمجة</h4>
+                    <p class="process-step-desc">بناء النظام باستخدام أفضل ممارسات Laravel والأمان.</p>
+                </div>
+            </div>
+
+            <div class="process-step reveal">
+                <div class="process-icon-wrap">
+                    <i data-lucide="rocket" size="22" stroke-width="1.75"></i>
+                </div>
+                <div class="process-step-body">
+                    <h4 class="process-step-title">التسليم والدعم</h4>
+                    <p class="process-step-desc">إطلاق النظام مع دعم فني مستمر لضمان الاستقرار.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
-        <div class="container contact-container">
-            <div class="reveal">
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-header reveal">
+                <span class="contact-eyebrow">تواصل معي</span>
                 <h2 class="section-title">جاهز لأتمتة أعمالك؟</h2>
                 <p class="section-subtitle">دعنا نناقش كيف يمكن لنظام رقمي مخصص أن يوفر وقتك ويزيد أرباحك.</p>
             </div>
-            
-            <form id="contact-form" class="reveal contact-card">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">الاسم بالكامل</label>
-                        <input type="text" id="name" class="form-control" placeholder="أحمد محمد" required>
+
+            <div class="contact-grid">
+                <!-- First Column: Contact Info & Map -->
+                <div class="contact-info-col reveal">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">تواصل مباشر وسريع</h3>
+                        <p class="contact-info-desc">لديك فكرة مشروع أو ترغب في استشارة تقنية؟ يمكنك التواصل مباشرة عبر أي من القنوات التالية:</p>
+
+                        <div class="contact-items-list">
+                            <!-- Tel / Phone -->
+                            <a href="tel:+201091536978" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="phone" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">الهاتف / واتساب</span>
+                                    <span class="contact-item-val" dir="ltr">+20 109 153 6978</span>
+                                </div>
+                            </a>
+
+                            <!-- Email -->
+                            <a href="mailto:ahmedgamal1254@gmail.com" class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="mail" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">البريد الإلكتروني</span>
+                                    <span class="contact-item-val">ahmedgamal1254@gmail.com</span>
+                                </div>
+                            </a>
+
+                            <!-- Address -->
+                            <div class="contact-item">
+                                <div class="contact-item-icon">
+                                    <i data-lucide="map-pin" size="20"></i>
+                                </div>
+                                <div class="contact-item-text">
+                                    <span class="contact-item-label">الموقع الجغرافي</span>
+                                    <span class="contact-item-val">القاهرة، مصر • متاح عالمياً (عن بُعد)</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">البريد الإلكتروني</label>
-                        <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+
+                    <!-- Map -->
+                    <div class="contact-map-card">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d110502.6118504068!2d31.188423456885668!3d30.059611343394807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate%2C%20Egypt!5e0!3m2!1sar!2seg!4v1710000000000!5m2!1sar!2seg" 
+                            width="100%" 
+                            height="230" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="خريطة القاهرة، مصر">
+                        </iframe>
                     </div>
                 </div>
-                
-                <div class="form-group">
-                    <label for="project-type">نوع المشروع</label>
-                    <select id="project-type" class="form-control" required>
-                        <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
-                        <option value="LMS Ecosystem">نظام لإدارة الدورات التدريبية</option>
-                        <option value="Live Academy">
-                            نظام محاضرات مباشرة مع جدولة ذكية
-                        </option>
-                        <option value="Marketplace">متجر إلكتروني </option>
-                        <option value="Portfolio">
-                            موقع شخصى لعرض الخدمات والنتائج
-                        </option>
-                        <option value="Business Portal">
-                            موقع بوابة أعمال لعرض الخدمات وتحويل العملاء
-                        </option>
-                    </select>
+
+                <!-- Second Column: Form -->
+                <div class="contact-form-col reveal">
+                    <form id="contact-form" class="contact-card">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">الاسم بالكامل</label>
+                                <input type="text" id="name" class="form-control" placeholder="أحمد محمد" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">البريد الإلكتروني</label>
+                                <input type="email" id="email" class="form-control" placeholder="example@domain.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="project-type">نوع المشروع</label>
+                            <select id="project-type" class="form-control" required>
+                                <option value="" disabled selected>اختر الخدمة المطلوبة...</option>
+                                <option value="LMS Ecosystem">نظام لإدارة الدورات التدريبية</option>
+                                <option value="Live Academy">نظام محاضرات مباشرة مع جدولة ذكية</option>
+                                <option value="Marketplace">متجر إلكتروني </option>
+                                <option value="Portfolio">موقع شخصى لعرض الخدمات والنتائج</option>
+                                <option value="Business Portal">موقع بوابة أعمال لعرض الخدمات وتحويل العملاء</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="goals">أهداف عملك</label>
+                            <textarea id="goals" class="form-control" placeholder="أخبرني ما الذي تود تحقيقه (مثلاً: أتمتة تسجيل الطلاب، بناء سوق للموردين...)" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-contact-submit">
+                            تواصل معنا <i data-lucide="message-circle" size="16"></i>
+                        </button>
+                    </form>
                 </div>
-                
-                <div class="form-group">
-                    <label for="goals">أهداف عملك</label>
-                    <textarea id="goals" class="form-control" placeholder="أخبرني ما الذي تود تحقيقه (مثلاً: أتمتة تسجيل الطلاب، بناء سوق للموردين...)" required></textarea>
-                </div>
-                
-                <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
-                    إرسال الطلب وفتح واتساب <i data-lucide="message-circle" size="20"></i>
-                </button>
-            </form>
+            </div>
         </div>
     </section>
 
@@ -406,7 +479,8 @@
             <div class="footer-grid">
                 <div class="footer-brand">
                     <div class="logo">أحمد جمال</div>
-                    <p>تحويل تحديات الأعمال المعقدة إلى حلول رقمية عالية الأداء. متخصص في التعليم الإلكتروني، الأسواق، وأنظمة الأعمال.</p>
+                    <p>تحويل تحديات الأعمال المعقدة إلى حلول رقمية عالية الأداء. متخصص في التعليم الإلكتروني، الأسواق،
+                        وأنظمة الأعمال.</p>
                 </div>
                 <div>
                     <h4 class="footer-heading">الخدمات</h4>
@@ -428,9 +502,12 @@
                 <div>
                     <h4 class="footer-heading">تواصل</h4>
                     <div class="footer-social">
-                        <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" title="LinkedIn"><i data-lucide="linkedin" size="24"></i></a>
-                        <a href="https://github.com/ahmedgamal1254" target="_blank" title="GitHub"><i data-lucide="github" size="24"></i></a>
-                        <a href="https://wa.me/201091536978" target="_blank" title="WhatsApp"><i data-lucide="message-circle" size="24"></i></a>
+                        <a href="https://linkedin.com/in/ahmed-gamal-1b212621b" target="_blank" title="LinkedIn"><i
+                                data-lucide="linkedin" size="24"></i></a>
+                        <a href="https://github.com/ahmedgamal1254" target="_blank" title="GitHub"><i
+                                data-lucide="github" size="24"></i></a>
+                        <a href="https://wa.me/201091536978" target="_blank" title="WhatsApp"><i
+                                data-lucide="message-circle" size="24"></i></a>
                     </div>
                 </div>
             </div>
@@ -441,7 +518,7 @@
         </div>
     </footer>
 
-        <!-- Mobile Bottom Navigation -->
+    <!-- Mobile Bottom Navigation -->
     <nav class="mobile-bottom-nav">
 
         <a href="#about_us" class="mobile-nav-item">
@@ -468,9 +545,12 @@
 
     <!-- Scripts -->
     <script src="https://unpkg.com/lucide@0.418.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="../assets/js/projects-data.js"></script>
     <script src="../assets/js/main.js"></script>
     <script>
         lucide.createIcons();
     </script>
 </body>
+
 </html>
