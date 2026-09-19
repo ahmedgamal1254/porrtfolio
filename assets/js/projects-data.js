@@ -54,7 +54,7 @@ window.PORTFOLIO_PROJECTS = [
       "en": "Kenzi Clinic Preview",
       "ar": "معاينة مركز كنزي الطبي"
     },
-    "liveUrl": "",
+    "liveUrl": "https://staging.kenzi-iq.com",
     "detailsUrl": "projects/detail.html?id=kenzi",
     "challenge": {
       "en": "Managing high-volume clinic bookings across multi-specialty doctors and multiple clinic branches while preventing race conditions (double bookings), supporting complex slot calculations with buffer times, dynamic coupon rules, loyalty point redemptions, and seamless tri-lingual localized user experiences (Arabic, English, Kurdish) across mobile and web platforms.",
@@ -269,13 +269,48 @@ window.PORTFOLIO_PROJECTS = [
     "image": "assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp",
     "images": [
       "assets/imgs/projects/منصة-قاف-التعليمية-06-05-2026_12_32_PM.webp",
-      "assets/imgs/projects/lms.png"
+      "assets/imgs/projects/qaf/2.webp",
+      "assets/imgs/projects/qaf/3.webp",
+      "assets/imgs/projects/qaf/4.webp",
+      "assets/imgs/projects/qaf/5.webp",
+      "assets/imgs/projects/qaf/6.webp",
+      "assets/imgs/projects/qaf/7.webp",
+      "assets/imgs/projects/qaf/8.webp",
+      "assets/imgs/projects/qaf/9.webp",
+      "assets/imgs/projects/qaf/10.webp",
+      "assets/imgs/projects/qaf/11.webp",
+      "assets/imgs/projects/qaf/12.webp",
+      "assets/imgs/projects/qaf/13.webp",
+      "assets/imgs/projects/qaf/14.webp",
+      "assets/imgs/projects/qaf/15.webp",
+      "assets/imgs/projects/qaf/16.webp",
+      "assets/imgs/projects/qaf/17.webp",
+      "assets/imgs/projects/qaf/18.webp",
+      "assets/imgs/projects/qaf/19.webp",
+      "assets/imgs/projects/qaf/20.webp",
+      "assets/imgs/projects/qaf/21.webp",
+      "assets/imgs/projects/qaf/22.webp",
+      "assets/imgs/projects/qaf/23.webp",
+      "assets/imgs/projects/qaf/24.webp",
+      "assets/imgs/projects/qaf/25.webp",
+      "assets/imgs/projects/qaf/26.webp",
+      "assets/imgs/projects/qaf/27.webp",
+      "assets/imgs/projects/qaf/28.webp",
+      "assets/imgs/projects/qaf/29.webp",
+      "assets/imgs/projects/qaf/30.webp",
+      "assets/imgs/projects/qaf/31.webp",
+      "assets/imgs/projects/qaf/32.webp",
+      "assets/imgs/projects/qaf/33.webp",
+      "assets/imgs/projects/qaf/34.webp",
+      "assets/imgs/projects/qaf/35.webp",
+      "assets/imgs/projects/qaf/36.webp",
+      "assets/imgs/projects/qaf/37.webp"
     ],
     "alt": {
       "en": "Qaf LMS Preview",
       "ar": "معاينة منصة قاف التعليمية"
     },
-    "liveUrl": "https://ivory-oryx-959875.hostingersite.com",
+    "liveUrl": "https://qaf-demo.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=qaf-lms",
     "challenge": {
       "en": "Independent educators needed a cost-effective platform to deliver online courses, manage multiple teachers with separate dashboards, handle student payments, and track progress—without the overhead of building a custom system from scratch.",
@@ -366,13 +401,45 @@ window.PORTFOLIO_PROJECTS = [
     "image": "assets/imgs/projects/zain-physics.webp",
     "images": [
       "assets/imgs/projects/zain-physics.webp",
-      "assets/imgs/projects/zain_lms.png"
+      "assets/imgs/projects/zain_lms.png",
+      "assets/imgs/projects/qaf/9.webp",
+      "assets/imgs/projects/qaf/7.webp",
+      "assets/imgs/projects/qaf/8.webp",
+      "assets/imgs/projects/qaf/6.webp",
+      "assets/imgs/projects/qaf/10.webp",
+      "assets/imgs/projects/qaf/11.webp",
+      "assets/imgs/projects/qaf/12.webp",
+      "assets/imgs/projects/qaf/13.webp",
+      "assets/imgs/projects/qaf/14.webp",
+      "assets/imgs/projects/qaf/15.webp",
+      "assets/imgs/projects/qaf/16.webp",
+      "assets/imgs/projects/qaf/17.webp",
+      "assets/imgs/projects/qaf/18.webp",
+      "assets/imgs/projects/qaf/19.webp",
+      "assets/imgs/projects/qaf/20.webp",
+      "assets/imgs/projects/qaf/21.webp",
+      "assets/imgs/projects/qaf/22.webp",
+      "assets/imgs/projects/qaf/23.webp",
+      "assets/imgs/projects/qaf/24.webp",
+      "assets/imgs/projects/qaf/25.webp",
+      "assets/imgs/projects/qaf/26.webp",
+      "assets/imgs/projects/qaf/27.webp",
+      "assets/imgs/projects/qaf/28.webp",
+      "assets/imgs/projects/qaf/29.webp",
+      "assets/imgs/projects/qaf/30.webp",
+      "assets/imgs/projects/qaf/31.webp",
+      "assets/imgs/projects/qaf/32.webp",
+      "assets/imgs/projects/qaf/33.webp",
+      "assets/imgs/projects/qaf/34.webp",
+      "assets/imgs/projects/qaf/35.webp",
+      "assets/imgs/projects/qaf/36.webp",
+      "assets/imgs/projects/qaf/37.webp"
     ],
     "alt": {
       "en": "Zain Physics LMS",
       "ar": "زين فيزيكس LMS"
     },
-    "liveUrl": "https://zain-physics.online",
+    "liveUrl": "https://lms-demo.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=zain-physics-lms",
     "challenge": {
       "en": "Physics students needed a dedicated mobile platform to access course materials, take quizzes, and track their learning progress with reliable performance across all devices and network conditions.",
@@ -468,7 +535,7 @@ window.PORTFOLIO_PROJECTS = [
       "en": "Clothe E-commerce",
       "ar": "متجر لبيع الملابس الرجالى"
     },
-    "liveUrl": "https://store.ahmedgamal.org/ar",
+    "liveUrl": "https://amstore.ahmedgamal.de",
     "detailsUrl": "projects/detail.html?id=clothe-ecommerce",
     "challenge": {
       "en": "Managing large product catalogs with size/color variants, multi-provider payment reconciliation, and real-time inventory updates without slowdowns.",
@@ -762,7 +829,7 @@ window.PORTFOLIO_PROJECTS = [
       "en": "Single Vendor E-commerce",
       "ar": "متجر إلكترونى"
     },
-    "liveUrl": "https://weaver-woad.vercel.app",
+    "liveUrl": "https://ecommerce-app-wheat-two.vercel.app",
     "detailsUrl": "projects/detail.html?id=single-vendor-ecommerce",
     "challenge": {
       "en": "Businesses needed an agile e-commerce platform with specialized CMS capabilities, rapid checkout flow, and custom inventory automation tailored to unique operational requirements.",
@@ -822,103 +889,6 @@ window.PORTFOLIO_PROJECTS = [
         "label": {
           "en": "Happy Customers",
           "ar": "عميل راضٍ"
-        }
-      }
-    ]
-  },
-  {
-    "id": "stock-management",
-    "badge": {
-      "en": "Stock Management System",
-      "ar": "نظام إدارة المخزون"
-    },
-    "title": {
-      "en": "Stock Management System",
-      "ar": "نظام إدارة المخزون والأصول"
-    },
-    "description": {
-      "en": "Custom stock management system with real-time analytics and automated reporting, improving inventory accuracy by 99% and reducing stockouts by 50%.",
-      "ar": "نظام إدارة مخزون مخصص مع تحليلات في الوقت الحقيقي والتقارير الآلية، مما يحسن دقة المخزون بنسبة 99% ويقلل من اكتظال المخازن بنسبة 50%."
-    },
-    "heroSummary": {
-      "en": "A real-time enterprise inventory platform designed for multi-branch gear tracking, automated audits, and predictive restocking.",
-      "ar": "منصة مؤسسية سحابية لإدارة وتتبع المعدات والأصول والمخزون في الوقت الحقيقي بدقة 99%."
-    },
-    "year": "2024",
-    "techStackSummary": "Next.js, React, Tailwind, Node",
-    "metric": {
-      "en": "10k+ Tracked Items",
-      "ar": "10k+ صنف ومعدّة"
-    },
-    "image": "assets/imgs/projects/homepage.png",
-    "images": [
-      "assets/imgs/projects/homepage.png",
-      "assets/imgs/projects/brand_portfolio.png"
-    ],
-    "alt": {
-      "en": "Stock Management System",
-      "ar": "نظام إدارة المخزون"
-    },
-    "liveUrl": "https://camera-inventory-front.vercel.app",
-    "detailsUrl": "projects/detail.html?id=stock-management",
-    "challenge": {
-      "en": "Warehouses and rental businesses faced frequent stockouts, lost inventory, and inefficient tracking across multiple storage locations.",
-      "ar": "واجهت الشركة صعوبة في تتبع المعدات والمخزون، مع أخطاء مستمرة في الجرد ونقص مفاجئ في القطع الحيوية عبر عدة فروع."
-    },
-    "solution": {
-      "en": "Built a real-time stock management system with barcode/QR tracking, automated low-stock reordering alerts, audit logs, and predictive stock analytics.",
-      "ar": "تم بناء نظام سحابي لإدارة المخزون يدعم الباركود والـ QR Code، مع تنبيهات آلية عند وصول المخزون للحد الأدنى، وسجل تدقيق شامل."
-    },
-    "result": {
-      "en": "Improved inventory accuracy to 99% and reduced costly stockouts by 50%.",
-      "ar": "رفع دقة جرد المخزون إلى 99% وخفض نفاد المخزون بنسبة 50%."
-    },
-    "techStack": [
-      "Next.js",
-      "React",
-      "Tailwind CSS",
-      "TypeScript",
-      "Node.js",
-      "PostgreSQL"
-    ],
-    "features": {
-      "en": [
-        "Real-time barcode/QR asset tracking",
-        "Multi-warehouse location management",
-        "Low stock alerts & auto-reorder triggers",
-        "Comprehensive audit trails & reports",
-        "Equipment check-in and check-out tracking",
-        "Maintenance and service scheduling"
-      ],
-      "ar": [
-        "تتبع فوري للأصول باستخدام الباركود و QR",
-        "إدارة مستودعات وفروع متعددة",
-        "تنبيهات فورية عند انخفاض المخزون",
-        "تقارير جرد ومراجعة تفصيلية",
-        "تسجيل استعارة وإرجاع المعدات",
-        "جدولة الصيانة الدورية للأجهزة"
-      ]
-    },
-    "impact": [
-      {
-        "number": "99%",
-        "label": {
-          "en": "Inventory Accuracy",
-          "ar": "دقة جرد المخزون"
-        }
-      },
-      {
-        "number": "50%",
-        "label": {
-          "en": "Stockouts Reduced",
-          "ar": "تقليل نسبة النقص المفاجئ"
-        }
-      },
-      {
-        "number": "10k+",
-        "label": {
-          "en": "Tracked Items",
-          "ar": "قطعة مدارة بالنظام"
         }
       }
     ]

@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 1. Try to fetch from projects.json
         try {
-            const res = await fetch(jsonPath);
+            const res = await fetch(`${jsonPath}?t=${Date.now()}`, { cache: 'no-store' });
             if (!res.ok) throw new Error(`HTTP error ${res.status}`);
             projects = await res.json();
         } catch (err) {

@@ -595,7 +595,7 @@
             // Load Projects Data
             let allProjects = [];
             try {
-                const res = await fetch('../projects.json');
+                const res = await fetch(`../projects.json?t=${Date.now()}`, { cache: 'no-store' });
                 if (!res.ok) throw new Error(`HTTP ${res.status}`);
                 allProjects = await res.json();
             } catch (err) {
