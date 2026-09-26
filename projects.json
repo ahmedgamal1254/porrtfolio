@@ -52,7 +52,7 @@
       "en": "Kenzi Clinic Preview",
       "ar": "معاينة مركز كنزي الطبي"
     },
-    "liveUrl": "https://staging.kenzi-iq.com",
+    "liveUrl": "https://kenzi-iq.com",
     "detailsUrl": "projects/detail.html?id=kenzi",
     "challenge": {
       "en": "Managing high-volume clinic bookings across multi-specialty doctors and multiple clinic branches while preventing race conditions (double bookings), supporting complex slot calculations with buffer times, dynamic coupon rules, loyalty point redemptions, and seamless tri-lingual localized user experiences (Arabic, English, Kurdish) across mobile and web platforms.",
