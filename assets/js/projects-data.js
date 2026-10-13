@@ -25,7 +25,7 @@ window.PORTFOLIO_PROJECTS = [
       "en": "10k+ Bookings, 0 Collisions",
       "ar": "10,000+ موعد، صفر تضارب مواعيد"
     },
-    "image": "assets/imgs/projects/kenzi/1.webp",
+    "image": "assets/imgs/projects/kenzi/image.webp",
     "images": [
       "assets/imgs/projects/kenzi/1.webp",
       "assets/imgs/projects/kenzi/2.webp",
@@ -44,11 +44,12 @@ window.PORTFOLIO_PROJECTS = [
       "assets/imgs/projects/kenzi/15.webp",
       "assets/imgs/projects/kenzi/16.webp",
       "assets/imgs/projects/kenzi/17.webp",
-      "assets/imgs/projects/kenzi/18.webp",
       "assets/imgs/projects/kenzi/19.webp",
       "assets/imgs/projects/kenzi/20.webp",
       "assets/imgs/projects/kenzi/21.webp",
-      "assets/imgs/projects/kenzi/22.webp"
+      "assets/imgs/projects/kenzi/22.webp",
+      "assets/imgs/projects/kenzi/23.webp",
+      "assets/imgs/projects/kenzi/24.webp"
     ],
     "alt": {
       "en": "Kenzi Clinic Preview",
@@ -159,20 +160,26 @@ window.PORTFOLIO_PROJECTS = [
       "en": "15k+ Liters Recycled, 5k+ Orders",
       "ar": "15k+ لتر زيت مستبدل، 5000+ طلب"
     },
-    "image": "assets/imgs/projects/beeto/1.jpg",
+    "image": "assets/imgs/projects/beeto/image.webp",
     "images": [
-      "assets/imgs/projects/beeto/1.jpg",
-      "assets/imgs/projects/beeto/2.jpg",
-      "assets/imgs/projects/beeto/3.jpg",
-      "assets/imgs/projects/beeto/4.jpg",
-      "assets/imgs/projects/beeto/5.jpg",
-      "assets/imgs/projects/beeto/6.jpg",
-      "assets/imgs/projects/beeto/7.jpg",
-      "assets/imgs/projects/beeto/8.jpg",
-      "assets/imgs/projects/beeto/9.jpg",
-      "assets/imgs/projects/beeto/10.jpg",
-      "assets/imgs/projects/beeto/11.jpg",
-      "assets/imgs/projects/beeto/12.jpg"
+      "assets/imgs/projects/beeto/1.webp",
+      "assets/imgs/projects/beeto/2.webp",
+      "assets/imgs/projects/beeto/3.webp",
+      "assets/imgs/projects/beeto/4.webp",
+      "assets/imgs/projects/beeto/5.webp",
+      "assets/imgs/projects/beeto/6.webp",
+      "assets/imgs/projects/beeto/7.webp",
+      "assets/imgs/projects/beeto/8.webp",
+      "assets/imgs/projects/beeto/9.webp",
+      "assets/imgs/projects/beeto/10.webp",
+      "assets/imgs/projects/beeto/11.webp",
+      "assets/imgs/projects/beeto/12.webp",
+      "assets/imgs/projects/beeto/13.webp",
+      "assets/imgs/projects/beeto/14.webp",
+      "assets/imgs/projects/beeto/15.webp",
+      "assets/imgs/projects/beeto/16.webp",
+      "assets/imgs/projects/beeto/17.webp",
+      "assets/imgs/projects/beeto/18.webp"
     ],
     "alt": {
       "en": "Beeto Preview",

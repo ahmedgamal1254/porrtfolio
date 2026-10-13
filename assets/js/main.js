@@ -101,15 +101,24 @@ document.addEventListener('DOMContentLoaded', () => {
             // Tech stack pills HTML
             const techTagsHtml = techStack.map(tag => `<span class="tech-tag">${tag}</span>`).join('');
 
+            // Fancybox gallery images (exclude cover project.image, show all project.images starting with images[0])
+            const galleryImages = (Array.isArray(project.images) && project.images.length > 0)
+                ? project.images.map(img => resolvePath(getLocalized(img)))
+                : (image ? [image] : []);
+
+            const firstGalleryImg = galleryImages[0] || image;
+            const remainingGalleryImages = galleryImages.slice(1);
+            const firstCaption = galleryImages.length > 1 ? `${title} (1/${galleryImages.length})` : title;
+
             return `
                 <div class="reveal project-card">    
                     <!-- Image with Fullscreen Slider Trigger -->
                     <div class="project-image-wrapper">
-                        <a href="${image}" class="project-image-link" data-fancybox="gallery-${project.id}" data-caption="${title}" aria-label="${title}">
+                        <a href="${firstGalleryImg}" class="project-image-link" data-fancybox="gallery-${project.id}" data-caption="${firstCaption}" aria-label="${title}">
                             <img src="${image}" alt="${alt}" loading="lazy" class="project-img">
                         </a>
-                        ${(Array.isArray(project.images) ? project.images.slice(1) : []).map((extraImg, idx) => `
-                            <a href="${resolvePath(getLocalized(extraImg))}" data-fancybox="gallery-${project.id}" data-caption="${title} (${idx + 2}/${project.images.length})" style="display: none;"></a>
+                        ${remainingGalleryImages.map((extraImg, idx) => `
+                            <a href="${extraImg}" data-fancybox="gallery-${project.id}" data-caption="${title} (${idx + 2}/${galleryImages.length})" style="display: none;"></a>
                         `).join('')}
                     </div>
 
