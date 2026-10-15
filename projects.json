@@ -134,6 +134,119 @@
       }
     ]
   },
+   {
+    "id": "iqmp",
+    "badge": {
+      "en": "Iraq Project Managers Directory",
+      "ar": "دليل مدراء المشاريع في العراق"
+    },
+    "title": {
+      "en": "Iraq Project Managers Directory",
+      "ar": "دليل مدراء المشاريع في العراق"
+    },
+    "description": {
+      "en": "An annual verified directory of elite project managers and teams in Iraq, trusted by major institutions and companies for networking and contracting with certified professionals.",
+      "ar": "سجل توثيقي سنوي لنخبة فرق وقادة المشاريع في العراق، يُعتمد عليه من قبل المؤسسات والشركات الكبرى للتواصل والتعاقد مع الكفاءات الموثّقة."
+    },
+    "heroSummary": {
+      "en": "A next-generation clinic SaaS ecosystem built with .NET 10 Clean Architecture and Next.js, powering high-concurrency medical appointment scheduling, loyalty programs, and tri-lingual operations.",
+      "ar": "موقع تعريفى سنوي يضم نخبة من مدراء المشاريع في العراق، مع واجهات تفاعلية متعددة اللغات (العربية، الإنجليزية، الكردية) لتسهيل التواصل والتعاقد مع المحترفين المعتمدين."
+    },
+    "year": "2026",
+    "techStackSummary": "Next.js, TanStack Query, shadcn/ui",
+    "metric": {
+      "en": "10k+ Verified Project Managers, 0 Collisions",
+      "ar": ""
+    },
+    "image": "assets/imgs/projects/iqmp/image.webp",
+    "images": [
+      "assets/imgs/projects/iqmp/1.webp",
+      "assets/imgs/projects/iqmp/2.webp",
+      "assets/imgs/projects/iqmp/3.webp",
+      "assets/imgs/projects/iqmp/4.webp",
+      "assets/imgs/projects/iqmp/5.webp",
+      "assets/imgs/projects/iqmp/6.webp",
+      "assets/imgs/projects/iqmp/7.webp",
+      "assets/imgs/projects/iqmp/8.webp"
+    ],
+    "alt": {
+      "en": "IQMP Preview",
+      "ar": "معاينة دليل مدراء المشاريع في العراق"
+    },
+    "liveUrl": "https://iqmp.sumt.net",
+    "detailsUrl": "projects/detail.html?id=iqmp",
+    "challenge": {
+      "en": "Managing high-volume clinic bookings across multi-specialty doctors and multiple clinic branches while preventing race conditions (double bookings), supporting complex slot calculations with buffer times, dynamic coupon rules, loyalty point redemptions, and seamless tri-lingual localized user experiences (Arabic, English, Kurdish) across mobile and web platforms.",
+      "ar": "إدارة الحجوزات الطبية عالية الكثافة عبر فروع وتخصصات متعددة مع منع تضارب المواعيد (Race Conditions) بشكل قطعي، واحتساب الفترات الزمنية بدقة مع فترات التجهيز، بالإضافة لمعالجة برامج الولاء والخصومات، وتقديم واجهات سلسة تدعم ثلاث لغات (العربية، الإنجليزية، الكردية) مع توافق كامل مع اتجاهات القراءة (RTL/LTR)."
+    },
+    "solution": {
+      "en": "Engineered a robust .NET 10 backend applying Clean Architecture and CQRS with Redis distributed locks for zero-collision appointment reservations. Built an interactive, high-performance Next.js admin dashboard utilizing TanStack React Query for real-time caching and optimistic mutations, React Hook Form + Zod for strict validation, and shadcn/ui with bidirectional RTL/LTR layout support. Integrated automated background jobs via Hangfire and centralized exception handling with localized envelopes.",
+      "ar": "بناء معمارية خلفية فائقة القوة باستخدام .NET 10 مع Clean Architecture و CQRS مع أقفال موزعة (Redis Distributed Locks) لضمان حجز المواعيد بدون أي تضارب. وتطوير لوحة تحكم إدارية تفاعلية بـ Next.js مع TanStack React Query للمزامنة الفورية، و React Hook Form + Zod للتحقق الدقيق من المدخلات، ومكونات shadcn/ui المتوافقة مع الاتجاهين RTL/LTR، مع معالجة المهام الخلفية عبر Hangfire ورسائل خطأ مترجمة وموحدة."
+    },
+    "result": {
+      "en": "Achieved zero scheduling collisions over 10,000+ bookings, reduced patient waiting times by 40%, cut admin booking processing overhead by 65%, and ensured sub-100ms API response times across peak clinic consultation hours.",
+      "ar": "تحقيق دقة مطلقة وصفر تضارب في المواعيد لأكثر من 10,000 حجز، وتقليل وقت انتظار المرضى بنسبة 40%، وخفض وقت المعالجة الإدارية للحجوزات بنسبة 65%، مع سرعة استجابة فائقة للـ API بأقل من 100ms حتى في أوقات الذروة."
+    },
+    "techStack": [
+      "Next.js",
+      "Supabase",
+      "TypeScript",
+      "shadcn/ui",
+      "Tailwind CSS"
+    ],
+    "features": {
+      "en": [
+        "Smart slot reservation engine with Redis distributed locking preventing double bookings",
+        "High-performance Next.js dashboard with TanStack React Query for real-time schedule management",
+        "Multi-branch & multi-doctor scheduling with buffer times, breaks, and dynamic availability",
+        "Automated loyalty points calculation and wallet system for returning clinic clients",
+        "Tiered coupon engine with usage limits, minimum spend, and category restrictions",
+        "Comprehensive tri-lingual internationalization (Arabic, Kurdish, English) with RTL support",
+        "Role-based access control (RBAC) and audit logs for receptionists, doctors, and branch managers",
+        "Automated reminders and notifications via background Hangfire processing"
+      ],
+      "ar": [
+        "محرك حجز ذكي مدعوم بأقفال Redis الموزعة لمنع أي تضارب في المواعيد بين المرضى",
+        "لوحة تحكم إدارية سريعة بـ Next.js و TanStack React Query للمزامنة الفورية لجدول الحجوزات",
+        "إدارة متكاملة للفروع وجداول الأطباء وتحديد فترات الراحة والأوقات المتاحة ديناميكياً",
+        "نظام محفظة ونقاط ولاء آلي يمنح المرضى مكافآت وخصومات عند تكرار الزيارات",
+        "محرك كوبونات وخصومات متقدم مع حدود استخدام وشروط إنفاق وأقسام مخصصة",
+        "دعم متكامل لثلاث لغات (العربية، الكردية، الإنجليزية) مع توافق كامل لاتجاه RTL",
+        "نظام صلاحيات متقدم (RBAC) وسجل تدقيق تفصيلي لموظفي الاستقبال والأطباء ومدراء الفروع",
+        "إشعارات وتنبيهات مجدولة آلياً للمواعيد عبر خوادم المهام الخلفية Hangfire"
+      ]
+    },
+    "impact": [
+      {
+        "number": "10k+",
+        "label": {
+          "en": "Bookings Managed",
+          "ar": "حجز مدار بدون أخطاء"
+        }
+      },
+      {
+        "number": "0",
+        "label": {
+          "en": "Double Bookings (100% Reliable)",
+          "ar": "تضارب مواعيد (دقة 100%)"
+        }
+      },
+      {
+        "number": "40%",
+        "label": {
+          "en": "Wait Time Reduction",
+          "ar": "تقليل زمن انتظار المرضى"
+        }
+      },
+      {
+        "number": "99.9%",
+        "label": {
+          "en": "System Uptime",
+          "ar": "استقرار وجاهزية النظام"
+        }
+      }
+    ]
+  },
   {
     "id": "beeto",
     "badge": {
